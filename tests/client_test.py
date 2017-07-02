@@ -15,11 +15,6 @@ class TestClient():
         assert self.client.client_key == apikey.key
         assert self.client.client_secret == apikey.secret
 
-    def test_authenticate(self):
-        self.client = GoodreadsClient(apikey.key, apikey.secret)
-        self.client.authenticate('',
-                                apikey.oauth_access_token_secret)
-
     def test_auth_user(self):
         user = self.client.auth_user()
         assert user.user_name is None
