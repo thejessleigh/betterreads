@@ -179,20 +179,14 @@ License
 Acknowledgment
 --------------
 
-Thanks to `Paul Shannon <https://github.com/paulshannon>`__ for
+Thanks to `Paul Shannon <https://github.com/paulshannon>`__ and `Sefa Kilic <https://github.com/sefakilic>`__
+for
 providing 'goodreads' package at PyPI.
 
 .. |Build Status| image:: https://travis-ci.org/tatianass/goodreads2.svg?branch=master
    :target: https://travis-ci.org/tatianass/goodreads2
 .. |Coverage Status| image:: https://coveralls.io/repos/github/tatianass/goodreads2/badge.svg?branch=master
    :target: https://coveralls.io/github/tatianass/goodreads2?branch=master
-.. |Documentation Status| image:: https://readthedocs.org/projects/goodreads/badge/?version=latest
-   :target: https://readthedocs.org/projects/goodreads/?badge=latest
-.. |Downloads| image:: https://img.shields.io/pypi/dm/goodreads.svg
-   :target: https://pypi.python.org/pypi/goodreads/
-.. |Latest Version| image:: https://img.shields.io/pypi/v/goodreads.svg
-   :target: https://pypi.python.org/pypi/goodreads/
-.. |Supported Python versions| image:: https://img.shields.io/pypi/pyversions/goodreads.svg
-   :target: https://pypi.python.org/pypi/goodreads/
-.. |License| image:: https://img.shields.io/pypi/l/goodreads.svg
-   :target: https://pypi.python.org/pypi/goodreads/
+.. |Documentation Status| image:: https://readthedocs.org/projects/goodreads2/badge/?version=latest
+   :target: http://goodreads2.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
