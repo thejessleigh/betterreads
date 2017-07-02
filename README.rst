@@ -184,8 +184,8 @@ providing 'goodreads' package at PyPI.
 
 .. |Build Status| image:: http://img.shields.io/travis/sefakilic/goodreads.svg
    :target: https://travis-ci.org/tatianass/goodreads2
-.. |Coverage Status| image:: http://img.shields.io/coveralls/sefakilic/goodreads.svg
-   :target: https://coveralls.io/r/sefakilic/goodreads
+.. |Coverage Status| image:: https://coveralls.io/repos/github/tatianass/goodreads2/badge.svg?branch=master
+   :target: https://coveralls.io/github/tatianass/goodreads2?branch=master
 .. |Documentation Status| image:: https://readthedocs.org/projects/goodreads/badge/?version=latest
    :target: https://readthedocs.org/projects/goodreads/?badge=latest
 .. |Downloads| image:: https://img.shields.io/pypi/dm/goodreads.svg
