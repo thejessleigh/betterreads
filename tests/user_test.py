@@ -16,6 +16,13 @@ class TestUser():
                                 apikey.oauth_access_token_secret)
         cls.user = cls.client.user('1')
 
+    def test_repr(self):
+        eq_(repr(self.user), 'otis')
+
+    def test_repr_withou_user_name(self):
+        user = self.client.auth_user()
+        eq_(repr(user), '18185439')
+
     def test_get_user(self):
         ok_(isinstance(self.user, GoodreadsUser))
         eq_(self.user.gid, '1')
@@ -48,6 +55,7 @@ class TestUser():
 
     def test_user_own_books(self):
         owned_books = self.user.owned_books()
+        print(owned_books)
         ok_(all(isinstance(book, GoodreadsOwnedBook) for book in owned_books))
 
     def test_reviews(self):

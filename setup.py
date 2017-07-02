@@ -4,13 +4,13 @@ setup(
     name='goodreads',
     description="Python wrapper for Goodreads API",
     long_description=open("README.rst").read(),
-    url='https://github.com/sefakilic/goodreads/',
+    url='https://github.com/tatianass/goodreads2',
 
-    author='Sefa Kilic',
-    author_email='sefakilic@gmail.com',
+    author='Tatiana Saturno',
+    author_email='tatianassaturno@gmail.com',
 
     packages=['goodreads'],
-    version='0.3.2',
+    version='0.3.3',
     install_requires=['nose', 'xmltodict', 'requests', 'rauth'],
 
     license='MIT',

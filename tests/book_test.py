@@ -27,6 +27,14 @@ class TestBook():
         assert len(self.book.authors) == 1
         assert isinstance(self.book.authors[0], GoodreadsAuthor)
 
+    def test_many_authors(self):
+        client = GoodreadsClient(apikey.key, apikey.secret)
+        client.authenticate(apikey.oauth_access_token,
+                            apikey.oauth_access_token_secret)
+        book = client.book('18774683')
+        assert len(book.authors) == 2
+        assert isinstance(book.authors[0], GoodreadsAuthor)
+
     def test_description(self):
         assert self.book.description.startswith(
             '<i>There is an alternate cover edition')
