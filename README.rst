@@ -182,7 +182,7 @@ Acknowledgment
 Thanks to `Paul Shannon <https://github.com/paulshannon>`__ for
 providing 'goodreads' package at PyPI.
 
-.. |Build Status| image:: http://img.shields.io/travis/sefakilic/goodreads.svg
+.. |Build Status| image:: https://travis-ci.org/tatianass/goodreads2.svg?branch=master
    :target: https://travis-ci.org/tatianass/goodreads2
 .. |Coverage Status| image:: https://coveralls.io/repos/github/tatianass/goodreads2/badge.svg?branch=master
    :target: https://coveralls.io/github/tatianass/goodreads2?branch=master
