@@ -113,6 +113,40 @@ class GoodreadsClient():
             works = [works]
         return [self.book(work['best_book']['id']['#text']) for work in works]
 
+    def search_books_total_pages(self, q, page=1, search_field='all'):
+        """Get the total of pages from the search. This will search all
+        books in the title/author/ISBN fields and show matches, sorted by
+        popularity on Goodreads.
+        :param q: query text
+        :param page: which page to return (default 1)
+        :param search_fields: field to search, one of 'title', 'author' or
+        'genre' (default is 'all')
+        """
+        resp = self.request("search/index.xml",
+                            {'q': q, 'page': page, 'search[field]': search_field})
+        total = resp['search']['total-results']
+        books_per_page = 20
+
+        #convert to integer plus 1 in case that the result it's a float
+        pages = int(int(total)/books_per_page) + 2
+        return pages
+
+    def search_books_all_pages(self, q, page=1, search_field='all'):
+        """Get all books for the given query. This will search all
+        books in the title/author/ISBN fields and show matches, sorted by
+        popularity on Goodreads.
+        :param q: query text
+        :param page: which page to return (default 1)
+        :param search_fields: field to search, one of 'title', 'author' or
+        'genre' (default is 'all')
+        """
+        pages = self.search_books_total_pages(q=q, search_field=search_field)
+        books = [self.search_books(q, p, search_field) for p in list(range(1,pages))]
+        outputlist = []
+        for i in books:
+          outputlist.extend(i)
+        return outputlist
+
     def group(self, group_id):
         """Get info about a group"""
         resp = self.request("group/show", {'id': group_id})

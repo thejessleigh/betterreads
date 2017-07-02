@@ -40,8 +40,8 @@ class TestClient():
         eq_(book.gid,book_id)
 
     def test_search_books(self):
-        books = self.client.search_books("The selfish gene")
-        assert len(books) > 0
+        books = self.client.search_books(q='Gerri Hill', search_field='author')
+        assert len(books) == 20
         assert all(isinstance(book, GoodreadsBook) for book in books)
 
     def test_search_books_with_one_book(self):
@@ -61,3 +61,11 @@ class TestClient():
     def test_list_events(self):
         events = self.client.list_events(55408)
         assert len(events) > 0
+
+    def test_search_books_total_pages(self):
+        num_pages = self.client.search_books_total_pages(q='Gerri Hill', search_field='author')
+        eq_(num_pages, 2)
+
+    def test_search_books_all_pages(self):
+        books = self.client.search_books_all_pages(q='Gerri Hill', search_field='author')
+        assert len(books) > 20

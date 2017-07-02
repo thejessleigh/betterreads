@@ -4,3 +4,5 @@ docs/site/*
 dist/
 goodreads.egg-info/
 .coverage
+examples/*.json
+*.json

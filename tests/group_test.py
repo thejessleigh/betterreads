@@ -33,9 +33,6 @@ class TestGroup():
     def test_image_url(self):
     	eq_(self.group.image_url,'https://images.gr-assets.com/groups/1182455834p2/1.jpg')
 
-    def test_last_activity_at(self):
-    	eq_(self.group.last_activity_at,'Sun Jul 02 12:08:59 -0700 2017')
-
     def test_access(self):
     	eq_(self.group.access,'public')
 
