@@ -64,7 +64,7 @@ class TestClient():
 
     def test_search_books_total_pages(self):
         num_pages = self.client.search_books_total_pages(q='Gerri Hill', search_field='author')
-        eq_(num_pages, 2)
+        eq_(num_pages, 3)
 
     def test_search_books_all_pages(self):
         books = self.client.search_books_all_pages(q='Gerri Hill', search_field='author')

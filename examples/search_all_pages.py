@@ -13,7 +13,6 @@ gc = client.GoodreadsClient(apikey.key, apikey.secret)
 #get all books by query
 books = gc.search_books_all_pages(q='Gerri Hill', search_field='author')
 
-print(books)
 #to json
 data = []
 for book in books:
