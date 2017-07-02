@@ -18,7 +18,7 @@ class TestClient():
 
     def test_auth_user(self):
         user = self.client.auth_user()
-        assert user.user_name == 'sefakilic'
+        assert user.user_name is None
 
     def test_user_info(self):
         user = self.client.user(1)
