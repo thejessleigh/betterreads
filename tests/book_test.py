@@ -5,7 +5,7 @@ from goodreads.client import GoodreadsClient
 from goodreads.book import GoodreadsBook
 from goodreads.author import GoodreadsAuthor
 from goodreads.shelf import GoodreadsShelf
-
+from nose.tools import eq_, ok_
 
 class TestBook():
     @classmethod
@@ -57,6 +57,7 @@ class TestBook():
         assert self.book.num_pages.isdigit()
 
     def test_popular_shelves(self):
+        eq_(len(self.book.popular_shelves), 100)
         assert all(isinstance(shelf, GoodreadsShelf)
                    for shelf in self.book.popular_shelves)
 

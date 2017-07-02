@@ -1,0 +1,4 @@
+nose
+xmltodict
+requests
+rauth

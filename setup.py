@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='goodreads',
+    name='goodreads2',
     description="Python wrapper for Goodreads API",
     long_description=open("README.rst").read(),
     url='https://github.com/tatianass/goodreads2',
