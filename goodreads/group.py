@@ -1,4 +1,5 @@
 """Class for GoodreadsGroup"""
+from . import user
 
 class GoodreadsGroup:
     """Goodreads Group class implementation"""
@@ -61,4 +62,4 @@ class GoodreadsGroup:
     @property
     def members(self):
         """Members of the group"""
-        return self._group_dict['members']['group_users']
+        return self._group_dict['members']['group_user']
