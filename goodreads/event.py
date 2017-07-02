@@ -91,12 +91,22 @@ class GoodreadsEvent:
     @property
     def reminder_at(self):
         """Reminder time for the event"""
-        return self._event_dict['reminder_at']['#text']
+        reminder = ''
+        try:
+            reminder = self._event_dict['reminder_at']['#text']
+        except Exception as e:
+            pass
+        return reminder
 
     @property
     def rsvp_end_at(self):
         """RSVP for the event ends at"""
-        return self._event_dict['rsvp_end_at']['#text']
+        rsvp_end_at = ''
+        try:
+            rsvp_end_at = self._event_dict['rsvp_end_at']['#text']
+        except Exception as e:
+            pass
+        return rsvp_end_at
 
     @property
     def start_at(self):
@@ -121,5 +131,5 @@ class GoodreadsEvent:
     @property
     def resource(self):
         """Type and ID for the event resource"""
-        return (self._event_dict['resouce_type'],
-                self._event_dict['resouce_id']['#text'])
+        return (self._event_dict['resource_type'],
+                self._event_dict['resource_id']['#text'])
