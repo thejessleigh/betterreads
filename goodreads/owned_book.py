@@ -1,6 +1,7 @@
 """Class definition for owned books"""
 
 from . import book
+from . import review
 
 class GoodreadsOwnedBook:
     def __init__(self, owned_book_dict):
@@ -14,12 +15,12 @@ class GoodreadsOwnedBook:
     @property
     def book(self):
         """Book owned"""
-        return book.GoodreadsBook(self._owned_book_dict['book'])
+        return book.GoodreadsBook(self._owned_book_dict['book'], self)
 
     @property
     def review(self):
         """Review for the owned book"""
-        return self._owned_book_dict['review']
+        return review.GoodreadsReview(self._owned_book_dict['review'])
 
     @property
     def current_owner(self):
@@ -29,17 +30,29 @@ class GoodreadsOwnedBook:
     @property
     def original_purchase_date(self):
         """Date of purchase"""
-        return self._owned_book_dict['original_purchase_date']
+        date = ''
+        try:
+            self._owned_book_dict['original_purchase_date']['@nil'] == 'true'
+        except Exception as e:
+            date = self._owned_book_dict['original_purchase_date']['#text']
+        return date
 
     @property
     def original_purchase_location(self):
         """Purchase location"""
-        return self._owned_book_dict['original_purchase_location']
+        location = ''
+        try:
+            self._owned_book_dict['original_purchase_location']['@nil'] == 'true'
+        except Exception as e:
+            location = self._owned_book_dict['original_purchase_location']
+        return location
 
+    @property
     def condition(self):
         """Condition of the book"""
         return self._owned_book_dict['condition']
 
+    @property
     def link(self):
         """Linked for the owned book"""
         return self._owned_book_dict['link']
