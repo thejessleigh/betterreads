@@ -46,7 +46,7 @@ class GoodreadsAuthor:
 
     def fans_count(self):
         """Number of fans"""
-        return self._author_dict['fans_count']
+        return self._author_dict['fans_count']['#text']
 
     @property
     def gender(self):

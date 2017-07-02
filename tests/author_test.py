@@ -40,7 +40,7 @@ class TestAuthor():
         assert author.died_at == '1900/11/30'
 
     def test_fans_count(self):
-        assert self.author.fans_count()['#text'] == '240'
+        assert self.author.fans_count() == '240'
 
     def test_gender(self):
         assert self.author.gender == 'male'

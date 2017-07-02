@@ -1,5 +1,4 @@
 """Class for GoodreadsGroup"""
-from . import user
 
 class GoodreadsGroup:
     """Goodreads Group class implementation"""
