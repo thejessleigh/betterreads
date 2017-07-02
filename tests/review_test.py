@@ -10,7 +10,10 @@ class TestReview():
         cls.client.authenticate(apikey.oauth_access_token,
                                 apikey.oauth_access_token_secret)
         cls.review = cls.client.review('2')
-
+    
+    def test_repr(self):
+        eq_(repr(self.review), 'review [2]')
+    
     def test_recent_reviews(self):
         reviews = self.client.recent_reviews()
         ok_(all(isinstance(r, GoodreadsReview) for r in reviews))

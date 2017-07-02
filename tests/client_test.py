@@ -4,7 +4,6 @@ from goodreads import apikey
 from goodreads.client import GoodreadsClient
 from goodreads.book import GoodreadsBook
 
-
 class TestClient():
     @classmethod
     def setup_class(cls):
@@ -15,6 +14,11 @@ class TestClient():
     def test_client_setup(self):
         assert self.client.client_key == apikey.key
         assert self.client.client_secret == apikey.secret
+
+    def test_authenticate(self):
+        self.client = GoodreadsClient(apikey.key, apikey.secret)
+        self.client.authenticate('',
+                                apikey.oauth_access_token_secret)
 
     def test_auth_user(self):
         user = self.client.auth_user()
@@ -44,7 +48,16 @@ class TestClient():
         assert len(books) > 0
         assert all(isinstance(book, GoodreadsBook) for book in books)
 
+    def test_search_books_with_one_book(self):
+        books = self.client.search_books("Childhood, Boyhood, Truth: From an African Youth to the Selfish Gene")
+        assert len(books) == 1
+        assert all(isinstance(book, GoodreadsBook) for book in books)
+
     def test_group_by_id(self):
         group_id = '1'
         group = self.client.group(group_id)
         assert group.gid == group_id
+
+    def test_find_groups(self):
+        groups = self.client.find_groups('Goodreads Developers')
+        assert len(groups) > 1
