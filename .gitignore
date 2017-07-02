@@ -3,4 +3,4 @@ build/
 docs/site/*
 dist/
 goodreads.egg-info/
-tests/.coverage
+.coverage
