@@ -99,4 +99,4 @@ class GoodreadsUser():
              'per_page': per_page
              }
         )
-        return [review.GoodreadsReview(r) for r in resp['reviews']['review']], resp['reviews']['@total']
+        return [review.GoodreadsReview(r) for r in resp['reviews']['review']], int(resp['reviews']['@total'])
