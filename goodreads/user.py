@@ -90,13 +90,20 @@ class GoodreadsUser():
 
     def per_shelf_reviews(self, page=1, per_page=200, shelf_name='read'):
         """Get all books and reviews on a user's particular shelf"""
-        resp = self._client.request(
-            "/review/list.xml",
-            {'v': 2,
-             'id': self.gid,
-             'page': page,
-             'shelf': shelf_name,
-             'per_page': per_page
-             }
-        )
-        return [review.GoodreadsReview(r) for r in resp['reviews']['review']], int(resp['reviews']['@total'])
+        total = 1
+        all_reviews = []
+        while len(reviews) > total:
+            resp = self._client.request(
+                "/review/list.xml",
+                {'v': 2,
+                 'id': self.gid,
+                 'page': page,
+                 'shelf': shelf_name,
+                 'per_page': per_page
+                 }
+            )
+            reviews = [review.GoodreadsReview(r) for r in resp['reviews']['review']]
+            all_reviews.extend(reviews)
+            page += 1
+            total = int(resp['reviews']['@total'])
+        return all_reviews
