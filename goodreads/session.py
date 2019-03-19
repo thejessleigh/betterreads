@@ -17,10 +17,10 @@ class GoodreadsSession():
             consumer_key=self.client_key,
             consumer_secret=self.client_secret,
             name='goodreads',
-            request_token_url='http://www.goodreads.com/oauth/request_token',
-            authorize_url='http://www.goodreads.com/oauth/authorize',
-            access_token_url='http://www.goodreads.com/oauth/access_token',
-            base_url='http://www.goodreads.com/'
+            request_token_url='https://www.goodreads.com/oauth/request_token',
+            authorize_url='https://www.goodreads.com/oauth/authorize',
+            access_token_url='https://www.goodreads.com/oauth/access_token',
+            base_url='https://www.goodreads.com/'
         )
         request_token, request_token_secret = service.get_request_token(header_auth=True)
         auth_url = service.get_authorize_url(request_token)
