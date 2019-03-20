@@ -92,7 +92,7 @@ class GoodreadsUser():
         """Get all books and reviews on a user's particular shelf"""
         total = 1
         all_reviews = []
-        while len(all_reviews) > total:
+        while len(all_reviews) < total:
             resp = self._client.request(
                 "/review/list.xml",
                 {'v': 2,
