@@ -1,56 +1,57 @@
-from goodreads import apikey
-from goodreads.client import GoodreadsClient
+from nose.tools import eq_, ok_
+
 from goodreads.user import GoodreadsUser
 from goodreads.group import GoodreadsGroup
 from goodreads.owned_book import GoodreadsOwnedBook
 from goodreads.review import GoodreadsReview
 from goodreads.shelf import GoodreadsShelf
-from nose.tools import eq_, ok_
+from tests.test_fixture import GoodreadsTestClass
 
 
-class TestUser():
+class TestUser(GoodreadsTestClass):
     @classmethod
     def setup_class(cls):
-        cls.client = GoodreadsClient(apikey.key, apikey.secret)
-        cls.client.authenticate(apikey.oauth_access_token,
-                                apikey.oauth_access_token_secret)
-        cls.user = cls.client.user('1')
+        GoodreadsTestClass.setup_class()
+        cls.user = cls.client.user("1")
 
     def test_repr(self):
-        eq_(repr(self.user), 'otis')
+        eq_(repr(self.user), "otis")
 
     def test_repr_withou_user_name(self):
         user = self.client.auth_user()
-        eq_(repr(user), '18185439')
+        eq_(repr(user), "18185439")
 
     def test_get_user(self):
         ok_(isinstance(self.user, GoodreadsUser))
-        eq_(self.user.gid, '1')
+        eq_(self.user.gid, "1")
 
     def test_user_name(self):
-        eq_(self.user.user_name, 'otis')
+        eq_(self.user.user_name, "otis")
 
     def test_name(self):
-        eq_(self.user.name, 'Otis Chandler')
+        eq_(self.user.name, "Otis Chandler")
 
     def test_link(self):
-        eq_(self.user.link,
-            u'https://www.goodreads.com/user/show/1-otis-chandler')
+        eq_(self.user.link, u"https://www.goodreads.com/user/show/1-otis-chandler")
 
     def test_image_url(self):
-        eq_(self.user.image_url,
-            u'https://images.gr-assets.com/users/1189644957p3/1.jpg')
+        eq_(
+            self.user.image_url,
+            u"https://images.gr-assets.com/users/1189644957p3/1.jpg",
+        )
 
     def test_small_image_url(self):
-        eq_(self.user.small_image_url,
-            u'https://images.gr-assets.com/users/1189644957p2/1.jpg')
+        eq_(
+            self.user.small_image_url,
+            u"https://images.gr-assets.com/users/1189644957p2/1.jpg",
+        )
 
     def test_user_in_groups(self):
         groups = self.user.list_groups()
         ok_(all(isinstance(group, GoodreadsGroup) for group in groups))
 
     def test_user_not_in_any_group(self):
-        user = self.client.user('25044452')  # A user with no joined groups
+        user = self.client.user("25044452")  # A user with no joined groups
         eq_(user.list_groups(), [])
 
     def test_user_own_books(self):
