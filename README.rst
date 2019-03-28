@@ -8,7 +8,7 @@ goodreads
 
 This package provides a Python interface for the `Goodreads
 API <http://goodreads.com/api>`__. Using it, you can do pretty much
-anything that Goodreads allows to do with their own data.
+anything that Goodreads allows through their public API.
 
 Dependencies
 ------------
@@ -179,13 +179,16 @@ Acknowledgment
 --------------
 
 Thanks to `Paul Shannon <https://github.com/paulshannon>`__ and `Sefa Kilic <https://github.com/sefakilic>`__
-for
-providing 'goodreads' package at PyPI.
+for providing 'goodreads' package at PyPI, and to `Tatiana <https://github.com/tatianass>`__ and
+`Rehan Khwaja <https://github.com/rkhwaja>`__ for continuing the project as goodreads2. Goodreads3 couldn't exist
+without all of you.
 
-.. |Build Status| image:: https://travis-ci.org/tatianass/goodreads2.svg?branch=master
-   :target: https://travis-ci.org/tatianass/goodreads2
-.. |Coverage Status| image:: https://coveralls.io/repos/github/tatianass/goodreads2/badge.svg?branch=master
-   :target: https://coveralls.io/github/tatianass/goodreads2?branch=master
-.. |Documentation Status| image:: https://readthedocs.org/projects/goodreads2/badge/?version=latest
-   :target: http://goodreads2.readthedocs.io/en/latest/?badge=latest
+.. |Build Status| image:: https://travis-ci.org/thejessleigh/goodreads3.svg?branch=master
+   :target: https://travis-ci.org/thejessleigh/goodreads3
+   :alt: Build Status
+.. |Coverage Status| image:: https://coveralls.io/repos/github/thejessleigh/goodreads3/badge.svg?branch=master
+   :target: https://coveralls.io/github/thejessleigh/goodreads3?branch=master
+   :alt: Coverage Status
+.. |Documentation Status| image:: https://readthedocs.org/projects/goodreads3/badge/?version=latest
+   :target: http://goodreads3.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
