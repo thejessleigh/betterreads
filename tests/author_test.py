@@ -1,5 +1,5 @@
-from goodreads.author import GoodreadsAuthor
-from goodreads.book import GoodreadsBook
+from betterreads.author import GoodreadsAuthor
+from betterreads.book import GoodreadsBook
 from tests.test_fixture import GoodreadsTestClass
 
 

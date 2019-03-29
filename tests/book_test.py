@@ -2,9 +2,9 @@ import collections
 
 from nose.tools import eq_
 
-from goodreads.book import GoodreadsBook
-from goodreads.author import GoodreadsAuthor
-from goodreads.shelf import GoodreadsShelf
+from betterreads.book import GoodreadsBook
+from betterreads.author import GoodreadsAuthor
+from betterreads.shelf import GoodreadsShelf
 from tests.test_fixture import GoodreadsTestClass
 
 

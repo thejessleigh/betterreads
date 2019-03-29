@@ -1,6 +1,6 @@
 from nose.tools import eq_, ok_
 
-from goodreads.comment import GoodreadsComment
+from betterreads.comment import GoodreadsComment
 from tests.test_fixture import GoodreadsTestClass
 
 

@@ -1,8 +1,4 @@
 *pyc
-build/
-docs/site/*
-dist/
-goodreads.egg-info/
 .coverage
-examples/*.json
-*.json
+venv/
+docs/_*

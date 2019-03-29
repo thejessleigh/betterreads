@@ -1,6 +1,6 @@
 from nose.tools import eq_, ok_
 
-from goodreads.event import GoodreadsEvent
+from betterreads.event import GoodreadsEvent
 from tests.test_fixture import GoodreadsTestClass
 
 

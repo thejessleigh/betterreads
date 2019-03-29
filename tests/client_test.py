@@ -3,7 +3,7 @@ import os
 
 from nose.tools import eq_
 
-from goodreads.book import GoodreadsBook
+from betterreads.book import GoodreadsBook
 from tests.test_fixture import GoodreadsTestClass
 
 

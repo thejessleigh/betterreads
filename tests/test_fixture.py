@@ -1,6 +1,6 @@
 import os
 
-from goodreads.client import GoodreadsClient
+from betterreads.client import GoodreadsClient
 
 
 class GoodreadsTestClass:
