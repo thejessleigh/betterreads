@@ -1,0 +1,354 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "comment_index"
+  },
+  "comments": {
+    "@start": "1",
+    "@end": "20",
+    "@total": "42",
+    "comment": [
+      {
+        "id": "49170541",
+        "body": "I think Goodreads is one of my addictions.....besides books of course! :)",
+        "user": {
+          "id": "1246928",
+          "uri": "kca://profile:goodreads/A1F8DG0ZJDNNON",
+          "name": "Holly",
+          "display_name": "Holly",
+          "location": "Ottawa, IL",
+          "link": "https://www.goodreads.com/user/show/1246928-holly",
+          "image_url": "https://images.gr-assets.com/users/1550083002p3/1246928.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1550083002p2/1246928.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Apr 19 20:29:12 -0700 2012",
+        "updated_at": "Thu Apr 19 20:29:12 -0700 2012"
+      },
+      {
+        "id": "36918660",
+        "body": "Thanks Alethea!",
+        "user": {
+          "id": "1",
+          "uri": "kca://profile:goodreads/A2CSQET51X1KEY",
+          "name": "Otis",
+          "display_name": "Otis Chandler",
+          "location": "San Francisco, CA",
+          "link": "https://www.goodreads.com/user/show/1-otis-chandler",
+          "image_url": "https://images.gr-assets.com/users/1506617226p3/1.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1506617226p2/1.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Sep 15 11:13:19 -0700 2011",
+        "updated_at": "Thu Sep 15 11:13:19 -0700 2011"
+      },
+      {
+        "id": "36918581",
+        "body": "Love the new splash page! Looks great! ;)",
+        "user": {
+          "id": "1069643",
+          "uri": "kca://profile:goodreads/A1ZGF10C2RCQRO",
+          "name": "Alethea",
+          "display_name": "Alethea A",
+          "location": null,
+          "link": "https://www.goodreads.com/user/show/1069643-alethea-a",
+          "image_url": "https://images.gr-assets.com/users/1461296634p3/1069643.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1461296634p2/1069643.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Sep 15 11:11:18 -0700 2011",
+        "updated_at": "Thu Sep 15 11:11:18 -0700 2011"
+      },
+      {
+        "id": "29963056",
+        "body": "fyi:<br /><br />The last part of the quote you'd posted is King - it's from \"Strength to Love\" (1963), which has a lengthy chapter on one's relationship with one's enemy. The first part -- the thousands -- is not King.",
+        "user": {
+          "id": "777369",
+          "uri": "kca://profile:goodreads/A8TUG07O0GCC8",
+          "name": "Jessica",
+          "display_name": "Jessica",
+          "location": "Sheffield, MA",
+          "link": "https://www.goodreads.com/user/show/777369-jessica",
+          "image_url": "https://images.gr-assets.com/users/1283427299p3/777369.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1283427299p2/777369.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Tue May 03 08:52:32 -0700 2011",
+        "updated_at": "Tue May 03 08:52:32 -0700 2011"
+      },
+      {
+        "id": "15436858",
+        "body": "Hi Otis,<br><br>I just wanted to say that Goodreads is absolutely, hands down, one of my favorite online haunts! I love everything about it :)<br><br><br><a href=\"http://s255.photobucket.com/albums/hh144/secretofthesands/?action=view&amp;current=28E035CC3EE3420687EF41C9D1448486-1.gif\" target=\"_blank\" rel=\"nofollow\">\\n  <img src=\"https://images.gr-assets.com/hostedimages/1380222758ra/70069.gif\" alt=\"Photobucket\" class=\"gr-hostedUserImg\"></a><br><br><br><b>\\n  <i>Rai Aren, co-author of the award-winning mystery novel SECRET OF THE SANDS</i>\\n</b>",
+        "user": {
+          "id": "1604185",
+          "uri": "kca://profile:goodreads/AZLI4JHVZR4JI",
+          "name": "Rai",
+          "display_name": "Rai",
+          "location": "Canada",
+          "link": "https://www.goodreads.com/user/show/1604185-rai",
+          "image_url": "https://images.gr-assets.com/users/1450244102p3/1604185.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1450244102p2/1604185.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Apr 08 21:55:25 -0700 2010",
+        "updated_at": "Thu Apr 08 21:55:25 -0700 2010"
+      },
+      {
+        "id": "6651151",
+        "body": "A fellow JRRT fan I see...in your opinion which is the best of the series?<br /><br /><a target=\"_blank\" href=\"http://www.jayceoneal.com\" rel=\"nofollow\">http://www.jayceoneal.com</a>",
+        "user": {
+          "id": "2328571",
+          "uri": "kca://profile:goodreads/A1A9B9BFOYBZHC",
+          "name": "Jayce",
+          "display_name": "Jayce O'Neal",
+          "location": "Virginia Beach, VA",
+          "link": "https://www.goodreads.com/user/show/2328571-jayce-o-neal",
+          "image_url": "https://images.gr-assets.com/users/1508343004p3/2328571.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1508343004p2/2328571.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Jun 18 10:21:54 -0700 2009",
+        "updated_at": "Thu Jun 18 10:21:54 -0700 2009"
+      },
+      {
+        "id": "6567513",
+        "body": "Otis's fortune cookie today \"You would prosper in the field of wacky inventions.\"<br /><br />:D",
+        "user": {
+          "id": "73",
+          "uri": "kca://profile:goodreads/AZAVG60V8OJ8S",
+          "name": "Michael",
+          "display_name": "Michael Economy",
+          "location": null,
+          "link": "https://www.goodreads.com/user/show/73-michael-economy",
+          "image_url": "https://images.gr-assets.com/users/1389653970p3/73.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1389653970p2/73.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Mon Jun 15 14:38:46 -0700 2009",
+        "updated_at": "Mon Jun 15 14:38:46 -0700 2009"
+      },
+      {
+        "id": "5964488",
+        "body": "Hello, Otis. Thankx for the add. It's nice to meet you.",
+        "user": {
+          "id": "1865827",
+          "uri": "kca://profile:goodreads/A33YK27A5Z9FW",
+          "name": "Aggie Villanueva",
+          "display_name": "Aggie Villanueva",
+          "location": "The United States",
+          "link": "https://www.goodreads.com/user/show/1865827-aggie-villanueva",
+          "image_url": "https://images.gr-assets.com/users/1501078213p3/1865827.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1501078213p2/1865827.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Wed May 20 17:13:08 -0700 2009",
+        "updated_at": "Wed May 20 17:13:08 -0700 2009"
+      },
+      {
+        "id": "5902604",
+        "body": "Good Morning Otis,<br /><br />First, you are to be commended for creating GOODREADS!<br />Second, My sincere thanks and appreciation for having me as a member.<br />Third, I think Goodreads is a great site for writers and reaaders to connect. I hope to be a contributing member.<br />Fourth: Quote attributed to FRANK SINATRA (but really written by Paul Anka), and adpted by me:<br /> \"<br /><br />Regards,<br /><br />Michael Phelps, Author<br />THE EXECUTION OF JUSTICE",
+        "user": {
+          "id": "2327448",
+          "uri": "kca://profile:goodreads/A2LSZXIMZKAXF2",
+          "name": "Michael",
+          "display_name": "Michael Phelps",
+          "location": "Miami, FL",
+          "link": "https://www.goodreads.com/user/show/2327448-michael-phelps",
+          "image_url": "https://images.gr-assets.com/users/1442465664p3/2327448.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1442465664p2/2327448.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Mon May 18 03:34:15 -0700 2009",
+        "updated_at": "Mon May 18 03:34:15 -0700 2009"
+      },
+      {
+        "id": "5136739",
+        "body": "Hi Otis, What kind of books you like? Let me know",
+        "user": {
+          "id": "2112983",
+          "uri": "kca://profile:goodreads/A29IQGFZ97KUYH",
+          "name": "Nicolasbazan123",
+          "display_name": "Nicolasbazan123",
+          "location": "The United States",
+          "link": "https://www.goodreads.com/user/show/2112983-nicolasbazan123",
+          "image_url": "https://images.gr-assets.com/users/1236857041p3/2112983.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1236857041p2/2112983.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Mon Apr 13 01:04:17 -0700 2009",
+        "updated_at": "Mon Apr 13 01:04:17 -0700 2009"
+      },
+      {
+        "id": "5102182",
+        "body": "Otis,I'm so impressed that I'm friends with someone who built goodreads!! Since April is poetry month, I'd like to recommend the poetry of Mary Oliver to all. You can read some of her poems online:<br /><a target=\"_blank\" href=\"http://www.english.illinois.edu/Maps/poets/m_r/oliver/online_poems.htm\" rel=\"nofollow\">http://www.english.illinois.edu/Maps/...</a><br />\"Wild Geese\" is one of my favorites.",
+        "user": {
+          "id": "1788790",
+          "uri": "kca://profile:goodreads/A2QT533MXWVQTG",
+          "name": "Irma",
+          "display_name": "Irma Fritz",
+          "location": "Seattle, WA",
+          "link": "https://www.goodreads.com/user/show/1788790-irma-fritz",
+          "image_url": "https://images.gr-assets.com/users/1442494892p3/1788790.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1442494892p2/1788790.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Sat Apr 11 10:45:47 -0700 2009",
+        "updated_at": "Sat Apr 11 10:45:47 -0700 2009"
+      },
+      {
+        "id": "5026175",
+        "body": "Well, I thought I should give you the names of my books in case you are looking for something a little different to read:<br />#1-AT HOME IN THE LAND OF OZ: AUTISM, MY SISTER AND ME (memoir, Jessica Kingsley Publishers, London, 2007)<br />#2-WHAT YOU LONG FOR, (short stories, Main Street Rag Publishers, out in May, 2009) The short stories are available for pre-order at:<br /><a target=\"_blank href=\"http://www.mainstreetrag.com/store/ComingSoon.php\" rel=\"nofollow\">www.mainstreetrag.com/store/ComingSoo...</a> <br />at a discounted price until April 27! Check it out.<br />Cheers and Happy Easter!",
+        "user": {
+          "id": "109880",
+          "uri": "kca://profile:goodreads/A3KHQJB5M7F27I",
+          "name": "Anne",
+          "display_name": "Anne Barnhill",
+          "location": "Supply, NC",
+          "link": "https://www.goodreads.com/user/show/109880-anne-barnhill",
+          "image_url": "https://images.gr-assets.com/users/1485275018p3/109880.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1485275018p2/109880.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Tue Apr 07 18:49:03 -0700 2009",
+        "updated_at": "Tue Apr 07 18:49:03 -0700 2009"
+      },
+      {
+        "id": "4963290",
+        "body": "walking through Borders today, I heard some people discussing...<br /><br />\"Well, I've got some friends on that site, it's a Facebook but for reading, ummm....\"<br /><br />I jumped out, \"Goodreads!!!! My homie in the field of user-interface design, Otis, wrote that!\"<br /><br />\"Yes, that's the one!\"<br /><br />\"Well go get a damn account! It's the shizznit!\"<br /><br />well done, old boy!",
+        "user": {
+          "id": "655723",
+          "uri": "kca://profile:goodreads/A6TKI1P30LVBV",
+          "name": "Nick",
+          "display_name": "Nick Black",
+          "location": "Atlanta, GA",
+          "link": "https://www.goodreads.com/user/show/655723-nick-black",
+          "image_url": "https://images.gr-assets.com/users/1315018121p3/655723.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1315018121p2/655723.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Sat Apr 04 19:32:42 -0700 2009",
+        "updated_at": "Sat Apr 04 19:32:42 -0700 2009"
+      },
+      {
+        "id": "4732511",
+        "body": "Thank you for adding me to your circle of friends. <br />--Lara Biuts. Author of the novel La Lune Blanche",
+        "user": {
+          "id": "1723370",
+          "uri": "kca://profile:goodreads/A2O6E3EVBDLOCC",
+          "name": "Lara",
+          "display_name": "Lara Biyuts",
+          "location": null,
+          "link": "https://www.goodreads.com/user/show/1723370-lara-biyuts",
+          "image_url": "https://images.gr-assets.com/users/1476101550p3/1723370.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1476101550p2/1723370.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Mon Mar 23 18:29:27 -0700 2009",
+        "updated_at": "Mon Mar 23 18:29:27 -0700 2009"
+      },
+      {
+        "id": "4673547",
+        "body": "Wow! THis is a really great idea--I'm a writer with book # 2 coming out in May--short stories. We have similar tastes--Tolkein, Herbert, ETc. I remember years ago discovering the Dune series.<br />At any rate, lovely!",
+        "user": {
+          "id": "109880",
+          "uri": "kca://profile:goodreads/A3KHQJB5M7F27I",
+          "name": "Anne",
+          "display_name": "Anne Barnhill",
+          "location": "Supply, NC",
+          "link": "https://www.goodreads.com/user/show/109880-anne-barnhill",
+          "image_url": "https://images.gr-assets.com/users/1485275018p3/109880.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1485275018p2/109880.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Fri Mar 20 19:36:17 -0700 2009",
+        "updated_at": "Fri Mar 20 19:36:17 -0700 2009"
+      },
+      {
+        "id": "4664274",
+        "body": "Hi Otis...you built Goodreads? I'm impressed and grateful! Thanks for the friendship, too.<br />Blessings,<br />Jeannie",
+        "user": {
+          "id": "1335032",
+          "uri": "kca://profile:goodreads/A1TU8OOZY1PGRJ",
+          "name": "Jeannie",
+          "display_name": "Jeannie Faulkner Barber",
+          "location": "Kilgore, TX",
+          "link": "https://www.goodreads.com/user/show/1335032-jeannie-faulkner-barber",
+          "image_url": "https://images.gr-assets.com/users/1442604204p3/1335032.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1442604204p2/1335032.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Fri Mar 20 12:38:27 -0700 2009",
+        "updated_at": "Fri Mar 20 12:38:27 -0700 2009"
+      },
+      {
+        "id": "3775017",
+        "body": "Thanks for the friendship add. Goodreads.com is awesome!! Have a great week!<br />Shadonna",
+        "user": {
+          "id": "1698583",
+          "uri": "kca://profile:goodreads/ADJRVVEVGT35U",
+          "name": "Shadonna",
+          "display_name": "Shadonna",
+          "location": "Canada",
+          "link": "https://www.goodreads.com/user/show/1698583-shadonna",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png",
+          "has_image": "false"
+        },
+        "created_at": "Mon Feb 02 10:46:11 -0800 2009",
+        "updated_at": "Mon Feb 02 10:46:11 -0800 2009"
+      },
+      {
+        "id": "3579841",
+        "body": "Hey, just coming by to say hello!",
+        "user": {
+          "id": "1300626",
+          "uri": "kca://profile:goodreads/A2OZV6SEPN3J8W",
+          "name": "Jessie Terwilliger",
+          "display_name": "Jessie Terwilliger",
+          "location": "The United States",
+          "link": "https://www.goodreads.com/user/show/1300626-jessie-terwilliger",
+          "image_url": "https://images.gr-assets.com/users/1442489504p3/1300626.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1442489504p2/1300626.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Thu Jan 22 18:03:08 -0800 2009",
+        "updated_at": "Thu Jan 22 18:03:08 -0800 2009"
+      },
+      {
+        "id": "3263188",
+        "body": "Good evening Otis,<br /><br />Thank you for be-friending me, I look forward to comparing books with you.<br /><br />And thank you for creating Goodreads.<br /><br />Later,<br />Deb",
+        "user": {
+          "id": "1718764",
+          "uri": "kca://profile:goodreads/A20KNTA563N6TX",
+          "name": "Deb",
+          "display_name": "Deb",
+          "location": "The United States",
+          "link": "https://www.goodreads.com/user/show/1718764-deb",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png",
+          "has_image": "false"
+        },
+        "created_at": "Sun Jan 04 17:35:36 -0800 2009",
+        "updated_at": "Sun Jan 04 17:35:36 -0800 2009"
+      },
+      {
+        "id": "3134247",
+        "body": "Hello Otis,<br /><br />How are you? Thank you for accepting my friend-request. Thanks a lot for Goodreads. Good premises and fortune on your endeavors. <br /><br />Please visit these groups when you have a chance: \\u201cHappy &amp; Brainy Group\\u201d and \\u201cTo the Glory of Man\\u201d. Have a marvelous holiday season and a Prosperous 2009! Warmest regards.",
+        "user": {
+          "id": "1321941",
+          "uri": "kca://profile:goodreads/AWZVCUZDJHGWH",
+          "name": "Ilyn",
+          "display_name": "Ilyn Ross",
+          "location": "Piscataway, NJ",
+          "link": "https://www.goodreads.com/user/show/1321941-ilyn-ross",
+          "image_url": "https://images.gr-assets.com/users/1442489849p3/1321941.jpg",
+          "small_image_url": "https://images.gr-assets.com/users/1442489849p2/1321941.jpg",
+          "has_image": "true"
+        },
+        "created_at": "Sun Dec 28 18:12:31 -0800 2008",
+        "updated_at": "Sun Dec 28 18:12:31 -0800 2008"
+      }
+    ]
+  }
+}
