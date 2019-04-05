@@ -99,7 +99,7 @@ class GoodreadsClient:
 
     def search_books(self, q, page=1, search_field="all"):
         """Get the most popular books for the given query. This will search all
-        books in the title/author/ISBN fields and show matches, sorted by
+        books in the title/author/genre fields and show matches, sorted by
         popularity on Goodreads.
         :param q: query text
         :param page: which page to return (default 1)
@@ -165,7 +165,8 @@ class GoodreadsClient:
     def find_groups(self, query, page=1):
         """Find a group based on the query"""
         resp = self.request("group/search.xml", {"q": query, "page": page})
-        return resp["groups"]["list"]["group"]
+        groups_dicts = resp["groups"]["list"]["group"]
+        return [GoodreadsGroup(g) for g in groups_dicts]
 
     def book_review_stats(self, isbns):
         """Get review statistics for books given a list of ISBNs"""
