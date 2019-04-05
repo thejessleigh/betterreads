@@ -1,3 +1,5 @@
+from unittest import skip
+
 from nose.tools import eq_, ok_
 
 from betterreads.user import GoodreadsUser
@@ -17,6 +19,7 @@ class TestUser(GoodreadsTestClass):
     def test_repr(self):
         eq_(repr(self.user), "otis")
 
+    @skip("Disabled until tests run on fixtures, not live API calls")
     def test_repr_withou_user_name(self):
         user = self.client.auth_user()
         eq_(repr(user), "18185439")
@@ -37,13 +40,13 @@ class TestUser(GoodreadsTestClass):
     def test_image_url(self):
         eq_(
             self.user.image_url,
-            u"https://images.gr-assets.com/users/1189644957p3/1.jpg",
+            u"https://images.gr-assets.com/users/1506617226p3/1.jpg",
         )
 
     def test_small_image_url(self):
         eq_(
             self.user.small_image_url,
-            u"https://images.gr-assets.com/users/1189644957p2/1.jpg",
+            u"https://images.gr-assets.com/users/1506617226p2/1.jpg",
         )
 
     def test_user_in_groups(self):

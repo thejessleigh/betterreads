@@ -16,7 +16,7 @@ class TestGroup(GoodreadsTestClass):
         eq_(self.group.gid, "1")
 
     def test_description(self):
-        assert self.group.description.startswith("This is a place to")
+        assert self.group.description.startswith("Welcome to the Feedback Group!")
 
     def test_category(self):
         eq_(self.group.category, "Business")
@@ -25,7 +25,7 @@ class TestGroup(GoodreadsTestClass):
         eq_(self.group.subcategory, "Companies")
 
     def test_rules(self):
-        assert self.group.rules.startswith("Please keep")
+        assert self.group.rules.startswith("To help")
 
     def test_image_url(self):
         eq_(

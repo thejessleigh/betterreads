@@ -1,3 +1,5 @@
+from unittest import skip
+
 from betterreads.author import GoodreadsAuthor
 from betterreads.book import GoodreadsBook
 from tests.test_fixture import GoodreadsTestClass
@@ -38,6 +40,9 @@ class TestAuthor(GoodreadsTestClass):
         author = self.client.author("3565")
         assert author.died_at == "1900/11/30"
 
+    @skip(
+        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
+    )
     def test_fans_count(self):
         assert self.author.fans_count() == "240"
 
@@ -71,5 +76,8 @@ class TestAuthor(GoodreadsTestClass):
     def test_user(self):
         assert self.author.user is None
 
+    @skip(
+        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
+    )
     def test_works_count(self):
         assert self.author.works_count == "59"

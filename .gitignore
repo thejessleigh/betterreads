@@ -2,3 +2,4 @@
 .coverage
 venv/
 docs/_*
+.idea/

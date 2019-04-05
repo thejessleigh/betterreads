@@ -111,7 +111,7 @@ class GoodreadsClient:
         )
         works = resp["search"]["results"]["work"]
         # If there's only one work returned, put it in a list.
-        if type(works) == collections.OrderedDict:
+        if type(works) == dict:
             works = [works]
         return [self.book(work["best_book"]["id"]["#text"]) for work in works]
 
