@@ -1,125 +1,140 @@
-from unittest import skip
+import json
+from unittest import mock
 
-from nose.tools import eq_
+import pytest
 
-from betterreads.book import GoodreadsBook
 from betterreads.author import GoodreadsAuthor
+from betterreads.book import GoodreadsBook
+from betterreads.client import GoodreadsClient
 from betterreads.shelf import GoodreadsShelf
-from tests.test_fixture import GoodreadsTestClass
 
 
-class TestBook(GoodreadsTestClass):
-    @classmethod
-    def setup_class(cls):
-        GoodreadsTestClass.setup_class()
-        cls.book = cls.client.book("11870085")
+class TestBook:
+    @pytest.fixture
+    @mock.patch("betterreads.client.GoodreadsClient.request")
+    def test_book(self, mock_request):
+        client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
+        with open("tests/fixtures/book.json") as f:
+            book_response = f.read()
+            mock_request.return_value = json.loads(book_response)
+        return client.book(39721925)
 
-    def test_get_book(self):
-        assert isinstance(self.book, GoodreadsBook)
-        assert self.book.gid == "11870085"
-        assert repr(self.book) == "The Fault in Our Stars"
+    def test_get_book(self, test_book):
+        assert isinstance(test_book, GoodreadsBook)
+        assert test_book.gid == "39721925"
+        assert (
+            repr(test_book)
+            == "The Personality Brokers: The Strange History of Myers-Briggs and the Birth of Personality Testing"
+        )
 
-    def test_title(self):
-        assert self.book.title == "The Fault in Our Stars"
+    def test_title(self, test_book):
+        assert (
+            test_book.title
+            == "The Personality Brokers: The Strange History of Myers-Briggs and the Birth of Personality Testing"
+        )
 
-    def test_authors(self):
-        assert len(self.book.authors) == 1
-        assert isinstance(self.book.authors[0], GoodreadsAuthor)
+    def test_authors(self, test_book):
+        assert len(test_book.authors) == 1
+        assert isinstance(test_book.authors[0], GoodreadsAuthor)
 
-    def test_many_authors(self):
-        book = self.client.book("18774683")
+    @mock.patch("betterreads.client.GoodreadsClient.request")
+    def test_many_authors(self, mock_request):
+        client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
+
+        # Goodreads Book data - Practical Data Science with R as of 2019-04-05. Lightly modified for testing purposes.
+        with open("tests/fixtures/book_multiple_authors.json") as f:
+            book_response = f.read()
+        mock_request.return_value = json.loads(book_response)
+
+        book = client.book("18774683")
         assert len(book.authors) == 2
         assert isinstance(book.authors[0], GoodreadsAuthor)
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_description(self):
-        assert self.book.description.startswith(
-            "<i>There is an alternate cover edition"
+    def test_description(self, test_book):
+        assert test_book.description.startswith(
+            "An unprecedented history of the personality test conceived a century ago"
         )
 
-    def test_average_rating(self):
-        rating = float(self.book.average_rating)
-        assert rating >= 1.0
-        assert rating <= 5.0
+    def test_average_rating(self, test_book):
+        rating = float(test_book.average_rating)
+        assert type(rating) == float
+        assert rating == 3.38
 
-    def test_rating_dist(self):
-        assert self.book.rating_dist.startswith("5:")
+    def test_rating_dist(self, test_book):
+        assert test_book.rating_dist.startswith("5:")
 
-    def test_ratings_count(self):
-        assert self.book.ratings_count.isdigit()
+    def test_ratings_count(self, test_book):
+        assert test_book.ratings_count == "935"
 
-    def test_text_reviews_count(self):
-        assert self.book.text_reviews_count.isdigit()
+    def test_text_reviews_count(self, test_book):
+        assert test_book.text_reviews_count == "195"
 
-    def test_num_pages(self):
-        assert self.book.num_pages.isdigit()
+    def test_num_pages(self, test_book):
+        assert test_book.num_pages == "307"
 
-    def test_popular_shelves(self):
-        eq_(len(self.book.popular_shelves), 100)
+    def test_popular_shelves(self, test_book):
+        shelf_names = [shelf.name for shelf in test_book.popular_shelves]
+        assert "to-read" in shelf_names
         assert all(
-            isinstance(shelf, GoodreadsShelf) for shelf in self.book.popular_shelves
+            isinstance(shelf, GoodreadsShelf) for shelf in test_book.popular_shelves
         )
 
-    def test_work(self):
-        assert type(self.book.work) == dict
-        assert self.book.work["id"]["#text"] == "16827462"
+    def test_work(self, test_book):
+        assert type(test_book.work) == dict
+        assert test_book.work["id"]["#text"] == "60781039"
 
-    def test_series_works(self):
-        assert self.book.series_works is None
+    def test_series_works(self, test_book):
+        assert test_book.series_works is None
 
-    def test_publication_date(self):
-        assert self.book.publication_date == ("1", "10", "2012")
+    # TODO: Add test book with series works
 
-    def test_publisher(self):
-        assert self.book.publisher == "Dutton Books"
+    def test_publication_date(self, test_book):
+        assert test_book.publication_date == ("9", "11", "2018")
 
-    def test_language_code(self):
-        assert self.book.language_code == "eng"
+    def test_publisher(self, test_book):
+        assert test_book.publisher == "Doubleday"
 
-    def test_edition_information(self):
-        assert self.book.edition_information is None
+    def test_language_code(self, test_book):
+        assert test_book.language_code == "eng"
 
-    def test_image_url(self):
+    def test_edition_information(self, test_book):
+        assert test_book.edition_information is None
+
+    # TODO: Add test book with edition information
+
+    def test_image_url(self, test_book):
         assert (
-            self.book.image_url
-            == "https://images.gr-assets.com/books/1360206420m/11870085.jpg"
+            test_book.image_url
+            == "https://images.gr-assets.com/books/1522909584m/39721925.jpg"
         )
 
-    def test_small_image_url(self):
+    def test_small_image_url(self, test_book):
         assert (
-            self.book.small_image_url
-            == "https://images.gr-assets.com/books/1360206420s/11870085.jpg"
+            test_book.small_image_url
+            == "https://images.gr-assets.com/books/1522909584s/39721925.jpg"
         )
 
-    def test_is_ebook(self):
-        assert self.book.is_ebook == "false"
+    def test_is_ebook(self, test_book):
+        assert test_book.is_ebook == "false"
 
-    def test_format(self):
-        assert self.book.format == "Hardcover"
+    def test_format(self, test_book):
+        assert test_book.format == "Hardcover"
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_isbn(self):
-        assert self.book.isbn == "0525478817"
+    def test_isbn(self, test_book):
+        assert test_book.isbn == "0385541902"
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_isbn13(self):
-        assert self.book.isbn13 == "9780525478812"
+    def test_isbn13(self, test_book):
+        assert test_book.isbn13 == "9780385541909"
 
-    def test_link(self):
+    def test_link(self, test_book):
         assert (
-            self.book.link
-            == "https://www.goodreads.com/book/show/11870085-the-fault-in-our-stars"
+            test_book.link
+            == "https://www.goodreads.com/book/show/39721925-the-personality-brokers"
         )
 
-    def test_reviews_widget(self):
-        assert self.book.reviews_widget.startswith("<style>")
-        assert self.book.reviews_widget.endswith("</div>")
+    def test_reviews_widget(self, test_book):
+        assert test_book.reviews_widget.startswith("<style>")
+        assert test_book.reviews_widget.endswith("</div>")
 
-    def test_similar_books(self):
-        assert all(isinstance(b, GoodreadsBook) for b in self.book.similar_books)
+    def test_similar_books(self, test_book):
+        assert all(isinstance(b, GoodreadsBook) for b in test_book.similar_books)

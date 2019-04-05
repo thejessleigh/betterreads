@@ -25,7 +25,7 @@ class GoodreadsAuthor:
     def books(self):
         """Books of the author"""
         # Goodreads API returns a list if there are more than one books, otherwise,
-        # just the OrderedDict.
+        # just the dict.
         from .book import GoodreadsBook
 
         if type(self._author_dict["books"]["book"]) == list:
@@ -46,6 +46,7 @@ class GoodreadsAuthor:
         """Author date of death"""
         return self._author_dict["died_at"]
 
+    @property
     def fans_count(self):
         """Number of fans"""
         return self._author_dict["fans_count"]["#text"]
