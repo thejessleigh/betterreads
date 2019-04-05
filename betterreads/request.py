@@ -26,7 +26,7 @@ class GoodreadsRequest:
         if resp.status_code != 200:
             raise GoodreadsRequestException(resp.reason, self.path)
         if self.req_format == "xml":
-            data_dict = xmltodict.parse(resp.content)
+            data_dict = xmltodict.parse(resp.content, dict_constructor=dict)
             return data_dict["GoodreadsResponse"]
         elif self.req_format == "json":
             return json.loads(resp.content)
