@@ -11,7 +11,7 @@ class GoodreadsEvent:
     @property
     def gid(self):
         """ID for the event"""
-        return self._event_dict["id"]
+        return self._event_dict["id"]["#text"]
 
     @property
     def title(self):
@@ -91,22 +91,20 @@ class GoodreadsEvent:
     @property
     def reminder_at(self):
         """Reminder time for the event"""
-        reminder = ""
-        try:
-            reminder = self._event_dict["reminder_at"]["#text"]
-        except Exception as e:
-            pass
-        return reminder
+        reminder = self._event_dict.get("reminder_at")
+        if reminder:
+            return reminder.get("#text")
+        else:
+            return None
 
     @property
     def rsvp_end_at(self):
         """RSVP for the event ends at"""
-        rsvp_end_at = ""
-        try:
-            rsvp_end_at = self._event_dict["rsvp_end_at"]["#text"]
-        except Exception as e:
-            pass
-        return rsvp_end_at
+        rsvp_end_at = self._event_dict.get("rsvp_end_at")
+        if rsvp_end_at:
+            return rsvp_end_at.get("#text")
+        else:
+            return None
 
     @property
     def start_at(self):
@@ -125,7 +123,7 @@ class GoodreadsEvent:
 
     @property
     def responses_count(self):
-        """Number of poeple invited"""
+        """Number of people who responded to the invite"""
         return int(self._event_dict["event_responses_count"]["#text"])
 
     @property

@@ -1,90 +1,110 @@
-from nose.tools import eq_, ok_
+import json
+from unittest import mock
 
+import pytest
+
+from betterreads.client import GoodreadsClient
 from betterreads.event import GoodreadsEvent
-from tests.test_fixture import GoodreadsTestClass
 
 
-class TestEvent(GoodreadsTestClass):
-    @classmethod
-    def setup_class(cls):
-        GoodreadsTestClass.setup_class()
-        cls.events = cls.client.list_events(55408)
-        cls.event = cls.events[0]
+class TestEvent:
+    @pytest.fixture
+    @mock.patch("betterreads.client.GoodreadsClient.request")
+    def test_event_list(self, mock_request):
+        client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
+        with open("tests/fixtures/event.json") as f:
+            event_response = f.read()
+            mock_request.return_value = json.loads(event_response)
+        return client.list_events(80126)
 
-    def test_list_events(self):
-        assert all(isinstance(e, GoodreadsEvent) for e in self.events)
+    @pytest.fixture
+    def test_event(self, test_event_list):
+        return test_event_list[0]
 
-    def test_repr(self):
-        eq_(self.event.resource, ("Author", "320918"))
+    def test_list_events(self, test_event_list):
+        assert all(isinstance(e, GoodreadsEvent) for e in test_event_list)
 
-    def test_repr(self):
-        eq_(repr(self.event), self.event.title)
+    def test_resource(self, test_event):
+        assert test_event.resource == ("Author", "21246")
 
-    def test_gid(self):
-        eq_(self.event.gid["#text"], "56764")
+    def test_repr(self, test_event):
+        assert repr(test_event) == test_event.title
 
-    def test_title(self):
-        assert self.event.title.startswith("Carol Sklenicka")
+    def test_gid(self, test_event):
+        assert test_event.gid == "1048832"
 
-    def test_description(self):
-        assert self.event.description.startswith("Carol Sklenicka")
+    def test_title(self, test_event):
+        assert test_event.title == "Outer Order Inner Calm Book Tour: Highland Park, CO"
 
-    def test_link(self):
-        eq_(self.event.link, "https://www.goodreads.com/event/show/56764")
-
-    def test_venue(self):
-        eq_(self.event.venue, "Magers &amp; Quinn")
-
-    def test_address(self):
-        eq_(self.event.address, "3038 Hennepin Avenue South")
-
-    def test_city(self):
-        eq_(self.event.city, "Minneapolis")
-
-    def test_postal_code(self):
-        eq_(self.event.postal_code, "55408")
-
-    def test_state_code(self):
-        eq_(self.event.state_code, "MN")
-
-    def test_country_code(self):
-        eq_(self.event.country_code, "US")
-
-    def test_access(self):
-        eq_(self.event.access, "public")
-
-    def test_event_type(self):
-        eq_(self.event.event_type, "author_appearance")
-
-    def test_added_by(self):
-        eq_(self.event.added_by, "788906")
-
-    def test_image_url(self):
-        eq_(
-            self.event.image_url,
-            "https://images.gr-assets.com/authors/1265142841p2/320918.jpg",
+    def test_description(self, test_event):
+        assert test_event.description.startswith(
+            "Douglas County Library and Tattered Cover Book Store present a talk"
         )
 
-    def test_created_at(self):
-        eq_(self.event.created_at, "2009-10-01T09:44:52+00:00")
+    def test_link(self, test_event):
+        assert test_event.link == "https://www.goodreads.com/event/show/1048832"
 
-    def test_updated_at(self):
-        eq_(self.event.updated_at, "2011-05-26T22:40:35+00:00")
+    def test_venue(self, test_event):
+        assert test_event.venue == "Denver Marriott"
 
-    def test_reminder_at(self):
-        eq_(self.event.reminder_at, "")
+    def test_address(self, test_event):
+        assert test_event.address == "10345 Pak Meadows Dr,"
 
-    def test_rsvp_end_at(self):
-        eq_(self.event.rsvp_end_at, "")
+    def test_city(self, test_event):
+        assert test_event.city == "Lone Tree"
 
-    def test_start_at(self):
-        eq_(self.event.start_at, "2029-11-30T03:00:00+00:00")
+    def test_postal_code(self, test_event):
+        assert test_event.postal_code == "80124"
 
-    def test_end_at(self):
-        eq_(self.event.end_at, "2029-11-30T04:00:00+00:00")
+    def test_state_code(self, test_event):
+        assert test_event.state_code == "CO"
 
-    def test_attending_count(self):
-        eq_(self.event.attending_count, 0)
+    def test_country_code(self, test_event):
+        assert test_event.country_code == "US"
 
-    def test_responses_count(self):
-        eq_(self.event.responses_count, 2)
+    def test_access(self, test_event):
+        assert test_event.access == "public"
+
+    def test_event_type(self, test_event):
+        assert test_event.event_type == "author_appearance"
+
+    def test_added_by(self, test_event):
+        assert test_event.added_by == "2547702"
+
+    def test_image_url(self, test_event):
+        assert (
+            test_event.image_url
+            == "https://images.gr-assets.com/authors/1252934548p2/21246.jpg"
+        )
+
+    def test_created_at(self, test_event):
+        assert test_event.created_at == "2019-02-11T20:50:41+00:00"
+
+    def test_updated_at(self, test_event):
+        assert test_event.updated_at == "2019-02-11T20:50:41+00:00"
+
+    def test_reminder_at(self, test_event):
+        assert test_event.reminder_at == "2019-05-01T02:00:00+00:00"
+
+    def test_none_reminder_at(self, test_event_list):
+        event = test_event_list[1]
+        assert event.reminder_at is None
+
+    def test_rsvp_end_at(self, test_event):
+        assert test_event.rsvp_end_at == "2019-05-08T02:00:00+00:00"
+
+    def test_none_rsvp_end_at(self, test_event_list):
+        event = test_event_list[1]
+        assert event.rsvp_end_at is None
+
+    def test_start_at(self, test_event):
+        assert test_event.start_at == "2019-05-08T02:00:00+00:00"
+
+    def test_end_at(self, test_event):
+        assert test_event.end_at == "2019-05-08T03:30:00+00:00"
+
+    def test_attending_count(self, test_event):
+        assert test_event.attending_count == 0
+
+    def test_responses_count(self, test_event):
+        assert test_event.responses_count == 0
