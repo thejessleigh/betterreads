@@ -1,9 +1,9 @@
 import collections
 
-from . import group
-from . import owned_book
-from . import review
-from . import shelf
+from betterreads.group import GoodreadsGroup
+from betterreads.owned_book import GoodreadsOwnedBook
+from betterreads.review import GoodreadsReview
+from betterreads.shelf import GoodreadsShelf
 
 
 class GoodreadsUser:
@@ -53,7 +53,7 @@ class GoodreadsUser:
         try:
             resp = self._client.request("group/list/%s.xml" % self.gid, {"page": page})
             groups = [
-                group.GoodreadsGroup(group_dict)
+                GoodreadsGroup(group_dict)
                 for group_dict in resp["groups"]["list"]["group"]
             ]
         except KeyError:
@@ -70,7 +70,7 @@ class GoodreadsUser:
             # If there's only one owned book returned, put it in a list.
             if type(owned_books_resp) == collections.OrderedDict:
                 owned_books_resp = [owned_books_resp]
-            owned_books = [owned_book.GoodreadsOwnedBook(d) for d in owned_books_resp]
+            owned_books = [GoodreadsOwnedBook(d) for d in owned_books_resp]
         except KeyError:
             owned_books = []
         return owned_books
@@ -80,7 +80,7 @@ class GoodreadsUser:
         resp = self._client.request(
             "/review/list.xml", {"v": 2, "id": self.gid, "page": page}
         )
-        return [review.GoodreadsReview(r) for r in resp["reviews"]["review"]]
+        return [GoodreadsReview(r) for r in resp["reviews"]["review"]]
 
     def shelves(self, page=1):
         """Get the user's shelves. This method gets shelves only for users with
@@ -88,7 +88,7 @@ class GoodreadsUser:
         resp = self._client.request(
             "shelf/list.xml", {"user_id": self.gid, "page": page}
         )
-        return [shelf.GoodreadsShelf(s) for s in resp["shelves"]["user_shelf"]]
+        return [GoodreadsShelf(s) for s in resp["shelves"]["user_shelf"]]
 
     def per_shelf_reviews(self, page=1, per_page=200, shelf_name="read"):
         """Get all books and reviews on a user's particular shelf"""

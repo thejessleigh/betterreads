@@ -1,6 +1,6 @@
 """Goodreads book class"""
-from . import author
-from . import shelf
+from betterreads import author
+from betterreads import shelf
 
 
 class GoodreadsBook:
