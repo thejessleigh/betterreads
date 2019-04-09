@@ -1,7 +1,7 @@
 """Class definition for owned books"""
 
-from . import book
-from . import review
+from betterreads.book import GoodreadsBook
+from betterreads.review import GoodreadsReview
 
 
 class GoodreadsOwnedBook:
@@ -16,12 +16,12 @@ class GoodreadsOwnedBook:
     @property
     def book(self):
         """Book owned"""
-        return book.GoodreadsBook(self._owned_book_dict["book"], self)
+        return GoodreadsBook(self._owned_book_dict["book"], self)
 
     @property
     def review(self):
         """Review for the owned book"""
-        return review.GoodreadsReview(self._owned_book_dict["review"])
+        return GoodreadsReview(self._owned_book_dict["review"])
 
     @property
     def current_owner(self):
@@ -31,22 +31,16 @@ class GoodreadsOwnedBook:
     @property
     def original_purchase_date(self):
         """Date of purchase"""
-        date = ""
-        try:
-            self._owned_book_dict["original_purchase_date"]["@nil"] == "true"
-        except Exception as e:
-            date = self._owned_book_dict["original_purchase_date"]["#text"]
-        return date
+        date_field = self._owned_book_dict.get("original_purchase_date", None)
+        if date_field:
+            return date_field.get("#text", None)
+        else:
+            return None
 
     @property
     def original_purchase_location(self):
         """Purchase location"""
-        location = ""
-        try:
-            self._owned_book_dict["original_purchase_location"]["@nil"] == "true"
-        except Exception as e:
-            location = self._owned_book_dict["original_purchase_location"]
-        return location
+        return self._owned_book_dict.get("original_purchase_location", None)
 
     @property
     def condition(self):
