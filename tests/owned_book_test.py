@@ -1,12 +1,10 @@
-from nose.tools import eq_
-
-from tests.test_fixture import GoodreadsTestClass
+import pytest
 
 
-class TestOwnedBook(GoodreadsTestClass):
+@pytest.mark.skip(reason="Test suite pending rewrite.")
+class TestOwnedBook:
     @classmethod
     def setup_class(cls):
-        GoodreadsTestClass.setup_class()
         cls.owned_book = cls.client.owned_book("43018920")
 
     def test_owned_book(self):

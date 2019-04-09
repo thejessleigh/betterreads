@@ -1,71 +1,82 @@
-from unittest import skip
+import json
+from unittest import mock, skip
 
-from nose.tools import eq_, ok_
+import pytest
 
-from betterreads.user import GoodreadsUser
+from betterreads.client import GoodreadsClient
 from betterreads.group import GoodreadsGroup
 from betterreads.owned_book import GoodreadsOwnedBook
 from betterreads.review import GoodreadsReview
 from betterreads.shelf import GoodreadsShelf
-from tests.test_fixture import GoodreadsTestClass
+from betterreads.user import GoodreadsUser
 
 
-class TestUser(GoodreadsTestClass):
-    @classmethod
-    def setup_class(cls):
-        GoodreadsTestClass.setup_class()
-        cls.user = cls.client.user("1")
+class TestUser:
+    @pytest.fixture
+    @mock.patch("betterreads.client.GoodreadsClient.request")
+    def test_user(self, mock_request):
+        client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
+        # User data for test user fetched 2019-04-09. Lightly modified for testing purposes
+        with open("tests/fixtures/user.json") as f:
+            user_response = f.read()
+            mock_request.return_value = json.loads(user_response)
+        return client.user(95040664)
 
-    def test_repr(self):
-        eq_(repr(self.user), "otis")
+    def test_repr(self, test_user):
+        assert repr(test_user) == "mitzynitzy"
 
-    @skip("Disabled until tests run on fixtures, not live API calls")
-    def test_repr_withou_user_name(self):
-        user = self.client.auth_user()
-        eq_(repr(user), "18185439")
+    def test_get_user(self, test_user):
+        assert isinstance(test_user, GoodreadsUser)
+        assert test_user.gid == "95040664"
 
-    def test_get_user(self):
-        ok_(isinstance(self.user, GoodreadsUser))
-        eq_(self.user.gid, "1")
+    def test_user_name(self, test_user):
+        assert test_user.user_name == "mitzynitzy"
 
-    def test_user_name(self):
-        eq_(self.user.user_name, "otis")
+    def test_name(self, test_user):
+        assert test_user.name == "Mitzy Nitzy"
 
-    def test_name(self):
-        eq_(self.user.name, "Otis Chandler")
-
-    def test_link(self):
-        eq_(self.user.link, u"https://www.goodreads.com/user/show/1-otis-chandler")
-
-    def test_image_url(self):
-        eq_(
-            self.user.image_url,
-            u"https://images.gr-assets.com/users/1506617226p3/1.jpg",
+    def test_link(self, test_user):
+        assert (
+            test_user.link == "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
         )
 
-    def test_small_image_url(self):
-        eq_(
-            self.user.small_image_url,
-            u"https://images.gr-assets.com/users/1506617226p2/1.jpg",
+    def test_image_urls(self, test_user):
+        assert (
+            test_user.image_url
+            == "https://images.gr-assets.com/users/1554823256p3/95040664.jpg"
+        )
+        assert (
+            test_user.small_image_url
+            == "https://images.gr-assets.com/users/1554823256p2/95040664.jpg"
         )
 
-    def test_user_in_groups(self):
-        groups = self.user.list_groups()
-        ok_(all(isinstance(group, GoodreadsGroup) for group in groups))
+    @skip("Makes live call - come back to this after groups tests are done")
+    def test_user_not_in_groups(self, test_user):
+        groups = test_user.list_groups()
+        assert isinstance(groups, list)
+        assert len(test_user.list_groups()) == 0
 
-    def test_user_not_in_any_group(self):
-        user = self.client.user("25044452")  # A user with no joined groups
-        eq_(user.list_groups(), [])
+    @skip("Makes live call - come back to this after groups tests are done")
+    def test_user_in_groups(self, test_user):
+        groups = test_user.list_groups()
+        assert all(isinstance(group, GoodreadsGroup) for group in groups)
 
+    @skip("Makes live call - come back to this after owned_books tests are done")
     def test_user_own_books(self):
         owned_books = self.user.owned_books()
         print(owned_books)
         ok_(all(isinstance(book, GoodreadsOwnedBook) for book in owned_books))
 
+    @skip("Makes live call - come back to this after reviews tests are done")
     def test_reviews(self):
         reviews = self.user.reviews()
         ok_(all(isinstance(review, GoodreadsReview) for review in reviews))
 
+    @skip("Makes live call - come back to this after shelves tests are done")
     def test_shelves(self):
         shelves = self.user.shelves()
         ok_(all(isinstance(shelf, GoodreadsShelf) for shelf in shelves))
+
+    @skip("Function new to this version - test later.")
+    def test_per_shelf_reivews(self):
+        pass

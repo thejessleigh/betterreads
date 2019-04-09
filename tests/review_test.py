@@ -1,13 +1,12 @@
-from nose.tools import eq_, ok_
+import pytest
 
 from betterreads.review import GoodreadsReview
-from tests.test_fixture import GoodreadsTestClass
 
 
-class TestReview(GoodreadsTestClass):
+@pytest.mark.skip(reason="Test suite pending rewrite.")
+class TestReview:
     @classmethod
     def setup_class(cls):
-        GoodreadsTestClass.setup_class()
         cls.review = cls.client.review("2")
 
     def test_repr(self):

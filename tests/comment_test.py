@@ -10,7 +10,7 @@ from betterreads.comment import GoodreadsComment
 class TestComment:
     @pytest.fixture
     @mock.patch("betterreads.client.GoodreadsClient.request")
-    def test_comment_list(cls, mock_request):
+    def test_comment_list(self, mock_request):
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
         with open("tests/fixtures/comment.json") as f:
             comment_response = f.read()
