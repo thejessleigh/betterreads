@@ -4,6 +4,8 @@
 class GoodreadsGroup:
     """Goodreads Group class implementation"""
 
+    #   TODO: Add moderators property
+    #   TODO: convert last_activity_at to datetime
     def __init__(self, group_dict):
         self._group_dict = group_dict
 
