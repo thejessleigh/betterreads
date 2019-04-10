@@ -7,8 +7,8 @@ from betterreads.client import GoodreadsClient
 from betterreads.group import GoodreadsGroup
 from betterreads.owned_book import GoodreadsOwnedBook
 from betterreads.review import GoodreadsReview
-from betterreads.shelf import GoodreadsShelf
 from betterreads.user import GoodreadsUser
+from betterreads.user_shelf import GoodreadsUserShelf
 
 
 class TestUser:
@@ -75,7 +75,7 @@ class TestUser:
     @skip("Makes live call - come back to this after shelves tests are done")
     def test_shelves(self):
         shelves = self.user.shelves()
-        ok_(all(isinstance(shelf, GoodreadsShelf) for shelf in shelves))
+        ok_(all(isinstance(shelf, GoodreadsUserShelf) for shelf in shelves))
 
     @skip("Function new to this version - test later.")
     def test_per_shelf_reivews(self):

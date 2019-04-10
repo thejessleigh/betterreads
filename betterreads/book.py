@@ -1,6 +1,5 @@
 """Goodreads book class"""
-from betterreads import author
-from betterreads import shelf
+from betterreads.author import GoodreadsAuthor
 
 
 class GoodreadsBook:
@@ -28,15 +27,11 @@ class GoodreadsBook:
         # otherwise, just the OrderedDict
         if type(self._book_dict["authors"]["author"]) == list:
             return [
-                author.GoodreadsAuthor(author_dict, self._client)
+                GoodreadsAuthor(author_dict, self._client)
                 for author_dict in self._book_dict["authors"]["author"]
             ]
         else:
-            return [
-                author.GoodreadsAuthor(
-                    self._book_dict["authors"]["author"], self._client
-                )
-            ]
+            return [GoodreadsAuthor(self._book_dict["authors"]["author"], self._client)]
 
     @property
     def description(self):
@@ -70,10 +65,9 @@ class GoodreadsBook:
 
     @property
     def popular_shelves(self):
-        """Popular shelves for the book"""
+        """A count of hw many user shelves with the same name contain this book"""
         return [
-            shelf.GoodreadsShelf(shelf_dict)
-            for shelf_dict in self._book_dict["popular_shelves"]["shelf"]
+            shelf_dict for shelf_dict in self._book_dict["popular_shelves"]["shelf"]
         ]
 
     @property

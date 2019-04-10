@@ -6,7 +6,6 @@ import pytest
 from betterreads.author import GoodreadsAuthor
 from betterreads.book import GoodreadsBook
 from betterreads.client import GoodreadsClient
-from betterreads.shelf import GoodreadsShelf
 
 
 class TestBook:
@@ -73,11 +72,9 @@ class TestBook:
         assert test_book.num_pages == "307"
 
     def test_popular_shelves(self, test_book):
-        shelf_names = [shelf.name for shelf in test_book.popular_shelves]
+        shelf_names = [shelf.get("@name") for shelf in test_book.popular_shelves]
         assert "to-read" in shelf_names
-        assert all(
-            isinstance(shelf, GoodreadsShelf) for shelf in test_book.popular_shelves
-        )
+        assert all(isinstance(shelf, dict) for shelf in test_book.popular_shelves)
 
     def test_work(self, test_book):
         assert type(test_book.work) == dict

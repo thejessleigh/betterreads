@@ -3,7 +3,7 @@ import collections
 from betterreads.group import GoodreadsGroup
 from betterreads.owned_book import GoodreadsOwnedBook
 from betterreads.review import GoodreadsReview
-from betterreads.shelf import GoodreadsShelf
+from betterreads.user_shelf import GoodreadsUserShelf
 
 
 class GoodreadsUser:
@@ -88,7 +88,7 @@ class GoodreadsUser:
         resp = self._client.request(
             "shelf/list.xml", {"user_id": self.gid, "page": page}
         )
-        return [GoodreadsShelf(s) for s in resp["shelves"]["user_shelf"]]
+        return [GoodreadsUserShelf(s) for s in resp["shelves"]["user_shelf"]]
 
     def per_shelf_reviews(self, page=1, per_page=200, shelf_name="read"):
         """Get all books and reviews on a user's particular shelf"""
@@ -105,7 +105,7 @@ class GoodreadsUser:
                     "per_page": per_page,
                 },
             )
-            reviews = [review.GoodreadsReview(r) for r in resp["reviews"]["review"]]
+            reviews = [GoodreadsReview(r) for r in resp["reviews"]["review"]]
             all_reviews.extend(reviews)
             page += 1
             total = int(resp["reviews"]["@total"])
