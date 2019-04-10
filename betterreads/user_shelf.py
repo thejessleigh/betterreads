@@ -3,7 +3,6 @@ class GoodreadsUserShelf:
     Interface for interacting with a GoodreadsUser's shelves
     """
 
-    # TODO: add sort, order, per_page, display_fields, recommended_for fields when I can find examples of how they're used
     def __init__(self, shelf_dict):
         self._shelf_dict = shelf_dict
 
