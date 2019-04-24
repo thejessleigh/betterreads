@@ -1,83 +1,95 @@
-"""Client test functions"""
+"""Client is the primary interface for interacting with the Goodreads API. This integration test makes live API
+calls and affirms that the correct objects are being returned. For a more comprehensive test that each of the interface
+objects is created and functions properly when given the correct inputs, check the unit test suite."""
 import os
-from unittest import skip
 
 import pytest
 
+from betterreads.author import GoodreadsAuthor
 from betterreads.book import GoodreadsBook
+from betterreads.client import GoodreadsClient, GoodreadsClientException
+from betterreads.comment import GoodreadsComment
+from betterreads.event import GoodreadsEvent
+from betterreads.group import GoodreadsGroup
+from betterreads.review import GoodreadsReview
 
 
-@pytest.mark.skip(reason="Test suite pending rewrite.")
 class TestClient:
-    def test_client_setup(self):
-        eq_(self.client.client_key, os.environ.get("GOODREADS_KEY"))
-        eq_(self.client.client_secret, os.environ.get("GOODREADS_SECRET"))
+    @pytest.fixture
+    def test_client_fixture(self):
+        return GoodreadsClient(
+            os.environ.get("GOODREADS_KEY"), os.environ.get("GOODREADS_SECRET")
+        )
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_auth_user(self):
-        user = self.client.auth_user()
-        assert user.user_name is None
+    def test_auth_user_no_session(self, test_client_fixture):
+        with pytest.raises(GoodreadsClientException):
+            test_client_fixture.auth_user()
 
-    def test_user_info(self):
-        user = self.client.user(1)
-        eq_(user.user_name, "otis")
+    def test_author_by_id(self, test_client_fixture):
+        author = test_client_fixture.author(8566992)
+        assert isinstance(author, GoodreadsAuthor)
 
-    def test_author_by_id(self):
-        author_id = "8566992"
-        author = self.client.author(author_id)
-        eq_(author.gid, author_id)
+    def test_author_by_name(self, test_client_fixture):
+        author = test_client_fixture.find_author("Stephen King")
+        assert isinstance(author, GoodreadsAuthor)
 
-    def test_author_by_name(self):
-        author_name = "Richard Dawkins"
-        author = self.client.find_author(author_name)
-        eq_(author.name, author_name)
+    def test_book_by_id(self, test_client_fixture):
+        book = test_client_fixture.book(123455)
+        assert isinstance(book, GoodreadsBook)
 
-    def test_book_by_id(self):
-        book_id = "11870085"
-        book = self.client.book(book_id)
-        eq_(book.gid, book_id)
-
-    def test_search_books(self):
-        books = self.client.search_books(q="Gerri Hill", search_field="author")
-        assert len(books) == 20
+    def test_search_books(self, test_client_fixture):
+        books = test_client_fixture.search_books(
+            q="Daniel Mallory Ortberg", search_field="author"
+        )
+        assert len(books) > 1
         assert all(isinstance(book, GoodreadsBook) for book in books)
 
-    def test_search_books_with_one_book(self):
-        books = self.client.search_books(
+    def test_book_no_options_given(self, test_client_fixture):
+        with pytest.raises(GoodreadsClientException):
+            test_client_fixture.book(None, None)
+
+    def test_search_books_with_one_book(self, test_client_fixture):
+        books = test_client_fixture.search_books(
             "Childhood, Boyhood, Truth: From an African Youth to the Selfish Gene"
         )
-        eq_(len(books), 1)
+        assert len(books) == 1
         assert all(isinstance(book, GoodreadsBook) for book in books)
 
-    def test_group_by_id(self):
-        group_id = "1"
-        group = self.client.group(group_id)
-        eq_(group.gid, group_id)
+    def test_group_by_id(self, test_client_fixture):
+        group = test_client_fixture.group(1)
+        assert isinstance(group, GoodreadsGroup)
 
-    def test_find_groups(self):
-        groups = self.client.find_groups("Goodreads Developers")
+    def test_find_groups(self, test_client_fixture):
+        groups = test_client_fixture.find_groups("Goodreads Developers")
         assert len(groups) > 1
+        assert all(isinstance(group, GoodreadsGroup) for group in groups)
 
-    def test_list_events(self):
-        events = self.client.list_events(55408)
+    def test_list_events(self, test_client_fixture):
+        events = test_client_fixture.list_events(80126)
         assert len(events) > 0
+        assert all(isinstance(event, GoodreadsEvent) for event in events)
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_search_books_total_pages(self):
-        num_pages = self.client.search_books_total_pages(
+    def test_search_books_total_pages(self, test_client_fixture):
+        num_pages = test_client_fixture.search_books_total_pages(
             q="Joe Hill", search_field="author"
         )
-        eq_(num_pages, 31)
+        assert isinstance(num_pages, int)
 
-    @skip(
-        "Skip until test fixtures w/o live calls - live calls are subject to change & break tests"
-    )
-    def test_search_books_all_pages(self):
-        books = self.client.search_books_all_pages(
-            q="Gerri Hill", search_field="author"
+    def test_search_books_all_pages(self, test_client_fixture):
+        books = test_client_fixture.search_books_all_pages(
+            q="Daniel Jose Older", search_field="author"
         )
-        assert len(books) > 20
+        assert len(books) > 10
+        assert all(isinstance(book, GoodreadsBook) for book in books)
+
+    def test_get_review(self, test_client_fixture):
+        review = test_client_fixture.review(12345)
+        assert isinstance(review, GoodreadsReview)
+
+    def test_list_comments_review(self, test_client_fixture):
+        comments = test_client_fixture.list_comments("review", 1618778364)
+        assert all(isinstance(comment, GoodreadsComment) for comment in comments)
+
+    def test_get_recent_reviews(self, test_client_fixture):
+        reviews = test_client_fixture.recent_reviews()
+        assert all(isinstance(review, GoodreadsReview) for review in reviews)

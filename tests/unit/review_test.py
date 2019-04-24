@@ -22,13 +22,6 @@ class TestReview:
     def test_repr(self, test_review):
         assert repr(test_review) == "review [12345]"
 
-    @pytest.mark.skip(
-        reason="this is a test of client functionality. Move test when you get around to client_test.py"
-    )
-    def test_recent_reviews(self):
-        reviews = self.client.recent_reviews()
-        ok_(all(isinstance(r, GoodreadsReview) for r in reviews))
-
     def test_review_gid(self, test_review):
         assert test_review.gid == "12345"
 

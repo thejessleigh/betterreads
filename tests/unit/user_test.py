@@ -49,34 +49,3 @@ class TestUser:
             test_user.small_image_url
             == "https://images.gr-assets.com/users/1554823256p2/95040664.jpg"
         )
-
-    @skip("Makes live call - come back to this after groups tests are done")
-    def test_user_not_in_groups(self, test_user):
-        groups = test_user.list_groups()
-        assert isinstance(groups, list)
-        assert len(test_user.list_groups()) == 0
-
-    @skip("Makes live call - come back to this after groups tests are done")
-    def test_user_in_groups(self, test_user):
-        groups = test_user.list_groups()
-        assert all(isinstance(group, GoodreadsGroup) for group in groups)
-
-    @skip("Makes live call - come back to this after owned_books tests are done")
-    def test_user_own_books(self):
-        owned_books = self.user.owned_books()
-        print(owned_books)
-        ok_(all(isinstance(book, GoodreadsOwnedBook) for book in owned_books))
-
-    @skip("Makes live call - come back to this after reviews tests are done")
-    def test_reviews(self):
-        reviews = self.user.reviews()
-        ok_(all(isinstance(review, GoodreadsReview) for review in reviews))
-
-    @skip("Makes live call - come back to this after shelves tests are done")
-    def test_shelves(self):
-        shelves = self.user.shelves()
-        ok_(all(isinstance(shelf, GoodreadsUserShelf) for shelf in shelves))
-
-    @skip("Function new to this version - test later.")
-    def test_per_shelf_reivews(self):
-        pass
