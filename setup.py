@@ -15,7 +15,7 @@ setup(
     author="Jess Unrein",
     author_email="j.l.unrein@gmail.com",
     packages=["betterreads"],
-    version="0.4.0",
+    version="0.4.1",
     install_requires=["nose", "xmltodict", "requests", "rauth"],
     license="MIT",
     keywords="goodreads API",
