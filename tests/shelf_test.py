@@ -8,7 +8,7 @@ from betterreads.user_shelf import GoodreadsUserShelf
 class TestUserShelf:
     @pytest.fixture
     def test_shelf(self):
-        with open("tests/fixtures/shelf.json") as f:
+        with open("tests/unit/fixtures/shelf.json") as f:
             shelf_dict = f.read()
             return GoodreadsUserShelf(json.loads(shelf_dict))
 
@@ -34,4 +34,4 @@ class TestUserShelf:
         assert test_shelf.sticky is None
 
     def test_shelf_featured(self, test_shelf):
-        assert test_shelf.featured is True
+        assert test_shelf.featured == "true"

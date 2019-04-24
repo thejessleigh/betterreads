@@ -14,7 +14,7 @@ class TestReview:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
 
         # Goodreads Group data pulled on 2019-04-09. Lightly modified for testing purposes
-        with open("tests/fixtures/review.json") as f:
+        with open("tests/unit/fixtures/review.json") as f:
             review_response = f.read()
             mock_request.return_value = json.loads(review_response)
         return client.review(12345)

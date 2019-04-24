@@ -12,7 +12,7 @@ class TestComment:
     @mock.patch("betterreads.client.GoodreadsClient.request")
     def test_comment_list(self, mock_request):
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
-        with open("tests/fixtures/comment.json") as f:
+        with open("tests/unit/fixtures/comment.json") as f:
             comment_response = f.read()
             mock_request.return_value = json.loads(comment_response)
         return client.list_comments("user", 1)

@@ -15,7 +15,7 @@ class TestOwnedBook:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
         with mock.patch("betterreads.client.GoodreadsSession") as mock_session:
             client.session = mock_session
-            with open("tests/fixtures/owned_book.json") as f:
+            with open("tests/unit/fixtures/owned_book.json") as f:
                 owned_book_response = f.read()
                 client.session.get.return_value = json.loads(owned_book_response)
             return client.owned_book(49488032)
@@ -25,7 +25,7 @@ class TestOwnedBook:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
         with mock.patch("betterreads.client.GoodreadsSession") as mock_session:
             client.session = mock_session
-            with open("tests/fixtures/owned_book_missing_original_data.json") as f:
+            with open("tests/unit/fixtures/owned_book_missing_original_data.json") as f:
                 owned_book_response = f.read()
                 client.session.get.return_value = json.loads(owned_book_response)
             return client.owned_book(6133754)

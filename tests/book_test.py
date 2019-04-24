@@ -13,7 +13,7 @@ class TestBook:
     @mock.patch("betterreads.client.GoodreadsClient.request")
     def test_book(self, mock_request):
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
-        with open("tests/fixtures/book.json") as f:
+        with open("tests/unit/fixtures/book.json") as f:
             book_response = f.read()
             mock_request.return_value = json.loads(book_response)
         return client.book(39721925)
@@ -41,7 +41,7 @@ class TestBook:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
 
         # Goodreads Book data - Practical Data Science with R as of 2019-04-05. Lightly modified for testing purposes.
-        with open("tests/fixtures/book_multiple_authors.json") as f:
+        with open("tests/unit/fixtures/book_multiple_authors.json") as f:
             book_response = f.read()
         mock_request.return_value = json.loads(book_response)
 

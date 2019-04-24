@@ -16,7 +16,7 @@ class TestAuthor:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
 
         # Goodreads Author data pulled for Jeannette Ng on 2019-04-05. Lightly modified for testing purposes
-        with open("tests/fixtures/author.json") as f:
+        with open("tests/unit/fixtures/author.json") as f:
             author_response = f.read()
         mock_request.return_value = json.loads(author_response)
         return client.author(14880958)
@@ -45,7 +45,7 @@ class TestAuthor:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
 
         # Goodreads Author data pulled for IACA on 2019-04-05. Lightly modified for testing purposes
-        with open("tests/fixtures/author_one_book.json") as f:
+        with open("tests/unit/fixtures/author_one_book.json") as f:
             author_response = f.read()
         mock_request.return_value = json.loads(author_response)
         books = client.author("5734084").books

@@ -17,7 +17,7 @@ class TestUser:
     def test_user(self, mock_request):
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
         # User data for test user fetched 2019-04-09. Lightly modified for testing purposes
-        with open("tests/fixtures/user.json") as f:
+        with open("tests/unit/fixtures/user.json") as f:
             user_response = f.read()
             mock_request.return_value = json.loads(user_response)
         return client.user(95040664)

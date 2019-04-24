@@ -12,7 +12,7 @@ class TestEvent:
     @mock.patch("betterreads.client.GoodreadsClient.request")
     def test_event_list(self, mock_request):
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
-        with open("tests/fixtures/event.json") as f:
+        with open("tests/unit/fixtures/event.json") as f:
             event_response = f.read()
             mock_request.return_value = json.loads(event_response)
         return client.list_events(80126)

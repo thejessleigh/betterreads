@@ -13,7 +13,7 @@ class TestGroup:
         client = GoodreadsClient("GOODREADS_KEY", "GOODREADS_SECRET")
 
         # Goodreads Group data pulled on 2019-04-09. Lightly modified for testing purposes
-        with open("tests/fixtures/group.json") as f:
+        with open("tests/unit/fixtures/group.json") as f:
             group_response = f.read()
             mock_request.return_value = json.loads(group_response)
         return client.group(8095)
