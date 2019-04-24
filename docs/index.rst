@@ -103,7 +103,7 @@ License
    request
    review
    session
-   shelf
+   user_shelf
    user
    contributing
 
