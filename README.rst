@@ -1,7 +1,7 @@
 betterreads
 ===========
 
-|Build Status| |Coverage Status| |Documentation Status| |Code Style|
+|Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
 
 .. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
    :width: 100
@@ -212,6 +212,9 @@ without all of you.
 .. |Documentation Status| image:: https://readthedocs.org/projects/betterreads/badge/?version=latest
    :target: http://betterreads.readthedocs.io/en/latest/?badge=latest
    :alt: Documentation Status
-.. |Code Style| image:: https://camo.githubusercontent.com/28a51fe3a2c05048d8ca8ecd039d6b1619037326/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667
+.. |Primary Code Style| image:: https://camo.githubusercontent.com/28a51fe3a2c05048d8ca8ecd039d6b1619037326/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667
     :target: https://github.com/ambv/black
-    :alt: Code Style - Black
+    :alt: Primary Code Style - Black
+.. |Secondary Code Style| image:: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+    :target: https://github.com/prettier/prettier
+    :alt: Secondary Code Style - Prettier
