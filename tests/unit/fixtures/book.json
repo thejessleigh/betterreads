@@ -1,0 +1,1062 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "book_show"
+  },
+  "book": {
+    "id": "39721925",
+    "title": "The Personality Brokers: The Strange History of Myers-Briggs and the Birth of Personality Testing",
+    "isbn": "0385541902",
+    "isbn13": "9780385541909",
+    "asin": null,
+    "kindle_asin": "B078FZDLF7",
+    "marketplace_id": "ATVPDKIKX0DER",
+    "country_code": "US",
+    "image_url": "https://images.gr-assets.com/books/1522909584m/39721925.jpg",
+    "small_image_url": "https://images.gr-assets.com/books/1522909584s/39721925.jpg",
+    "publication_year": "2018",
+    "publication_month": "9",
+    "publication_day": "11",
+    "publisher": "Doubleday",
+    "language_code": "eng",
+    "is_ebook": "false",
+    "description": "An unprecedented history of the personality test conceived a century ago by a mother and her daughter\\u2013fiction writers with no formal training in psychology\\u2013and how it insinuated itself into our boardrooms, classrooms, and beyond<br /><br />The Myers-Briggs Type Indicator is the most popular personality test in the world. It is used regularly by Fortune 500 companies, universities, hospitals, churches, and the military. Its language of personality types\\u2013extraversion and introversion, sensing and intuiting, thinking and feeling, judging and perceiving\\u2013has inspired television shows, online dating platforms, and <em>Buzzfeed</em> quizzes. Yet despite the test\\u2019s widespread adoption, experts in the field of psychometric testing, a $2 billion industry, have struggled to validate its results\\u2013no less account for its success. How did Myers-Briggs, a homegrown multiple choice questionnaire, infiltrate our workplaces, our relationships, our Internet, our lives? <br /><br />First conceived in the 1920s by the mother-daughter team of Katherine Briggs and Isabel Briggs Myers, a pair of devoted homemakers, novelists, and amateur psychoanalysts, Myers-Briggs was designed to bring the gospel of Carl Jung to the masses. But it would take on a life entirely its own, reaching from the smoke-filled boardrooms of mid-century New York to Berkeley, California, where it was administered to some of the twentieth century\\u2019s greatest creative minds. It would travel across the world to London, Zurich, Cape Town, Melbourne, and Tokyo, until it could be found just as easily in elementary schools, nunneries, and wellness retreats as in shadowy political consultancies and on social networks.<br /><br />Drawing from original reporting and never-before-published documents, <em>The Personality Brokers</em> takes a critical look at the personality indicator that became a cultural icon. Along the way it examines nothing less than the definition of the self\\u2013our attempts to grasp, categorize, and quantify our personalities. Surprising and absorbing, the book, like the test at its heart, considers the timeless question: What makes you, you?",
+    "work": {
+      "id": {
+        "@type": "integer",
+        "#text": "60781039"
+      },
+      "books_count": {
+        "@type": "integer",
+        "#text": "12"
+      },
+      "best_book_id": {
+        "@type": "integer",
+        "#text": "39721925"
+      },
+      "reviews_count": {
+        "@type": "integer",
+        "#text": "14544"
+      },
+      "ratings_sum": {
+        "@type": "integer",
+        "#text": "3691"
+      },
+      "ratings_count": {
+        "@type": "integer",
+        "#text": "1092"
+      },
+      "text_reviews_count": {
+        "@type": "integer",
+        "#text": "226"
+      },
+      "original_publication_year": {
+        "@type": "integer",
+        "#text": "2018"
+      },
+      "original_publication_month": {
+        "@type": "integer",
+        "#text": "9"
+      },
+      "original_publication_day": {
+        "@type": "integer",
+        "#text": "11"
+      },
+      "original_title": null,
+      "original_language_id": {
+        "@type": "integer",
+        "@nil": "true"
+      },
+      "media_type": "book",
+      "rating_dist": "5:108|4:356|3:493|2:113|1:22|total:1092",
+      "desc_user_id": {
+        "@type": "integer",
+        "#text": "38676098"
+      },
+      "default_chaptering_book_id": {
+        "@type": "integer",
+        "@nil": "true"
+      },
+      "default_description_language_code": {
+        "@nil": "true"
+      }
+    },
+    "average_rating": "3.38",
+    "num_pages": "307",
+    "format": "Hardcover",
+    "edition_information": null,
+    "ratings_count": "935",
+    "text_reviews_count": "195",
+    "url": "https://www.goodreads.com/book/show/39721925-the-personality-brokers",
+    "link": "https://www.goodreads.com/book/show/39721925-the-personality-brokers",
+    "authors": {
+      "author": {
+        "id": "16550892",
+        "name": "Merve Emre",
+        "role": null,
+        "image_url": {
+          "@nophoto": "true",
+          "#text": "https://s.gr-assets.com/assets/nophoto/user/f_200x266-3061b784cc8e7f021c6430c9aba94587.png"
+        },
+        "small_image_url": {
+          "@nophoto": "true",
+          "#text": "https://s.gr-assets.com/assets/nophoto/user/f_50x66-6a03a5c12233c941481992b82eea8d23.png"
+        },
+        "link": "https://www.goodreads.com/author/show/16550892.Merve_Emre",
+        "average_rating": "3.39",
+        "ratings_count": "1108",
+        "text_reviews_count": "227"
+      }
+    },
+    "reviews_widget": "<style>\\n  #goodreads-widget {\\n    font-family: georgia, serif;\\n    padding: 18px 0;\\n    width:565px;\\n  }\\n  #goodreads-widget h1 {\\n    font-weight:normal;\\n    font-size: 16px;\\n    border-bottom: 1px solid #BBB596;\\n    margin-bottom: 0;\\n  }\\n  #goodreads-widget a {\\n    text-decoration: none;\\n    color:#660;\\n  }\\n  iframe{\\n    background-color: #fff;\\n  }\\n  #goodreads-widget a:hover { text-decoration: underline; }\\n  #goodreads-widget a:active {\\n    color:#660;\\n  }\\n  #gr_footer {\\n    width: 100%;\\n    border-top: 1px solid #BBB596;\\n    text-align: right;\\n  }\\n  #goodreads-widget .gr_branding{\\n    color: #382110;\\n    font-size: 11px;\\n    text-decoration: none;\\n    font-family: \"Helvetica Neue \", Helvetica, Arial, sans-serif;\\n  }\\n</style>\\n<div id=\"goodreads-widget\">\\n  <div id=\"gr_header\"><h1><a rel=\"nofollow\" href=\"https://www.goodreads.com/book/show/39721925-the-personality-brokers\">The Personality Brokers Reviews</a></h1></div>\\n  <iframe id=\"the_iframe\" src=\"https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&amp;format=html&amp;isbn=0385541902&amp;links=660&amp;min_rating=&amp;review_back=fff&amp;stars=000&amp;text=000\" width=\"565\" height=\"400\" frameborder=\"0\"></iframe>\\n  <div id=\"gr_footer\">\\n    <a class=\"gr_branding\" target=\"_blank\" rel=\"nofollow noopener noreferrer\" href=\"https://www.goodreads.com/book/show/39721925-the-personality-brokers?utm_medium=api&amp;utm_source=reviews_widget\">Reviews from Goodreads.com</a>\\n  </div>\\n</div>",
+    "popular_shelves": {
+      "shelf": [
+        {
+          "@name": "to-read",
+          "@count": "12567"
+        },
+        {
+          "@name": "currently-reading",
+          "@count": "406"
+        },
+        {
+          "@name": "non-fiction",
+          "@count": "238"
+        },
+        {
+          "@name": "nonfiction",
+          "@count": "150"
+        },
+        {
+          "@name": "psychology",
+          "@count": "140"
+        },
+        {
+          "@name": "history",
+          "@count": "74"
+        },
+        {
+          "@name": "science",
+          "@count": "44"
+        },
+        {
+          "@name": "biography",
+          "@count": "26"
+        },
+        {
+          "@name": "library",
+          "@count": "13"
+        },
+        {
+          "@name": "wish-list",
+          "@count": "12"
+        },
+        {
+          "@name": "abandoned",
+          "@count": "12"
+        },
+        {
+          "@name": "audiobooks",
+          "@count": "11"
+        },
+        {
+          "@name": "did-not-finish",
+          "@count": "11"
+        },
+        {
+          "@name": "to-buy",
+          "@count": "10"
+        },
+        {
+          "@name": "audiobook",
+          "@count": "9"
+        },
+        {
+          "@name": "blinkist",
+          "@count": "8"
+        },
+        {
+          "@name": "self-help",
+          "@count": "8"
+        },
+        {
+          "@name": "to-read-nonfiction",
+          "@count": "8"
+        },
+        {
+          "@name": "non-fiction-to-read",
+          "@count": "8"
+        },
+        {
+          "@name": "owned",
+          "@count": "7"
+        },
+        {
+          "@name": "dnf",
+          "@count": "7"
+        },
+        {
+          "@name": "to-read-non-fiction",
+          "@count": "7"
+        },
+        {
+          "@name": "tbr-nonfiction",
+          "@count": "7"
+        },
+        {
+          "@name": "nonfiction-to-read",
+          "@count": "7"
+        },
+        {
+          "@name": "psych",
+          "@count": "7"
+        },
+        {
+          "@name": "ebook",
+          "@count": "7"
+        },
+        {
+          "@name": "business",
+          "@count": "7"
+        },
+        {
+          "@name": "read-in-2019",
+          "@count": "6"
+        },
+        {
+          "@name": "2019-reads",
+          "@count": "6"
+        },
+        {
+          "@name": "nonfic",
+          "@count": "6"
+        },
+        {
+          "@name": "adult",
+          "@count": "6"
+        },
+        {
+          "@name": "audio",
+          "@count": "6"
+        },
+        {
+          "@name": "2018-releases",
+          "@count": "6"
+        },
+        {
+          "@name": "want-to-read-non-fiction",
+          "@count": "6"
+        },
+        {
+          "@name": "personality",
+          "@count": "6"
+        },
+        {
+          "@name": "sociology",
+          "@count": "5"
+        },
+        {
+          "@name": "audio-books",
+          "@count": "5"
+        },
+        {
+          "@name": "audible",
+          "@count": "5"
+        },
+        {
+          "@name": "npr",
+          "@count": "5"
+        },
+        {
+          "@name": "economist",
+          "@count": "5"
+        },
+        {
+          "@name": "biography-memoir",
+          "@count": "5"
+        },
+        {
+          "@name": "maybe",
+          "@count": "5"
+        },
+        {
+          "@name": "read-2019",
+          "@count": "4"
+        },
+        {
+          "@name": "best-of-2018",
+          "@count": "4"
+        },
+        {
+          "@name": "kindle",
+          "@count": "4"
+        },
+        {
+          "@name": "scribd",
+          "@count": "4"
+        },
+        {
+          "@name": "read-in-2018",
+          "@count": "4"
+        },
+        {
+          "@name": "audio-book",
+          "@count": "4"
+        },
+        {
+          "@name": "biography-and-memoir",
+          "@count": "4"
+        },
+        {
+          "@name": "bio-memoir",
+          "@count": "4"
+        },
+        {
+          "@name": "nf-history",
+          "@count": "4"
+        },
+        {
+          "@name": "interested",
+          "@count": "4"
+        },
+        {
+          "@name": "non-fic",
+          "@count": "4"
+        },
+        {
+          "@name": "2018-books",
+          "@count": "4"
+        },
+        {
+          "@name": "really-want-to-read",
+          "@count": "4"
+        },
+        {
+          "@name": "giveaways",
+          "@count": "4"
+        },
+        {
+          "@name": "social-science",
+          "@count": "4"
+        },
+        {
+          "@name": "education",
+          "@count": "4"
+        },
+        {
+          "@name": "netgalley",
+          "@count": "4"
+        },
+        {
+          "@name": "nonfiction-tbr",
+          "@count": "4"
+        },
+        {
+          "@name": "book-club",
+          "@count": "3"
+        },
+        {
+          "@name": "memoir-biography",
+          "@count": "3"
+        },
+        {
+          "@name": "on-kindle",
+          "@count": "3"
+        },
+        {
+          "@name": "library-book",
+          "@count": "3"
+        },
+        {
+          "@name": "ebooks",
+          "@count": "3"
+        },
+        {
+          "@name": "at-library",
+          "@count": "3"
+        },
+        {
+          "@name": "read-2018",
+          "@count": "3"
+        },
+        {
+          "@name": "work",
+          "@count": "3"
+        },
+        {
+          "@name": "nonfiction-psychology",
+          "@count": "3"
+        },
+        {
+          "@name": "giveaway-entries",
+          "@count": "3"
+        },
+        {
+          "@name": "biographies",
+          "@count": "3"
+        },
+        {
+          "@name": "historical",
+          "@count": "3"
+        },
+        {
+          "@name": "united-states",
+          "@count": "2"
+        },
+        {
+          "@name": "dnfers",
+          "@count": "2"
+        },
+        {
+          "@name": "2019-books",
+          "@count": "2"
+        },
+        {
+          "@name": "culture",
+          "@count": "2"
+        },
+        {
+          "@name": "self-improvement",
+          "@count": "2"
+        },
+        {
+          "@name": "2019-to-read",
+          "@count": "2"
+        },
+        {
+          "@name": "2019-reading-list",
+          "@count": "2"
+        },
+        {
+          "@name": "historical-non-fiction",
+          "@count": "2"
+        },
+        {
+          "@name": "general-nonfiction",
+          "@count": "2"
+        },
+        {
+          "@name": "2018-recs",
+          "@count": "2"
+        },
+        {
+          "@name": "blinklist",
+          "@count": "2"
+        },
+        {
+          "@name": "adult-non-fiction",
+          "@count": "2"
+        },
+        {
+          "@name": "intellectual-history",
+          "@count": "2"
+        },
+        {
+          "@name": "on-hold",
+          "@count": "2"
+        },
+        {
+          "@name": "available-at-library",
+          "@count": "2"
+        },
+        {
+          "@name": "philosophy",
+          "@count": "2"
+        },
+        {
+          "@name": "favorites",
+          "@count": "2"
+        },
+        {
+          "@name": "started-but-never-finished",
+          "@count": "2"
+        },
+        {
+          "@name": "next",
+          "@count": "2"
+        },
+        {
+          "@name": "reference",
+          "@count": "2"
+        },
+        {
+          "@name": "medicine-related",
+          "@count": "2"
+        },
+        {
+          "@name": "gave-up",
+          "@count": "2"
+        },
+        {
+          "@name": "library-books",
+          "@count": "2"
+        },
+        {
+          "@name": "didn-t-finish",
+          "@count": "2"
+        },
+        {
+          "@name": "pop-culture",
+          "@count": "2"
+        },
+        {
+          "@name": "overdrive",
+          "@count": "2"
+        },
+        {
+          "@name": "2018-reads",
+          "@count": "2"
+        },
+        {
+          "@name": "pop-psychology",
+          "@count": "2"
+        }
+      ]
+    },
+    "book_links": {
+      "book_link": {
+        "id": "8",
+        "name": "Libraries",
+        "link": "https://www.goodreads.com/book_link/follow/8"
+      }
+    },
+    "buy_links": {
+      "buy_link": [
+        {
+          "id": "1",
+          "name": "Amazon",
+          "link": "https://www.goodreads.com/book_link/follow/1"
+        },
+        {
+          "id": "10",
+          "name": "Audible",
+          "link": "https://www.goodreads.com/book_link/follow/10"
+        },
+        {
+          "id": "3",
+          "name": "Barnes & Noble",
+          "link": "https://www.goodreads.com/book_link/follow/3"
+        },
+        {
+          "id": "1027",
+          "name": "Walmart eBooks",
+          "link": "https://www.goodreads.com/book_link/follow/1027"
+        },
+        {
+          "id": "2102",
+          "name": "Apple Books",
+          "link": "https://www.goodreads.com/book_link/follow/2102"
+        },
+        {
+          "id": "8036",
+          "name": "Google Play",
+          "link": "https://www.goodreads.com/book_link/follow/8036"
+        },
+        {
+          "id": "4",
+          "name": "Abebooks",
+          "link": "https://www.goodreads.com/book_link/follow/4"
+        },
+        {
+          "id": "882",
+          "name": "Book Depository",
+          "link": "https://www.goodreads.com/book_link/follow/882"
+        },
+        {
+          "id": "9",
+          "name": "Indigo",
+          "link": "https://www.goodreads.com/book_link/follow/9"
+        },
+        {
+          "id": "5",
+          "name": "Alibris",
+          "link": "https://www.goodreads.com/book_link/follow/5"
+        },
+        {
+          "id": "107",
+          "name": "Better World Books",
+          "link": "https://www.goodreads.com/book_link/follow/107"
+        },
+        {
+          "id": "7",
+          "name": "IndieBound",
+          "link": "https://www.goodreads.com/book_link/follow/7"
+        }
+      ]
+    },
+    "series_works": null,
+    "similar_books": {
+      "book": [
+        {
+          "id": "17470957",
+          "title": "American Psychosis: How the Federal Government Destroyed the Mental Illness Treatment System",
+          "title_without_series": "American Psychosis: How the Federal Government Destroyed the Mental Illness Treatment System",
+          "link": "https://www.goodreads.com/book/show/17470957-american-psychosis",
+          "small_image_url": "https://images.gr-assets.com/books/1370837509s/17470957.jpg",
+          "image_url": "https://images.gr-assets.com/books/1370837509m/17470957.jpg",
+          "num_pages": "204",
+          "work": {
+            "id": "24379832"
+          },
+          "isbn": "0199988714",
+          "isbn13": "9780199988716",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2013",
+          "publication_month": "10",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "110738",
+              "name": "E. Fuller Torrey",
+              "link": "https://www.goodreads.com/author/show/110738.E_Fuller_Torrey"
+            }
+          }
+        },
+        {
+          "id": "1027539",
+          "title": "Love at Goon Park: Harry Harlow and the Science of Affection",
+          "title_without_series": "Love at Goon Park: Harry Harlow and the Science of Affection",
+          "link": "https://www.goodreads.com/book/show/1027539.Love_at_Goon_Park",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "352",
+          "work": {
+            "id": "533192"
+          },
+          "isbn": "0738202789",
+          "isbn13": "9780738202785",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2002",
+          "publication_month": "10",
+          "publication_day": "2",
+          "authors": {
+            "author": {
+              "id": "16175",
+              "name": "Deborah Blum",
+              "link": "https://www.goodreads.com/author/show/16175.Deborah_Blum"
+            }
+          }
+        },
+        {
+          "id": "30746292",
+          "title": "The Inkblots: Hermann Rorschach, His Iconic Test, and the Power of Seeing",
+          "title_without_series": "The Inkblots: Hermann Rorschach, His Iconic Test, and the Power of Seeing",
+          "link": "https://www.goodreads.com/book/show/30746292-the-inkblots",
+          "small_image_url": "https://images.gr-assets.com/books/1474661517s/30746292.jpg",
+          "image_url": "https://images.gr-assets.com/books/1474661517m/30746292.jpg",
+          "num_pages": "405",
+          "work": {
+            "id": "51290999"
+          },
+          "isbn": "0804136548",
+          "isbn13": "9780804136549",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2017",
+          "publication_month": "2",
+          "publication_day": "21",
+          "authors": {
+            "author": {
+              "id": "322493",
+              "name": "Damion Searls",
+              "link": "https://www.goodreads.com/author/show/322493.Damion_Searls"
+            }
+          }
+        },
+        {
+          "id": "25430297",
+          "title": "Paradise Now: The Story of American Utopianism",
+          "title_without_series": "Paradise Now: The Story of American Utopianism",
+          "link": "https://www.goodreads.com/book/show/25430297-paradise-now",
+          "small_image_url": "https://images.gr-assets.com/books/1450648246s/25430297.jpg",
+          "image_url": "https://images.gr-assets.com/books/1450648246m/25430297.jpg",
+          "num_pages": "512",
+          "work": {
+            "id": "45191202"
+          },
+          "isbn": "0812993713",
+          "isbn13": "9780812993714",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2016",
+          "publication_month": "1",
+          "publication_day": "12",
+          "authors": {
+            "author": {
+              "id": "650412",
+              "name": "Chris Jennings",
+              "link": "https://www.goodreads.com/author/show/650412.Chris_Jennings"
+            }
+          }
+        },
+        {
+          "id": "25810353",
+          "title": "The Book of Magic: From Antiquity to the Enlightenment",
+          "title_without_series": "The Book of Magic: From Antiquity to the Enlightenment",
+          "link": "https://www.goodreads.com/book/show/25810353-the-book-of-magic",
+          "small_image_url": "https://images.gr-assets.com/books/1452387390s/25810353.jpg",
+          "image_url": "https://images.gr-assets.com/books/1452387390m/25810353.jpg",
+          "num_pages": "672",
+          "work": {
+            "id": "45666345"
+          },
+          "isbn": "0241198569",
+          "isbn13": "9780241198568",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2015",
+          "publication_month": "11",
+          "publication_day": "5",
+          "authors": {
+            "author": {
+              "id": "142415",
+              "name": "Brian P. Copenhaver",
+              "link": "https://www.goodreads.com/author/show/142415.Brian_P_Copenhaver"
+            }
+          }
+        },
+        {
+          "id": "31374512",
+          "title": "How to Tame a Fox (and Build a Dog): Visionary Scientists and a Siberian Tale of Jump-Started Evolution",
+          "title_without_series": "How to Tame a Fox (and Build a Dog): Visionary Scientists and a Siberian Tale of Jump-Started Evolution",
+          "link": "https://www.goodreads.com/book/show/31374512-how-to-tame-a-fox-and-build-a-dog",
+          "small_image_url": "https://images.gr-assets.com/books/1475990246s/31374512.jpg",
+          "image_url": "https://images.gr-assets.com/books/1475990246m/31374512.jpg",
+          "num_pages": "240",
+          "work": {
+            "id": "52063785"
+          },
+          "isbn": "022644418X",
+          "isbn13": "9780226444185",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2017",
+          "publication_month": "3",
+          "publication_day": "23",
+          "authors": {
+            "author": {
+              "id": "180014",
+              "name": "Lee Alan Dugatkin",
+              "link": "https://www.goodreads.com/author/show/180014.Lee_Alan_Dugatkin"
+            }
+          }
+        },
+        {
+          "id": "30653955",
+          "title": "Doing Harm: The Truth About How Bad Medicine and Lazy Science Leave Women Dismissed, Misdiagnosed, and Sick",
+          "title_without_series": "Doing Harm: The Truth About How Bad Medicine and Lazy Science Leave Women Dismissed, Misdiagnosed, and Sick",
+          "link": "https://www.goodreads.com/book/show/30653955-doing-harm",
+          "small_image_url": "https://images.gr-assets.com/books/1513491498s/30653955.jpg",
+          "image_url": "https://images.gr-assets.com/books/1513491498m/30653955.jpg",
+          "num_pages": "400",
+          "work": {
+            "id": "51198903"
+          },
+          "isbn": "0062470809",
+          "isbn13": "9780062470805",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "3",
+          "publication_day": "6",
+          "authors": {
+            "author": {
+              "id": "15376372",
+              "name": "Maya Dusenbery",
+              "link": "https://www.goodreads.com/author/show/15376372.Maya_Dusenbery"
+            }
+          }
+        },
+        {
+          "id": "39971023",
+          "title": "White Kids: Growing Up with Privilege in a Racially Divided America",
+          "title_without_series": "White Kids: Growing Up with Privilege in a Racially Divided America",
+          "link": "https://www.goodreads.com/book/show/39971023-white-kids",
+          "small_image_url": "https://images.gr-assets.com/books/1525717145s/39971023.jpg",
+          "image_url": "https://images.gr-assets.com/books/1525717145m/39971023.jpg",
+          "num_pages": "280",
+          "work": {
+            "id": "61879342"
+          },
+          "isbn": "1479803685",
+          "isbn13": "9781479803682",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "9",
+          "publication_day": "4",
+          "authors": {
+            "author": {
+              "id": "17984272",
+              "name": "Margaret A. Hagerman",
+              "link": "https://www.goodreads.com/author/show/17984272.Margaret_A_Hagerman"
+            }
+          }
+        },
+        {
+          "id": "32498162",
+          "title": "The Seeds of Life: From Aristotle to da Vinci, from Sharks' Teeth to Frogs' Pants, the Long and Strange Quest to Discover Where Babies Come From",
+          "title_without_series": "The Seeds of Life: From Aristotle to da Vinci, from Sharks' Teeth to Frogs' Pants, the Long and Strange Quest to Discover Where Babies Come From",
+          "link": "https://www.goodreads.com/book/show/32498162-the-seeds-of-life",
+          "small_image_url": "https://images.gr-assets.com/books/1490767277s/32498162.jpg",
+          "image_url": "https://images.gr-assets.com/books/1490767277m/32498162.jpg",
+          "num_pages": "320",
+          "work": {
+            "id": "53090903"
+          },
+          "isbn": "0465082955",
+          "isbn13": "9780465082957",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2017",
+          "publication_month": "6",
+          "publication_day": "6",
+          "authors": {
+            "author": {
+              "id": "11059",
+              "name": "Edward Dolnick",
+              "link": "https://www.goodreads.com/author/show/11059.Edward_Dolnick"
+            }
+          }
+        },
+        {
+          "id": "38363182",
+          "title": "The Job: The Future of Work in the Modern Era",
+          "title_without_series": "The Job: The Future of Work in the Modern Era",
+          "link": "https://www.goodreads.com/book/show/38363182-the-job",
+          "small_image_url": "https://images.gr-assets.com/books/1526212344s/38363182.jpg",
+          "image_url": "https://images.gr-assets.com/books/1526212344m/38363182.jpg",
+          "num_pages": "400",
+          "work": {
+            "id": "60028467"
+          },
+          "isbn": "0451497252",
+          "isbn13": "9780451497253",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "10",
+          "publication_day": "23",
+          "authors": {
+            "author": {
+              "id": "286966",
+              "name": "Ellen Ruppel Shell",
+              "link": "https://www.goodreads.com/author/show/286966.Ellen_Ruppel_Shell"
+            }
+          }
+        },
+        {
+          "id": "40607235",
+          "title": "The Path Made Clear: Discovering Your Life's Direction and Purpose",
+          "title_without_series": "The Path Made Clear: Discovering Your Life's Direction and Purpose",
+          "link": "https://www.goodreads.com/book/show/40607235-the-path-made-clear",
+          "small_image_url": "https://images.gr-assets.com/books/1534271483s/40607235.jpg",
+          "image_url": "https://images.gr-assets.com/books/1534271483m/40607235.jpg",
+          "num_pages": "208",
+          "work": {
+            "id": "63074832"
+          },
+          "isbn": "1250307503",
+          "isbn13": "9781250307507",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2019",
+          "publication_month": "3",
+          "publication_day": "26",
+          "authors": {
+            "author": {
+              "id": "3518",
+              "name": "Oprah Winfrey",
+              "link": "https://www.goodreads.com/author/show/3518.Oprah_Winfrey"
+            }
+          }
+        },
+        {
+          "id": "34930832",
+          "title": "Darwin Comes to Town: How the Urban Jungle Drives Evolution",
+          "title_without_series": "Darwin Comes to Town: How the Urban Jungle Drives Evolution",
+          "link": "https://www.goodreads.com/book/show/34930832-darwin-comes-to-town",
+          "small_image_url": "https://images.gr-assets.com/books/1498791024s/34930832.jpg",
+          "image_url": "https://images.gr-assets.com/books/1498791024m/34930832.jpg",
+          "num_pages": "304",
+          "work": {
+            "id": "56194704"
+          },
+          "isbn": "1250127823",
+          "isbn13": "9781250127822",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "4",
+          "publication_day": "3",
+          "authors": {
+            "author": {
+              "id": "340365",
+              "name": "Menno Schilthuizen",
+              "link": "https://www.goodreads.com/author/show/340365.Menno_Schilthuizen"
+            }
+          }
+        },
+        {
+          "id": "11724841",
+          "title": "The Authentic Animal: Inside the Odd and Obsessive World of Taxidermy",
+          "title_without_series": "The Authentic Animal: Inside the Odd and Obsessive World of Taxidermy",
+          "link": "https://www.goodreads.com/book/show/11724841-the-authentic-animal",
+          "small_image_url": "https://images.gr-assets.com/books/1312232908s/11724841.jpg",
+          "image_url": "https://images.gr-assets.com/books/1312232908m/11724841.jpg",
+          "num_pages": null,
+          "work": {
+            "id": "16673284"
+          },
+          "isbn": "0312643713",
+          "isbn13": "9780312643713",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": null,
+          "publication_month": null,
+          "publication_day": null,
+          "authors": {
+            "author": {
+              "id": "5020442",
+              "name": "Dave  Madden",
+              "link": "https://www.goodreads.com/author/show/5020442.Dave_Madden"
+            }
+          }
+        },
+        {
+          "id": "38232376",
+          "title": "Nine Pints: A Journey Through the Money, Medicine, and Mysteries of Blood",
+          "title_without_series": "Nine Pints: A Journey Through the Money, Medicine, and Mysteries of Blood",
+          "link": "https://www.goodreads.com/book/show/38232376-nine-pints",
+          "small_image_url": "https://images.gr-assets.com/books/1523762222s/38232376.jpg",
+          "image_url": "https://images.gr-assets.com/books/1523762222m/38232376.jpg",
+          "num_pages": "289",
+          "work": {
+            "id": "59914882"
+          },
+          "isbn": "1627796371",
+          "isbn13": "9781627796378",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "10",
+          "publication_day": "23",
+          "authors": {
+            "author": {
+              "id": "955517",
+              "name": "Rose George",
+              "link": "https://www.goodreads.com/author/show/955517.Rose_George"
+            }
+          }
+        },
+        {
+          "id": "21977708",
+          "title": "Extreme: Why Some People Thrive at the Limits",
+          "title_without_series": "Extreme: Why Some People Thrive at the Limits",
+          "link": "https://www.goodreads.com/book/show/21977708-extreme",
+          "small_image_url": "https://images.gr-assets.com/books/1405866386s/21977708.jpg",
+          "image_url": "https://images.gr-assets.com/books/1405866386m/21977708.jpg",
+          "num_pages": "278",
+          "work": {
+            "id": "41288248"
+          },
+          "isbn": "0199668582",
+          "isbn13": "9780199668588",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2014",
+          "publication_month": "11",
+          "publication_day": "15",
+          "authors": {
+            "author": {
+              "id": "8167483",
+              "name": "Emma Barrett",
+              "link": "https://www.goodreads.com/author/show/8167483.Emma_Barrett"
+            }
+          }
+        },
+        {
+          "id": "32714234",
+          "title": "The Social Life of Books: Reading Together in the Eighteenth-Century Home",
+          "title_without_series": "The Social Life of Books: Reading Together in the Eighteenth-Century Home",
+          "link": "https://www.goodreads.com/book/show/32714234-the-social-life-of-books",
+          "small_image_url": "https://images.gr-assets.com/books/1490411422s/32714234.jpg",
+          "image_url": "https://images.gr-assets.com/books/1490411422m/32714234.jpg",
+          "num_pages": "368",
+          "work": {
+            "id": "53293936"
+          },
+          "isbn": "0300208294",
+          "isbn13": "9780300208290",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2017",
+          "publication_month": "6",
+          "publication_day": "27",
+          "authors": {
+            "author": {
+              "id": "987471",
+              "name": "Abigail Williams",
+              "link": "https://www.goodreads.com/author/show/987471.Abigail_Williams"
+            }
+          }
+        },
+        {
+          "id": "38400400",
+          "title": "The Art of Logic in an Illogical World",
+          "title_without_series": "The Art of Logic in an Illogical World",
+          "link": "https://www.goodreads.com/book/show/38400400-the-art-of-logic-in-an-illogical-world",
+          "small_image_url": "https://images.gr-assets.com/books/1518850446s/38400400.jpg",
+          "image_url": "https://images.gr-assets.com/books/1518850446m/38400400.jpg",
+          "num_pages": "320",
+          "work": {
+            "id": "60056478"
+          },
+          "isbn": "1541672488",
+          "isbn13": "9781541672482",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "9",
+          "publication_day": "11",
+          "authors": {
+            "author": {
+              "id": "9259857",
+              "name": "Eugenia Cheng",
+              "link": "https://www.goodreads.com/author/show/9259857.Eugenia_Cheng"
+            }
+          }
+        },
+        {
+          "id": "39027389",
+          "title": "Babel: Around the World in Twenty Languages",
+          "title_without_series": "Babel: Around the World in Twenty Languages",
+          "link": "https://www.goodreads.com/book/show/39027389-babel",
+          "small_image_url": "https://images.gr-assets.com/books/1523723811s/39027389.jpg",
+          "image_url": "https://images.gr-assets.com/books/1523723811m/39027389.jpg",
+          "num_pages": "320",
+          "work": {
+            "id": "60590826"
+          },
+          "isbn": "0802128793",
+          "isbn13": "9780802128799",
+          "average_rating": "3.38",
+          "ratings_count": "1092",
+          "publication_year": "2018",
+          "publication_month": "12",
+          "publication_day": "4",
+          "authors": {
+            "author": {
+              "id": "609014",
+              "name": "Gaston Dorren",
+              "link": "https://www.goodreads.com/author/show/609014.Gaston_Dorren"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

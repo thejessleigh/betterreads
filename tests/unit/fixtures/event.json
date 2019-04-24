@@ -1,0 +1,1251 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "event_index"
+  },
+  "query": {
+    "postal_code": "80126",
+    "city": "Littleton",
+    "state_code": "CO",
+    "country_code": "US",
+    "country": "The United States"
+  },
+  "events": {
+    "event": [
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1048832"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "2547702"
+        },
+        "title": "Outer Order Inner Calm Book Tour: Highland Park, CO",
+        "address": "10345 Pak Meadows Dr,",
+        "city": "Lone Tree",
+        "postal_code": "80124",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-05-08T02:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-02-11T20:50:41+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-02-11T20:50:41+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "21246"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Denver Marriott",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "#text": "2019-05-01T02:00:00+00:00"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-08T02:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-08T03:30:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1252934548p2/21246.jpg",
+        "link": "https://www.goodreads.com/event/show/1048832",
+        "description": "Douglas County Library and Tattered Cover Book Store present a talk, Q&amp;A, and book signing with Gretchen Rubin on Tuesday, May 7th. *Note this is a ticketed event.<br />"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1046019"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "April 2019 AG Recommended Readings Book Talk",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T01:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2018-12-16T00:29:31+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2018-12-16T00:29:31+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "event_type": "other",
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T02:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1046019",
+        "description": "A monthly presentation of AG bookseller's recent reads/ recommends.<br /><br />As well as taking home a list of potential new titles, this talk also involves give-aways/ raffles, discounted titles, and of course free snacks and drinks.<br /><br />RSVP is NOT required to attend."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1048109"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "2824059"
+        },
+        "title": "Book Signing for \"In the Company of Like-Minded Women",
+        "address": "1628 16th Street",
+        "city": "Denver",
+        "postal_code": "80202",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-06-08T21:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T20:42:59+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T20:42:59+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "6443318"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Book Store (Historic LoDo)",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-08T19:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-08T23:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1497539148p2/6443318.jpg",
+        "link": "https://www.goodreads.com/event/show/1048109",
+        "description": "Book presentation and signing for \"In the Company of Like-Minded Women\" on Saturday, June 8, 2019, from 2-4 pm."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1048110"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "2824059"
+        },
+        "title": "Molly Brown House Museum Book Club",
+        "address": "1340 Pennsylvania Avenue",
+        "city": "Denver",
+        "postal_code": "80203",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-06-09T19:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T20:49:00+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T20:49:00+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "6443318"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Molly Brown House Museum Denver",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-02-05T04:44:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-09T21:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1497539148p2/6443318.jpg",
+        "link": "https://www.goodreads.com/event/show/1048110",
+        "description": "Book club meeting at the Molly Brown House Museum for my novel \"In the Company of Like-Minded Women\""
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1050448"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "Madeline Miller Book Talk/ Signing",
+        "address": "5955 South Holly Street",
+        "city": "Centennial",
+        "postal_code": "80121",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-05-07T02:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-03-16T22:58:25+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-03-16T22:58:25+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Arapahoe Library",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-07T02:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-07T03:30:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1050448",
+        "description": "Madeline Miller will be discussing her newest book Circe, as well as signing copies of Circe and Song of Achilles."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047679"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "May 2019 Meeting",
+        "address": "7601 South Santa Fe Drive Unit 240",
+        "city": "Littleton",
+        "postal_code": "80110",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-05-18T22:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T00:49:39+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T00:49:39+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-18T22:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-18T23:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047679",
+        "description": "Circe by Madeline Miller"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047680"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "June 2019 Meeting",
+        "address": "7601 South Santa Fe Drive Unit 240",
+        "city": "Littleton",
+        "postal_code": "80110",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-06-15T22:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T00:52:26+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T00:52:26+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-15T22:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-15T23:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047680",
+        "description": "Title TBA<br />--either The Alice Network by Kate Quinn or White Elephant by Julie Langsdorf--"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047683"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "July 2019 Meeting",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-07-20T22:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:17:54+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:17:54+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-07-20T22:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-07-20T23:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047683",
+        "description": "Title TBA<br />--either The Alice Network by Kate Quinn or White Elephant by Julie Langsdorf--"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047684"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "May  2019 AG Recommended Readings Book Talk",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-05-31T01:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:20:20+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:20:20+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "other",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-31T01:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-31T02:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047684",
+        "description": "A monthly presentation of AG bookseller's recent reads/ recommends.<br /><br />As well as taking home a list of potential new titles, this talk also involves give-aways/ raffles, discounted titles, and of course free snacks and drinks.<br /><br />RSVP is NOT required to attend."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047685"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "June 2019 AG Recommended Readings Book Talk",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-06-28T01:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:22:21+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:22:21+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "other",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-28T01:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-28T02:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047685",
+        "description": "A monthly presentation of AG bookseller's recent reads/ recommends.<br /><br />As well as taking home a list of potential new titles, this talk also involves give-aways/ raffles, discounted titles, and of course free snacks and drinks.<br /><br />RSVP is NOT required to attend."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1047687"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "July 2019 AG Recommended Readings Book Talk",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-07-26T01:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:24:46+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-20T02:24:46+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "other",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-07-26T01:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-07-26T01:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1047687",
+        "description": "A monthly presentation of AG bookseller's recent reads/ recommends.<br /><br />As well as taking home a list of potential new titles, this talk also involves give-aways/ raffles, discounted titles, and of course free snacks and drinks.<br /><br />RSVP is NOT required to attend."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1051564"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "94132388"
+        },
+        "title": "Author Signing",
+        "address": "529 Main St",
+        "city": "Alamosa",
+        "postal_code": "81101",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-04-20T20:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-04-08T18:03:20+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-04-08T18:03:20+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "18939973"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Milagros Coffee House",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "#text": "2019-04-18T20:00:00+00:00"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-20T06:58:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-20T22:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1552420835p2/18939973.jpg",
+        "link": "https://www.goodreads.com/event/show/1051564",
+        "description": "Laurie Holbrook is heading back to her hometown for an author signing. This is where it all began. Growing up in the San Luis Valley shaped her into the writer she is today and she wouldn't change it for the world."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1049265"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "4988481"
+        },
+        "title": "Starfest Comic Con",
+        "address": "4900 S Syracuse St",
+        "city": "Denver",
+        "postal_code": "80237",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T20:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-02-21T05:50:28+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-02-21T05:50:28+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "224479"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Marriott DTC Convention Hotel",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "#text": "2019-04-19T20:00:00+00:00"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T20:43:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-29T01:43:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1550722323p2/224479.jpg",
+        "link": "https://www.goodreads.com/event/show/1049265",
+        "description": "Peter will be selling and signing books at his table. Come by to meet the author and add to your Peter Meredith book collection!<br />He will also have t-shirts, posters, stickers and much more available.<br /><br />*Bring your already purchased books to be signed as well. :-)"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1049266"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "4988481"
+        },
+        "title": "Denver Pop Culture Con",
+        "address": "700 14th St",
+        "city": "Denver",
+        "postal_code": "80202",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-05-31T19:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-02-21T06:00:28+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-02-21T06:00:28+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "224479"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Colorado Convention Center",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "#text": "2019-05-24T19:00:00+00:00"
+        },
+        "event_type": "author_appearance",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-05-31T19:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-02T19:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1550722323p2/224479.jpg",
+        "link": "https://www.goodreads.com/event/show/1049266",
+        "description": "Peter will be selling and signing books at his table. Come by to meet the author and add to your Peter Meredith book collection!<br />He will also have t-shirts, posters, stickers and much more available.<br /><br />*Bring your already purchased books to be signed as well. :-)"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1048520"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "10594232"
+        },
+        "title": "Animal Totems and the Gemstone Kingdom at Celebrations in Colorado Springs, CO",
+        "address": "975 Garden of the Gods Rd., #C",
+        "city": "Colorado Springs",
+        "postal_code": "80907",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-06-07T00:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-03-10T13:21:17+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-02-05T15:58:41+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "56425"
+        },
+        "resource_type": "Author",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Celebrations Metaphysical Center",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "other",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-06T19:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-06-07T04:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/authors/1449694021p2/56425.jpg",
+        "link": "https://www.goodreads.com/event/show/1048520",
+        "description": "Presenter: Margaret Ann Lembo<br /><br />Date: Thursday, June 6, 2019<br /><br />Time: 5:00 pm \\u2013 9:00 pm (free meet and greet from 5:00 pm \\u2013 6:00 pm)<br /><br />Price: $45.00 (the hour meet and greet before class is free)<br /><br />All creatures, great and small, in all species on this planet are interconnected. When an animal, insect, bird, or other creature from nature appears repetitively, whether, in real life or dreams, there are many teachings available through the observation of a particular animal totem and their habits and patterns.<br /><br />The associated gemstone for each animal totem is a further indication of the energy of the animal as symbolism. The color, formation, and the manner in which the stone grows in the Earth offers a teaching to know yourself and your life purpose.<br /><br />Matching the teachings of animals with the teachings of gemstones, Margaret Ann Lembo shows how there is symbolism all around you offering clues to light your path.<br /><br />Margaret Ann will provide short animal messages for the group from the new deck.<br /><br />Before class (5-6), come meet Margaret Ann and get your copy of her book and deck signed!<br /><br />Call Celebration Store at 719-634-1855 to sign up. Space is limited."
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1048055"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "27422620"
+        },
+        "title": "April Bookclub Meeting",
+        "address": "6766 Quail St.",
+        "city": "Arvada",
+        "postal_code": "80004",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T11:26:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T04:14:49+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-01-28T04:14:49+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "27422620"
+        },
+        "resource_type": "User",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tonya's House",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "#text": "2019-04-23T11:26:00+00:00"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-24T11:24:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-26T11:26:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/users/1409601071p2/27422620.jpg",
+        "link": "https://www.goodreads.com/event/show/1048055",
+        "description": "Book discussion is 32 Yolks, From My Mother's Table to Working The Line by Eric Ripert"
+      },
+      {
+        "id": {
+          "@type": "integer",
+          "#text": "1046015"
+        },
+        "user_id": {
+          "@type": "integer",
+          "#text": "70278498"
+        },
+        "title": "April 2019 Meeting",
+        "address": "7301 South Santa Fe Drive Unit 240",
+        "city": "LITTLETON",
+        "postal_code": "80120",
+        "country_code": "US",
+        "start_at": {
+          "@type": "datetime",
+          "#text": "2019-04-21T22:00:00+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2018-12-16T00:19:00+00:00"
+        },
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2018-12-16T00:19:00+00:00"
+        },
+        "state_code": "CO",
+        "resource_id": {
+          "@type": "integer",
+          "#text": "746525"
+        },
+        "resource_type": "Group",
+        "public_flag": {
+          "@type": "integer",
+          "#text": "1"
+        },
+        "venue": "Tattered Cover Aspen Grove",
+        "access": "public",
+        "source": {
+          "@nil": "true"
+        },
+        "source_url": {
+          "@nil": "true"
+        },
+        "event_responses_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "event_attending_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "can_invite_flag": {
+          "@type": "boolean",
+          "#text": "true"
+        },
+        "reminder_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "event_type": "book_club_meeting",
+        "rsvp_end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-21T22:00:00+00:00"
+        },
+        "end_at": {
+          "@type": "datetime",
+          "#text": "2019-04-21T23:00:00+00:00"
+        },
+        "image_url": "https://images.gr-assets.com/groups/1537057462p2/746525.jpg",
+        "link": "https://www.goodreads.com/event/show/1046015",
+        "description": "The Maze at Windermere by Gregory Blake Smith"
+      }
+    ]
+  }
+}

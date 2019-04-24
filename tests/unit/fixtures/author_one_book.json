@@ -1,0 +1,86 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "author_show"
+  },
+  "author": {
+    "id": "5734084",
+    "name": "IACA",
+    "link": "https://www.goodreads.com/author/show/5734084.IACA",
+    "fans_count": {
+      "@type": "integer",
+      "#text": "0"
+    },
+    "author_followers_count": {
+      "@type": "integer",
+      "#text": "0"
+    },
+    "large_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_333x500-46491541e26dbeac15f51487d68dd207.png",
+    "image_url": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png",
+    "small_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png",
+    "about": null,
+    "influences": null,
+    "works_count": "1",
+    "gender": null,
+    "hometown": null,
+    "born_at": null,
+    "died_at": null,
+    "goodreads_author": null,
+    "books": {
+      "book": {
+        "id": {
+          "@type": "integer",
+          "#text": "2167047"
+        },
+        "isbn": "1570670625",
+        "isbn13": "9781570670626",
+        "text_reviews_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "uri": "kca://book/amzn1.gr.book.v1.7Q2CMylXoTwSiZ1VpqXmqw",
+        "title": "Collecting Authentic Indian Arts & Crafts: Traditional Work of the Southwest",
+        "title_without_series": "Collecting Authentic Indian Arts & Crafts: Traditional Work of the Southwest",
+        "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+        "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+        "large_image_url": null,
+        "link": "https://www.goodreads.com/book/show/2167047.Collecting_Authentic_Indian_Arts_Crafts",
+        "num_pages": null,
+        "format": null,
+        "edition_information": null,
+        "publisher": null,
+        "publication_day": null,
+        "publication_year": null,
+        "publication_month": null,
+        "average_rating": "3.67",
+        "ratings_count": "3",
+        "description": null,
+        "authors": {
+          "author": {
+            "id": "5734084",
+            "name": "IACA",
+            "role": null,
+            "image_url": {
+              "@nophoto": "true",
+              "#text": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png"
+            },
+            "small_image_url": {
+              "@nophoto": "true",
+              "#text": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+            },
+            "link": "https://www.goodreads.com/author/show/5734084.IACA",
+            "average_rating": "3.67",
+            "ratings_count": "3",
+            "text_reviews_count": "0"
+          }
+        },
+        "published": null,
+        "work": {
+          "id": "2172576",
+          "uri": "kca://work/amzn1.gr.work.v1.b5m2DzGdeHYyP5vt8p3k8A"
+        }
+      }
+    }
+  }
+}

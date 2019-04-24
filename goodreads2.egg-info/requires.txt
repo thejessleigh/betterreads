@@ -1,4 +1,0 @@
-nose
-xmltodict
-requests
-rauth

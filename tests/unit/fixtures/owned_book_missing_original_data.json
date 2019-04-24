@@ -1,0 +1,130 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "owned_books_show"
+  },
+  "owned_book": {
+    "owned_book": {
+      "id": {
+        "@type": "integer",
+        "#text": "6133754"
+      },
+      "current_owner_id": {
+        "@type": "integer",
+        "#text": "1724077"
+      },
+      "original_purchase_date": {
+        "@type": "datetime",
+        "@nil": "true"
+      },
+      "original_purchase_location": null,
+      "condition": "unspecified",
+      "traded_count": "0",
+      "link": "https://www.goodreads.com/owned_books/6133754",
+      "book": {
+        "id": {
+          "@type": "integer",
+          "#text": "24800"
+        },
+        "isbn": "038560310X",
+        "isbn13": "9780385603102",
+        "text_reviews_count": {
+          "@type": "integer",
+          "#text": "6837"
+        },
+        "uri": "kca://book/amzn1.gr.book.v1.bu0H_yqYefblt1zZW7Yiog",
+        "title": "House of Leaves",
+        "title_without_series": "House of Leaves",
+        "image_url": "https://images.gr-assets.com/books/1403889034m/24800.jpg",
+        "small_image_url": "https://images.gr-assets.com/books/1403889034s/24800.jpg",
+        "large_image_url": null,
+        "link": "https://www.goodreads.com/book/show/24800.House_of_Leaves",
+        "num_pages": "705",
+        "format": "Paperback",
+        "edition_information": null,
+        "publisher": "Random House",
+        "publication_day": "7",
+        "publication_year": "2000",
+        "publication_month": "3",
+        "average_rating": "4.12",
+        "ratings_count": "104936",
+        "description": "Years ago, when <i>House of Leaves</i> was first being passed around, it was nothing more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. No one could have anticipated the small but devoted following this terrifying story would soon command. Starting with an odd assortment of marginalized youth\\u2014musicians, tattoo artists, programmers, strippers, environmentalists, and adrenaline junkies\\u2014the book eventually made its way into the hands of older generations, who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of their estranged children.<br /><br />Now, for the first time, this astonishing novel is made available in book form, complete with the original colored words, vertical footnotes, and newly added second and third appendices.<br /><br />The story remains unchanged, focusing on a young family that moves into a small home on Ash Tree Lane where they discover something is terribly wrong: their house is bigger on the inside than it is on the outside.<br /><br />Of course, neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the consequences of that impossibility, until the day their two little children wandered off and their voices eerily began to return another story\\u2014of creature darkness, of an ever-growing abyss behind a closet door, and of that unholy growl which soon enough would tear through their walls and consume all their dreams.",
+        "authors": {
+          "author": {
+            "id": "13974",
+            "name": "Mark Z. Danielewski",
+            "role": null,
+            "image_url": {
+              "@nophoto": "false",
+              "#text": "https://images.gr-assets.com/authors/1348252837p5/13974.jpg"
+            },
+            "small_image_url": {
+              "@nophoto": "false",
+              "#text": "https://images.gr-assets.com/authors/1348252837p2/13974.jpg"
+            },
+            "link": "https://www.goodreads.com/author/show/13974.Mark_Z_Danielewski",
+            "average_rating": "4.05",
+            "ratings_count": "123151",
+            "text_reviews_count": "11697"
+          }
+        },
+        "published": "2000",
+        "work": {
+          "id": "856555",
+          "uri": "kca://work/amzn1.gr.work.v1.uRivJZCzFTJUGFTjLYSwCQ"
+        }
+      },
+      "review": {
+        "id": "37923258",
+        "rating": "5",
+        "votes": "0",
+        "spoiler_flag": "false",
+        "spoilers_state": "none",
+        "shelves": {
+          "shelf": [
+            {
+              "@name": "read",
+              "@exclusive": "true",
+              "@id": "5725901",
+              "@review_shelf_id": ""
+            },
+            {
+              "@exclusive": "false",
+              "@id": "74118620",
+              "@name": "read-in-the-00s",
+              "@review_shelf_id": "486879687",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "28152786",
+              "@name": "re-reads",
+              "@review_shelf_id": "197447167",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "56054279",
+              "@name": "favorites",
+              "@review_shelf_id": "367264025",
+              "@sortable": "false"
+            }
+          ]
+        },
+        "recommended_for": null,
+        "recommended_by": null,
+        "started_at": null,
+        "read_at": "Sun Oct 19 00:00:00 -0700 2003",
+        "date_added": "Sun Nov 16 22:50:01 -0800 2008",
+        "date_updated": "Thu Aug 08 13:07:46 -0700 2013",
+        "read_count": "4",
+        "body": null,
+        "comments_count": "0",
+        "url": "https://www.goodreads.com/review/show/37923258",
+        "link": "https://www.goodreads.com/review/show/37923258",
+        "owned": "1"
+      }
+    }
+  }
+}
