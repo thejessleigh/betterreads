@@ -1,0 +1,1237 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "user_show"
+  },
+  "user": {
+    "id": "95040664",
+    "name": "Mitzy Nitzy",
+    "user_name": "mitzynitzy",
+    "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy",
+    "image_url": "https://images.gr-assets.com/users/1554823256p3/95040664.jpg",
+    "small_image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+    "about": "there's not much to say here.",
+    "age": "34",
+    "gender": "Enby",
+    "location": "Chicago, IL",
+    "website": "https://example.com",
+    "joined": "03/2019",
+    "last_active": "04/2019",
+    "interests": "books and homebrewing",
+    "favorite_books": "young adult thrillers",
+    "favorite_authors": {
+      "author": [
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "10746"
+          },
+          "name": "Jim Butcher"
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "1221698"
+          },
+          "name": "Neil Gaiman"
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "3472"
+          },
+          "name": "Margaret Atwood"
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "2383"
+          },
+          "name": "Gillian Flynn"
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "33918"
+          },
+          "name": "China Mi\\u00e9ville"
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "8842"
+          },
+          "name": "Susanna Clarke"
+        }
+      ]
+    },
+    "updates_rss_url": "https://www.goodreads.com/user/updates_rss/95040664?key=pj_64QbWbfym08zO6gfXEt0QKHTbzCcTl_qh2M23fRfBMjqF",
+    "reviews_rss_url": "https://www.goodreads.com/review/list_rss/95040664?key=pj_64QbWbfym08zO6gfXEt0QKHTbzCcTl_qh2M23fRfBMjqF&shelf=%23ALL%23",
+    "friends_count": {
+      "@type": "integer",
+      "#text": "0"
+    },
+    "groups_count": "0",
+    "reviews_count": {
+      "@type": "integer",
+      "#text": "3"
+    },
+    "user_shelves": {
+      "@type": "array",
+      "user_shelf": [
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "308827957"
+          },
+          "name": "read",
+          "book_count": {
+            "@type": "integer",
+            "#text": "3"
+          },
+          "exclusive_flag": {
+            "@type": "boolean",
+            "#text": "true"
+          },
+          "description": {
+            "@nil": "true"
+          },
+          "sort": {
+            "@nil": "true"
+          },
+          "order": {
+            "@nil": "true"
+          },
+          "per_page": {
+            "@type": "integer",
+            "@nil": "true"
+          },
+          "display_fields": null,
+          "featured": {
+            "@type": "boolean",
+            "#text": "true"
+          },
+          "recommend_for": {
+            "@type": "boolean",
+            "#text": "false"
+          },
+          "sticky": {
+            "@type": "boolean",
+            "@nil": "true"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "308827956"
+          },
+          "name": "currently-reading",
+          "book_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "exclusive_flag": {
+            "@type": "boolean",
+            "#text": "true"
+          },
+          "description": {
+            "@nil": "true"
+          },
+          "sort": {
+            "@nil": "true"
+          },
+          "order": {
+            "@nil": "true"
+          },
+          "per_page": {
+            "@type": "integer",
+            "@nil": "true"
+          },
+          "display_fields": null,
+          "featured": {
+            "@type": "boolean",
+            "#text": "false"
+          },
+          "recommend_for": {
+            "@type": "boolean",
+            "#text": "false"
+          },
+          "sticky": {
+            "@type": "boolean",
+            "@nil": "true"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "308827955"
+          },
+          "name": "to-read",
+          "book_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "exclusive_flag": {
+            "@type": "boolean",
+            "#text": "true"
+          },
+          "description": {
+            "@nil": "true"
+          },
+          "sort": {
+            "@nil": "true"
+          },
+          "order": {
+            "@nil": "true"
+          },
+          "per_page": {
+            "@type": "integer",
+            "@nil": "true"
+          },
+          "display_fields": null,
+          "featured": {
+            "@type": "boolean",
+            "#text": "false"
+          },
+          "recommend_for": {
+            "@type": "boolean",
+            "#text": "true"
+          },
+          "sticky": {
+            "@type": "boolean",
+            "@nil": "true"
+          }
+        }
+      ]
+    },
+    "updates": {
+      "@type": "array",
+      "update": [
+        {
+          "@type": "review",
+          "action_text": "gave 2 stars to <a href=\"https://www.goodreads.com/book/show/2767052-the-hunger-games\">The Hunger Games (The Hunger Games, #1)</a> by <a href=\"https://www.goodreads.com/author/show/153394.Suzanne_Collins\">Suzanne Collins</a>",
+          "link": "https://www.goodreads.com/review/show/2757600587",
+          "image_url": "https://images.gr-assets.com/books/1447303603s/2767052.jpg",
+          "actor": {
+            "id": {
+              "@type": "integer",
+              "#text": "95040664"
+            },
+            "name": "Mitzy Nitzy",
+            "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+            "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
+          },
+          "updated_at": "Wed, 20 Mar 2019 15:12:39 -0700",
+          "action": {
+            "@type": "rating",
+            "rating": "2"
+          },
+          "object": {
+            "book": {
+              "id": "2767052",
+              "title": "The Hunger Games (The Hunger Games, #1)",
+              "link": "https://www.goodreads.com/book/show/2767052-the-hunger-games",
+              "authors": {
+                "author": {
+                  "id": "153394",
+                  "name": "Suzanne Collins",
+                  "role": null,
+                  "image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1530308375p5/153394.jpg"
+                  },
+                  "small_image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1530308375p2/153394.jpg"
+                  },
+                  "link": "https://www.goodreads.com/author/show/153394.Suzanne_Collins",
+                  "average_rating": "4.26",
+                  "ratings_count": "10329525",
+                  "text_reviews_count": "372358"
+                }
+              }
+            }
+          }
+        },
+        {
+          "@type": "review",
+          "action_text": "gave 5 stars to <a href=\"https://www.goodreads.com/book/show/748558.The_Long_Night_of_Leo_and_Bree\">The Long Night of Leo and Bree (Paperback)</a> by <a href=\"https://www.goodreads.com/author/show/161133.Ellen_Wittlinger\">Ellen Wittlinger</a>",
+          "link": "https://www.goodreads.com/review/show/2757600415",
+          "image_url": "https://images.gr-assets.com/books/1347964902s/748558.jpg",
+          "actor": {
+            "id": {
+              "@type": "integer",
+              "#text": "95040664"
+            },
+            "name": "Mitzy Nitzy",
+            "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+            "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
+          },
+          "updated_at": "Wed, 20 Mar 2019 15:12:28 -0700",
+          "action": {
+            "@type": "rating",
+            "rating": "5"
+          },
+          "object": {
+            "book": {
+              "id": "748558",
+              "title": "The Long Night of Leo and Bree",
+              "link": "https://www.goodreads.com/book/show/748558.The_Long_Night_of_Leo_and_Bree",
+              "authors": {
+                "author": {
+                  "id": "161133",
+                  "name": "Ellen Wittlinger",
+                  "role": null,
+                  "image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1253601810p5/161133.jpg"
+                  },
+                  "small_image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1253601810p2/161133.jpg"
+                  },
+                  "link": "https://www.goodreads.com/author/show/161133.Ellen_Wittlinger",
+                  "average_rating": "3.68",
+                  "ratings_count": "21656",
+                  "text_reviews_count": "2143"
+                }
+              }
+            }
+          }
+        },
+        {
+          "@type": "review",
+          "action_text": "gave 1 star to <a href=\"https://www.goodreads.com/book/show/656.War_and_Peace\">War and Peace (Paperback)</a> by <a href=\"https://www.goodreads.com/author/show/128382.Leo_Tolstoy\">Leo Tolstoy</a>",
+          "link": "https://www.goodreads.com/review/show/2757600090",
+          "image_url": "https://images.gr-assets.com/books/1413215930s/656.jpg",
+          "actor": {
+            "id": {
+              "@type": "integer",
+              "#text": "95040664"
+            },
+            "name": "Mitzy Nitzy",
+            "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+            "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
+          },
+          "updated_at": "Wed, 20 Mar 2019 15:12:11 -0700",
+          "action": {
+            "@type": "rating",
+            "rating": "1"
+          },
+          "object": {
+            "book": {
+              "id": "656",
+              "title": "War and Peace",
+              "link": "https://www.goodreads.com/book/show/656.War_and_Peace",
+              "authors": {
+                "author": {
+                  "id": "128382",
+                  "name": "Leo Tolstoy",
+                  "role": null,
+                  "image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1506091388p5/128382.jpg"
+                  },
+                  "small_image_url": {
+                    "@nophoto": "false",
+                    "#text": "https://images.gr-assets.com/authors/1506091388p2/128382.jpg"
+                  },
+                  "link": "https://www.goodreads.com/author/show/128382.Leo_Tolstoy",
+                  "average_rating": "4.04",
+                  "ratings_count": "1021379",
+                  "text_reviews_count": "45949"
+                }
+              }
+            }
+          }
+        },
+        {
+          "@type": "readstatus",
+          "action_text": "has read <a only_path=\"false\" href=\"https://www.goodreads.com/review/show/2757600415\">The Long Night of Leo and Bree</a>",
+          "link": "https://www.goodreads.com/read_statuses/2834459846",
+          "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+          "actor": {
+            "id": {
+              "@type": "integer",
+              "#text": "95040664"
+            },
+            "name": "Mitzy Nitzy",
+            "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+            "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
+          },
+          "updated_at": "Wed, 20 Mar 2019 15:11:57 -0700",
+          "object": {
+            "read_status": {
+              "id": {
+                "@type": "integer",
+                "#text": "2834459846"
+              },
+              "review_id": {
+                "@type": "integer",
+                "#text": "2757600415"
+              },
+              "user_id": {
+                "@type": "integer",
+                "#text": "95040664"
+              },
+              "old_status": {
+                "@nil": "true"
+              },
+              "status": "read",
+              "updated_at": {
+                "@type": "datetime",
+                "#text": "2019-03-20T22:11:57+00:00"
+              },
+              "review": {
+                "id": {
+                  "@type": "integer",
+                  "#text": "2757600415"
+                },
+                "user_id": {
+                  "@type": "integer",
+                  "#text": "95040664"
+                },
+                "book_id": {
+                  "@type": "integer",
+                  "#text": "748558"
+                },
+                "rating": {
+                  "@type": "integer",
+                  "#text": "5"
+                },
+                "read_status": "read",
+                "sell_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "review": {
+                  "@nil": "true"
+                },
+                "recommendation": {
+                  "@nil": "true"
+                },
+                "read_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "updated_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:57+00:00"
+                },
+                "created_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:57+00:00"
+                },
+                "comments_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "weight": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "ratings_sum": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "ratings_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "spoiler_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "recommender_user_id1": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "recommender_user_name1": {
+                  "@nil": "true"
+                },
+                "work_id": {
+                  "@type": "integer",
+                  "#text": "1285846"
+                },
+                "last_comment_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "started_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "hidden_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "language_code": {
+                  "@type": "integer",
+                  "@nil": "true"
+                },
+                "last_revision_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:57+00:00"
+                },
+                "non_friends_rating_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "encrypted_notes": {
+                  "@nil": "true"
+                },
+                "notes": {
+                  "@nil": "true"
+                },
+                "book": {
+                  "id": {
+                    "@type": "integer",
+                    "#text": "748558"
+                  },
+                  "work_id": {
+                    "@type": "integer",
+                    "#text": "1285846"
+                  },
+                  "isbn": "0689863357",
+                  "isbn13": "9780689863356",
+                  "title": "The Long Night of Leo and Bree",
+                  "sort_by_title": "long night of leo and bree, the",
+                  "author_id": {
+                    "@type": "integer",
+                    "#text": "161133"
+                  },
+                  "author_role": {
+                    "@nil": "true"
+                  },
+                  "asin": {
+                    "@nil": "true"
+                  },
+                  "description": "NOBODY SHOULD HAVE A NIGHT LIKE THIS. 8:30 P.M.: It's been four years since Michelle was killed. Leo can't stand to be at home with his mom -- she's crazy with rage. He's got anger of his own and pictures of his dead sister he can't get out of his head. 9:00 P.M.: Bree parks her mom's car and locks the doors. She's in a bad part of town, but she knows the bar has to be around here somewhere. All she wants is to escape for a while and have a good time. 9:15 P.M.: Leo, out for a drive to get away from his mom, spots Bree. Why is this girl alive while Michelle's not? By 6:30 A.M., when their long night is over, everything has changed.",
+                  "format": "Paperback",
+                  "publication_year": {
+                    "@type": "integer",
+                    "#text": "2003"
+                  },
+                  "publication_month": {
+                    "@type": "integer",
+                    "#text": "10"
+                  },
+                  "publication_day": {
+                    "@type": "integer",
+                    "#text": "1"
+                  },
+                  "num_pages": {
+                    "@type": "integer",
+                    "#text": "128"
+                  },
+                  "publisher": "Simon Pulse",
+                  "language_code": "eng",
+                  "edition_information": {
+                    "@nil": "true"
+                  },
+                  "url": {
+                    "@nil": "true"
+                  },
+                  "source_url": {
+                    "@nil": "true"
+                  },
+                  "image_uploaded_at": {
+                    "@type": "datetime",
+                    "#text": "2012-09-18T10:41:42+00:00"
+                  },
+                  "s3_image_at": {
+                    "@type": "datetime",
+                    "#text": "2015-05-16T16:33:19+00:00"
+                  },
+                  "reviews_count": {
+                    "@type": "integer",
+                    "#text": "829"
+                  },
+                  "ratings_sum": {
+                    "@type": "integer",
+                    "#text": "1482"
+                  },
+                  "ratings_count": {
+                    "@type": "integer",
+                    "#text": "400"
+                  },
+                  "text_reviews_count": {
+                    "@type": "integer",
+                    "#text": "55"
+                  },
+                  "book_authors_count": {
+                    "@type": "integer",
+                    "#text": "0"
+                  },
+                  "updated_at": {
+                    "@type": "datetime",
+                    "#text": "2015-05-16T16:33:19+00:00"
+                  },
+                  "created_at": {
+                    "@type": "datetime",
+                    "#text": "2007-05-01T04:23:26+00:00"
+                  },
+                  "author_id_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "author_role_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "1"
+                  },
+                  "description_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-51"
+                  },
+                  "edition_information_updater_user_id": {
+                    "@type": "integer",
+                    "@nil": "true"
+                  },
+                  "format_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "image_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-110"
+                  },
+                  "isbn_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "isbn13_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "language_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-110"
+                  },
+                  "num_pages_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "publication_date_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "publisher_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "title_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-45"
+                  },
+                  "url_updater_user_id": {
+                    "@type": "integer",
+                    "@nil": "true"
+                  },
+                  "title_language_code": {
+                    "@nil": "true"
+                  },
+                  "publisher_language_code": {
+                    "@nil": "true"
+                  },
+                  "description_language_code": {
+                    "@nil": "true"
+                  },
+                  "asin_updater_user_id": {
+                    "@type": "integer",
+                    "@nil": "true"
+                  },
+                  "author": {
+                    "id": {
+                      "@type": "integer",
+                      "#text": "161133"
+                    },
+                    "name": "Ellen Wittlinger",
+                    "updated_at": {
+                      "@type": "datetime",
+                      "#text": "2019-03-27T18:33:12+00:00"
+                    },
+                    "created_at": {
+                      "@type": "datetime",
+                      "#text": "2007-03-08T09:39:08+00:00"
+                    },
+                    "searched_for_at": {
+                      "@type": "datetime",
+                      "#text": "2007-04-02T13:55:39+00:00"
+                    },
+                    "image_uploaded_at": {
+                      "@type": "datetime",
+                      "#text": "2009-09-22T06:43:30+00:00"
+                    },
+                    "user_id": {
+                      "@type": "integer",
+                      "#text": "1115628"
+                    },
+                    "gender": "F",
+                    "country_code": "US",
+                    "born_at": {
+                      "@type": "date",
+                      "#text": "1948-10-21"
+                    },
+                    "died_at": {
+                      "@type": "datetime",
+                      "@nil": "true"
+                    },
+                    "about": "Ellen Wittlinger is the critically acclaimed author of 15 young adult novels including <i>Parrotfish, Heart on My Sleeve, Love & Lies: Marisol's Story, Razzle, What's in a Name</i>, and <i>Hard Love</i> (an American Library Association Michael L. Printz Honor Book, a Lambda Literary Award winner, and a Booklist Editors' Choice). She has a bachelor's degree from Millikin University in Decatur, Illinois, and an M.F.A. from the University of Iowa Writer's Workshop. A former children's librarian, she lives with her husband in western Massachusetts.",
+                    "uploader_user_id": {
+                      "@type": "integer",
+                      "#text": "2761261"
+                    },
+                    "image_copyright": "www.ellenwittlinger.com",
+                    "influences": null,
+                    "url": "http://www.ellenwittlinger.com/",
+                    "genre1": "Young-adult",
+                    "genre2": "Children's",
+                    "genre3": null,
+                    "books_count": {
+                      "@type": "integer",
+                      "#text": "118"
+                    },
+                    "reviews_count": {
+                      "@type": "integer",
+                      "#text": "57254"
+                    },
+                    "ratings_sum": {
+                      "@type": "integer",
+                      "#text": "79654"
+                    },
+                    "works_count": {
+                      "@type": "integer",
+                      "#text": "28"
+                    },
+                    "hometown": "Belleville, IL",
+                    "rating_dist": "5:872|4:1315|3:1190|2:419|1:85|total:3881",
+                    "s3_image_at": {
+                      "@type": "datetime",
+                      "#text": "2015-05-14T23:23:56+00:00"
+                    },
+                    "ratings_count": {
+                      "@type": "integer",
+                      "#text": "21656"
+                    },
+                    "text_reviews_count": {
+                      "@type": "integer",
+                      "#text": "2143"
+                    },
+                    "author_program_at": {
+                      "@type": "datetime",
+                      "#text": "2016-05-16T09:32:31+00:00"
+                    },
+                    "postal_code": {
+                      "@nil": "true"
+                    },
+                    "fanships_count": {
+                      "@type": "integer",
+                      "#text": "159"
+                    },
+                    "best_book_id": {
+                      "@type": "integer",
+                      "#text": "790289"
+                    },
+                    "name_language_code": {
+                      "@nil": "true"
+                    },
+                    "sort_by_name": "wittlinger, ellen",
+                    "shelf_display_name": "Wittlinger, Ellen",
+                    "gender_custom": {
+                      "@nil": "true"
+                    },
+                    "gender_pronoun": {
+                      "@nil": "true"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "@type": "readstatus",
+          "action_text": "has read <a only_path=\"false\" href=\"https://www.goodreads.com/review/show/2757600090\">War and Peace</a>",
+          "link": "https://www.goodreads.com/read_statuses/2834459435",
+          "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+          "actor": {
+            "id": {
+              "@type": "integer",
+              "#text": "95040664"
+            },
+            "name": "Mitzy Nitzy",
+            "image_url": "https://images.gr-assets.com/users/1554823256p2/95040664.jpg",
+            "link": "https://www.goodreads.com/user/show/95040664-mitzy-nitzy"
+          },
+          "updated_at": "Wed, 20 Mar 2019 15:11:40 -0700",
+          "object": {
+            "read_status": {
+              "id": {
+                "@type": "integer",
+                "#text": "2834459435"
+              },
+              "review_id": {
+                "@type": "integer",
+                "#text": "2757600090"
+              },
+              "user_id": {
+                "@type": "integer",
+                "#text": "95040664"
+              },
+              "old_status": {
+                "@nil": "true"
+              },
+              "status": "read",
+              "updated_at": {
+                "@type": "datetime",
+                "#text": "2019-03-20T22:11:40+00:00"
+              },
+              "review": {
+                "id": {
+                  "@type": "integer",
+                  "#text": "2757600090"
+                },
+                "user_id": {
+                  "@type": "integer",
+                  "#text": "95040664"
+                },
+                "book_id": {
+                  "@type": "integer",
+                  "#text": "656"
+                },
+                "rating": {
+                  "@type": "integer",
+                  "#text": "1"
+                },
+                "read_status": "read",
+                "sell_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "review": {
+                  "@nil": "true"
+                },
+                "recommendation": {
+                  "@nil": "true"
+                },
+                "read_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "updated_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:40+00:00"
+                },
+                "created_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:39+00:00"
+                },
+                "comments_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "weight": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "ratings_sum": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "ratings_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "spoiler_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "recommender_user_id1": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "recommender_user_name1": {
+                  "@nil": "true"
+                },
+                "work_id": {
+                  "@type": "integer",
+                  "#text": "4912783"
+                },
+                "last_comment_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "started_at": {
+                  "@type": "datetime",
+                  "@nil": "true"
+                },
+                "hidden_flag": {
+                  "@type": "boolean",
+                  "#text": "false"
+                },
+                "language_code": {
+                  "@type": "integer",
+                  "@nil": "true"
+                },
+                "last_revision_at": {
+                  "@type": "datetime",
+                  "#text": "2019-03-20T22:11:40+00:00"
+                },
+                "non_friends_rating_count": {
+                  "@type": "integer",
+                  "#text": "0"
+                },
+                "encrypted_notes": {
+                  "@nil": "true"
+                },
+                "notes": {
+                  "@nil": "true"
+                },
+                "book": {
+                  "id": {
+                    "@type": "integer",
+                    "#text": "656"
+                  },
+                  "work_id": {
+                    "@type": "integer",
+                    "#text": "4912783"
+                  },
+                  "isbn": "0192833987",
+                  "isbn13": "9780192833983",
+                  "title": "War and Peace",
+                  "sort_by_title": "war and peace",
+                  "author_id": {
+                    "@type": "integer",
+                    "#text": "128382"
+                  },
+                  "author_role": {
+                    "@nil": "true"
+                  },
+                  "asin": {
+                    "@nil": "true"
+                  },
+                  "description": {
+                    "@nil": "true"
+                  },
+                  "format": "Paperback",
+                  "publication_year": {
+                    "@type": "integer",
+                    "#text": "1998"
+                  },
+                  "publication_month": {
+                    "@type": "integer",
+                    "#text": "6"
+                  },
+                  "publication_day": {
+                    "@type": "integer",
+                    "#text": "25"
+                  },
+                  "num_pages": {
+                    "@type": "integer",
+                    "#text": "1392"
+                  },
+                  "publisher": "Oxford University Press",
+                  "language_code": "eng",
+                  "edition_information": "Oxford World's Classics",
+                  "url": {
+                    "@nil": "true"
+                  },
+                  "source_url": {
+                    "@nil": "true"
+                  },
+                  "image_uploaded_at": {
+                    "@type": "datetime",
+                    "#text": "2014-10-13T15:58:50+00:00"
+                  },
+                  "s3_image_at": {
+                    "@type": "datetime",
+                    "#text": "2015-05-16T14:49:07+00:00"
+                  },
+                  "reviews_count": {
+                    "@type": "integer",
+                    "#text": "539747"
+                  },
+                  "ratings_sum": {
+                    "@type": "integer",
+                    "#text": "819864"
+                  },
+                  "ratings_count": {
+                    "@type": "integer",
+                    "#text": "200834"
+                  },
+                  "text_reviews_count": {
+                    "@type": "integer",
+                    "#text": "5834"
+                  },
+                  "book_authors_count": {
+                    "@type": "integer",
+                    "#text": "-1"
+                  },
+                  "updated_at": {
+                    "@type": "datetime",
+                    "#text": "2019-03-19T23:39:13+00:00"
+                  },
+                  "created_at": {
+                    "@type": "datetime",
+                    "#text": "2006-09-01T04:44:36+00:00"
+                  },
+                  "author_id_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "1323157"
+                  },
+                  "author_role_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "1"
+                  },
+                  "description_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "1525599"
+                  },
+                  "edition_information_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "6029578"
+                  },
+                  "format_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "171430"
+                  },
+                  "image_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "20605222"
+                  },
+                  "isbn_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-51"
+                  },
+                  "isbn13_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-51"
+                  },
+                  "language_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "974210"
+                  },
+                  "num_pages_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-51"
+                  },
+                  "publication_date_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "-51"
+                  },
+                  "publisher_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "6078800"
+                  },
+                  "title_updater_user_id": {
+                    "@type": "integer",
+                    "#text": "1849639"
+                  },
+                  "url_updater_user_id": {
+                    "@type": "integer",
+                    "@nil": "true"
+                  },
+                  "title_language_code": {
+                    "@nil": "true"
+                  },
+                  "publisher_language_code": {
+                    "@nil": "true"
+                  },
+                  "description_language_code": {
+                    "@nil": "true"
+                  },
+                  "asin_updater_user_id": {
+                    "@type": "integer",
+                    "@nil": "true"
+                  },
+                  "author": {
+                    "id": {
+                      "@type": "integer",
+                      "#text": "128382"
+                    },
+                    "name": "Leo Tolstoy",
+                    "updated_at": {
+                      "@type": "datetime",
+                      "#text": "2019-04-09T14:08:36+00:00"
+                    },
+                    "created_at": {
+                      "@type": "datetime",
+                      "#text": "2007-03-02T02:41:19+00:00"
+                    },
+                    "searched_for_at": {
+                      "@type": "datetime",
+                      "#text": "2008-08-11T05:14:47+00:00"
+                    },
+                    "image_uploaded_at": {
+                      "@type": "datetime",
+                      "#text": "2017-09-22T14:43:08+00:00"
+                    },
+                    "user_id": {
+                      "@type": "integer",
+                      "@nil": "true"
+                    },
+                    "gender": "M",
+                    "country_code": null,
+                    "born_at": {
+                      "@type": "date",
+                      "#text": "1828-09-09"
+                    },
+                    "died_at": {
+                      "@type": "date",
+                      "#text": "1910-11-20"
+                    },
+                    "about": "<b>Lev Nikolayevich Tolstoy</b> (Russian: [a:\\u041b\\u0435\\u0432 \\u041d\\u0438\\u043a\\u043e\\u043b\\u0430\\u0435\\u0432\\u0438\\u0447 \\u0422\\u043e\\u043b\\u0441\\u0442\\u043e\\u0439]; commonly <b>Leo Tolstoy</b> in Anglophone countries) was a Russian writer who primarily wrote novels and short stories. Later in life, he also wrote plays and essays. His two most famous works, the novels <i>War and Peace</i> and <i>Anna Karenina</i>, are acknowledged as two of the greatest novels of all time and a pinnacle of realist fiction. Many consider Tolstoy to have been one of the world's greatest novelists. Tolstoy is equally known for his complicated and paradoxical persona and for his extreme moralistic and ascetic views, which he adopted after a moral crisis and spiritual awakening in the 1870s, after which he also became noted as a moral thinker and social reformer.\\n\\nHis literal interpretation of the ethical teachings of Jesus, centering on the Sermon on the Mount, caused him in later life to become a fervent Christian anarchist and anarcho-pacifist. His ideas on nonviolent resistance, expressed in such works as <i>The Kingdom of God Is Within You</i>, were to have a profound impact on such pivotal twentieth-century figures as Mohandas Gandhi and Martin Luther King, Jr.",
+                    "uploader_user_id": {
+                      "@type": "integer",
+                      "#text": "28638878"
+                    },
+                    "image_copyright": "https://www.biography.com/.image/t_share/MTM1ODE1MTkxNDI1MjI3MjMw/tolstoy_croppedjpg.jpg",
+                    "influences": "[a:Alexander Pushkin|16070], [a:Henry David Thoreau|10264], [a:Victor Hugo|13661], [a:Nikolai Gogol|232932], [a:Stendhal|1481537], [a:Pierre-Joseph Proudhon|114439],  [a:Charles Dickens|239579], [a:Schopenhauer|11682], [a:Kropotkin|34296],  [a:Plato|879], [a:Socrates|275648]",
+                    "url": null,
+                    "genre1": "Fiction",
+                    "genre2": "Philosophy",
+                    "genre3": "Non-fiction",
+                    "books_count": {
+                      "@type": "integer",
+                      "#text": "14575"
+                    },
+                    "reviews_count": {
+                      "@type": "integer",
+                      "#text": "2406774"
+                    },
+                    "ratings_sum": {
+                      "@type": "integer",
+                      "#text": "4131436"
+                    },
+                    "works_count": {
+                      "@type": "integer",
+                      "#text": "2995"
+                    },
+                    "hometown": "Yasnaya Polyana, Tula, Russian Empire",
+                    "rating_dist": {
+                      "@nil": "true"
+                    },
+                    "s3_image_at": {
+                      "@type": "datetime",
+                      "@nil": "true"
+                    },
+                    "ratings_count": {
+                      "@type": "integer",
+                      "#text": "1021379"
+                    },
+                    "text_reviews_count": {
+                      "@type": "integer",
+                      "#text": "45949"
+                    },
+                    "author_program_at": {
+                      "@type": "datetime",
+                      "@nil": "true"
+                    },
+                    "postal_code": {
+                      "@nil": "true"
+                    },
+                    "fanships_count": {
+                      "@type": "integer",
+                      "#text": "5536"
+                    },
+                    "best_book_id": {
+                      "@type": "integer",
+                      "#text": "15823480"
+                    },
+                    "name_language_code": {
+                      "@nil": "true"
+                    },
+                    "sort_by_name": "tolstoy, leo",
+                    "shelf_display_name": "Tolstoy, Leo",
+                    "gender_custom": {
+                      "@nil": "true"
+                    },
+                    "gender_pronoun": {
+                      "@nil": "true"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "user_statuses": {
+      "user_status": {
+        "id": {
+          "@type": "integer",
+          "#text": "123456"
+        },
+        "page": {
+          "@type": "integer",
+          "#text": "106"
+        },
+        "chapter": {
+          "@type": "integer",
+          "@nil": "true"
+        },
+        "comments_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "body": null,
+        "created_at": {
+          "@type": "datetime",
+          "#text": "2019-03-25T15:40:24+00:00"
+        },
+        "updated_at": {
+          "@type": "datetime",
+          "#text": "2019-03-25T15:40:24+00:00"
+        },
+        "last_comment_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "ratings_count": {
+          "@type": "integer",
+          "#text": "0"
+        },
+        "percent": {
+          "@type": "integer",
+          "#text": "34"
+        },
+        "work_id": {
+          "@type": "integer",
+          "#text": "58029884"
+        },
+        "note_uri": {
+          "@nil": "true"
+        },
+        "note_updated_at": {
+          "@type": "datetime",
+          "@nil": "true"
+        },
+        "review_id": {
+          "@type": "integer",
+          "#text": "2613401946"
+        },
+        "book": {
+          "id": {
+            "@type": "integer",
+            "#text": "36348525"
+          },
+          "title": "Severance",
+          "num_pages": {
+            "@type": "integer",
+            "#text": "304"
+          },
+          "image_url": "https://images.gr-assets.com/books/1507060524m/36348525.jpg",
+          "small_image_url": "https://images.gr-assets.com/books/1507060524s/36348525.jpg",
+          "authors": {
+            "author": {
+              "id": "17343848",
+              "name": "Ling  Ma"
+            }
+          }
+        }
+      }
+    }
+  }
+}

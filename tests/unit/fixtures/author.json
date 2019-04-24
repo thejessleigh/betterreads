@@ -1,0 +1,322 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "author_show"
+  },
+  "author": {
+    "id": "14880958",
+    "name": "Jeannette Ng",
+    "link": "https://www.goodreads.com/author/show/14880958.Jeannette_Ng",
+    "fans_count": {
+      "@type": "integer",
+      "#text": "149"
+    },
+    "author_followers_count": {
+      "@type": "integer",
+      "#text": "149"
+    },
+    "large_image_url": "https://images.gr-assets.com/authors/1494425350p7/14880958.jpg",
+    "image_url": "https://images.gr-assets.com/authors/1494425350p5/14880958.jpg",
+    "small_image_url": "https://images.gr-assets.com/authors/1494425350p2/14880958.jpg",
+    "about": "Jeannette Ng is originally from Hong Kong but now lives in Durham, UK. Her MA in Medieval and Renaissance Studies fed into an interest in medieval and missionary theology. She runs live roleplay games and used to sell costumes for a living.",
+    "influences": null,
+    "works_count": "5",
+    "gender": "test gender",
+    "hometown": "test hometown",
+    "born_at": "1980/01/01",
+    "died_at": "2018/12/31",
+    "goodreads_author": "true",
+    "user": {
+      "id": {
+        "@type": "integer",
+        "#text": "30772884"
+      }
+    },
+    "books": {
+      "book": [
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "34643773"
+          },
+          "isbn": "0857667270",
+          "isbn13": "9780857667274",
+          "text_reviews_count": {
+            "@type": "integer",
+            "#text": "249"
+          },
+          "uri": "kca://book/amzn1.gr.book.v1.tU1XkfC1y-1v8sLJ-lFjNg",
+          "title": "Under the Pendulum Sun",
+          "title_without_series": "Under the Pendulum Sun",
+          "image_url": "https://images.gr-assets.com/books/1497994693m/34643773.jpg",
+          "small_image_url": "https://images.gr-assets.com/books/1497994693s/34643773.jpg",
+          "large_image_url": null,
+          "link": "https://www.goodreads.com/book/show/34643773-under-the-pendulum-sun",
+          "num_pages": "409",
+          "format": "Paperback",
+          "edition_information": null,
+          "publisher": "Angry Robot",
+          "publication_day": "3",
+          "publication_year": "2017",
+          "publication_month": "10",
+          "average_rating": "3.56",
+          "ratings_count": "1005",
+          "description": "WINNER OF THE BRITISH FANTASY AWARD FOR BEST NEWCOMER<br />SHORTLISTED FOR THE JOHN W CAMPBELL AWARD<br /><br />Catherine Helstone's brother, Laon, has disappeared in Arcadia, legendary land of the magical fae. Desperate for news of him, she makes the perilous journey, but once there, she finds herself alone and isolated in the sinister house of Gethsemane. At last there comes news: her beloved brother is riding to be reunited with her soon - but the Queen of the Fae and her insane court are hard on his heels.",
+          "authors": {
+            "author": {
+              "id": "14880958",
+              "name": "Jeannette Ng",
+              "role": null,
+              "image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1494425350p5/14880958.jpg"
+              },
+              "small_image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1494425350p2/14880958.jpg"
+              },
+              "link": "https://www.goodreads.com/author/show/14880958.Jeannette_Ng",
+              "average_rating": "3.58",
+              "ratings_count": "1061",
+              "text_reviews_count": "339"
+            }
+          },
+          "published": "2017",
+          "work": {
+            "id": "55804992",
+            "uri": "kca://work/amzn1.gr.work.v1.S4cYxnU_7RN-cn0MyYlWsQ"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "35894420"
+          },
+          "isbn": {
+            "@nil": "true"
+          },
+          "isbn13": {
+            "@nil": "true"
+          },
+          "text_reviews_count": {
+            "@type": "integer",
+            "#text": "16"
+          },
+          "uri": "kca://book/amzn1.gr.book.v1.-2v2_awG5Nv8BPoLBTI6hQ",
+          "title": "Not So Stories",
+          "title_without_series": "Not So Stories",
+          "image_url": "https://images.gr-assets.com/books/1523228220m/35894420.jpg",
+          "small_image_url": "https://images.gr-assets.com/books/1523228220s/35894420.jpg",
+          "large_image_url": null,
+          "link": "https://www.goodreads.com/book/show/35894420-not-so-stories",
+          "num_pages": null,
+          "format": null,
+          "edition_information": null,
+          "publisher": "Abaddon Books",
+          "publication_day": "10",
+          "publication_year": "2018",
+          "publication_month": "4",
+          "average_rating": "3.79",
+          "ratings_count": "52",
+          "description": "Rudyard Kipling's <i>Just So Stories</i> was one of the first true children's books in the English language, a timeless classic that continues to delight readers to this day. Beautiful, evocative and playful, the stories of ...",
+          "authors": {
+            "author": {
+              "id": "5622154",
+              "name": "David Thomas Moore",
+              "role": "Editor",
+              "image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1520608778p5/5622154.jpg"
+              },
+              "small_image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1520608778p2/5622154.jpg"
+              },
+              "link": "https://www.goodreads.com/author/show/5622154.David_Thomas_Moore",
+              "average_rating": "3.88",
+              "ratings_count": "537",
+              "text_reviews_count": "177"
+            }
+          },
+          "published": "2018",
+          "work": {
+            "id": "57413411",
+            "uri": "kca://work/amzn1.gr.work.v1.0nC_QLQpochvzbyDOjeCoA"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "35660845"
+          },
+          "isbn": {
+            "@nil": "true"
+          },
+          "isbn13": {
+            "@nil": "true"
+          },
+          "text_reviews_count": {
+            "@type": "integer",
+            "#text": "3"
+          },
+          "uri": "kca://book/amzn1.gr.book.v1.wHTvVRKf2DaOO-EZF11mvw",
+          "title": "Shoreline of Infinity 8",
+          "title_without_series": "Shoreline of Infinity 8",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "large_image_url": null,
+          "link": "https://www.goodreads.com/book/show/35660845-shoreline-of-infinity-8",
+          "num_pages": null,
+          "format": null,
+          "edition_information": null,
+          "publisher": null,
+          "publication_day": null,
+          "publication_year": null,
+          "publication_month": null,
+          "average_rating": "4.45",
+          "ratings_count": "11",
+          "description": "Stories <br />Targets \\u2013 Eric Brown <br />Goddess with a Human Heart \\u2013 Jeannette Ng <br />The Pink Life(La Vie En Rose) \\u2013 Nathan Susnik <br />These Are the Ways \\u2013 Premee Mohamed <br />The Black Tide \\u2013 Laura Duerr <br />The Starchitect \\u2013 Barry Charman <br />Arthur Kovic\\u2019s Days of Change \\u2013 Michael Teasdale <br />The Folger Variation \\u2013 Chris Kelso <br /><br />SF Poetry by Lauren Harwyn, Louise Peterkin, Colin McGuire <br /><br />Cover \\u2013 The Rescue of Sister, by Stephen Pickering <br />Flash Fiction Competition <br />Noise and Sparks: Ruth EJ Booth <br /><br />SF Caledonia \\u2013 interview with Chris Kelso <br /><br />Tales of the Beachcomber\\u2014Mark Toner &amp; Stephen Pickering <br /><br />Book Reviews <br />All the Galaxies by Philip Miller <br />The Last Days of New Paris by China Mi\\u00e9ville <br />Raven Stratagem by Yoon Ha Lee <br />Rupert Wong and the Ends of the Earth (Gods and Monsters: Rupert Wong Book 2) by Cassandra Khaw <br />Ancestral Machines: A Humanity\\u2019s Fire Novel by Michael Cobley <br />The List by Patricia Forde",
+          "authors": {
+            "author": {
+              "id": "5147514",
+              "name": "Noel Chidwick",
+              "role": null,
+              "image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1319837356p5/5147514.jpg"
+              },
+              "small_image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1319837356p2/5147514.jpg"
+              },
+              "link": "https://www.goodreads.com/author/show/5147514.Noel_Chidwick",
+              "average_rating": "4.25",
+              "ratings_count": "81",
+              "text_reviews_count": "21"
+            }
+          },
+          "published": null,
+          "work": {
+            "id": "57116160",
+            "uri": "kca://work/amzn1.gr.work.v1.IPj1CuLPSdZWEEHUdFxn3A"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "28602931"
+          },
+          "isbn": {
+            "@nil": "true"
+          },
+          "isbn13": {
+            "@nil": "true"
+          },
+          "text_reviews_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "uri": "kca://book/amzn1.gr.book.v1.kqeQ9B1GdHyc6WiTkbwdzw",
+          "title": "Mythic Delirium Magazine Issue 2.3",
+          "title_without_series": "Mythic Delirium Magazine Issue 2.3",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "large_image_url": null,
+          "link": "https://www.goodreads.com/book/show/28602931-mythic-delirium-magazine-issue-2-3",
+          "num_pages": null,
+          "format": null,
+          "edition_information": null,
+          "publisher": null,
+          "publication_day": null,
+          "publication_year": null,
+          "publication_month": null,
+          "average_rating": "5.00",
+          "ratings_count": "2",
+          "description": "In our first issue of 2016, Sheila Finch, Janna Layton, and Jeannette Ng provide fantasy tales that have embedded within them thoughtful takes on Christian themes, in the best traditions of Stephen King or James Morrow. A breeze from the ocean wafts through each of these tales as well, bearing tidings of murder, mayhem, and mermaids. <br /><br />The poems in this issue further some of the motifs found in the fiction. Sandi Leibowitz and Melissa Frederick contemplate worlds ending; Olchar E. Lindsann discusses deicide while Edith Hope Bishop contemplates horrors that have become disturbingly everyday; Alexandra Seidel and Jennifer Crow complete the tour by taking us out to sea. <br /><br />Our cover photograph, by Anne Sampson, depicts a sculpture by Anita Allen. <br /><br />TABLE OF CONTENTS: <br /><br /> \\u2022 \\u201cBurdens\\u201d by Sheila Finch <br /> \\u2022 \\u201cUmbrellas of the Aftermath\\u201d by Sandi Leibowitz <br /> \\u2022 \\u201cMoving the Earth\\u201d by Melissa Frederick <br /> \\u2022 \\u201cLuz and Bee at the Beach\\u201d by Janna Layton <br /> \\u2022 \\u201cThe Immortal Accursed\\u201d by Olchar E. Lindsann <br /> \\u2022 \\u201cWhen the Gunman Comes\\u201d by Edith Hope Bishop <br /> \\u2022 \\u201cThree Hundred Years\\u201d by Jeannette Ng <br /> \\u2022 \\u201cDeep Sea Mermaid Fishing\\u201d by Alexandra Seidel <br /> \\u2022 \\u201cLove, and the Merciless Sea\\u201d by Jennifer Crow <br />",
+          "authors": {
+            "author": {
+              "id": "74416",
+              "name": "Mike Allen",
+              "role": "Editor",
+              "image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1353940871p5/74416.jpg"
+              },
+              "small_image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1353940871p2/74416.jpg"
+              },
+              "link": "https://www.goodreads.com/author/show/74416.Mike_Allen",
+              "average_rating": "3.77",
+              "ratings_count": "2870",
+              "text_reviews_count": "427"
+            }
+          },
+          "published": null,
+          "work": {
+            "id": "48782005",
+            "uri": "kca://work/amzn1.gr.work.v1.xQDzXblCtCJO2IsEJ-EpLw"
+          }
+        },
+        {
+          "id": {
+            "@type": "integer",
+            "#text": "44034465"
+          },
+          "isbn": {
+            "@nil": "true"
+          },
+          "isbn13": {
+            "@nil": "true"
+          },
+          "text_reviews_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "uri": "kca://book/amzn1.gr.book.v1.gtiwgA6XW32ahB23TRJ1Lw",
+          "title": "The Chosen from the First Age",
+          "title_without_series": "The Chosen from the First Age",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "large_image_url": null,
+          "link": "https://www.goodreads.com/book/show/44034465-the-chosen-from-the-first-age",
+          "num_pages": null,
+          "format": null,
+          "edition_information": null,
+          "publisher": null,
+          "publication_day": null,
+          "publication_year": null,
+          "publication_month": null,
+          "average_rating": "0.0",
+          "ratings_count": "0",
+          "description": null,
+          "authors": {
+            "author": {
+              "id": "5147514",
+              "name": "Noel Chidwick",
+              "role": null,
+              "image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1319837356p5/5147514.jpg"
+              },
+              "small_image_url": {
+                "@nophoto": "false",
+                "#text": "https://images.gr-assets.com/authors/1319837356p2/5147514.jpg"
+              },
+              "link": "https://www.goodreads.com/author/show/5147514.Noel_Chidwick",
+              "average_rating": "4.25",
+              "ratings_count": "81",
+              "text_reviews_count": "21"
+            }
+          },
+          "published": null,
+          "work": {
+            "id": "68471246",
+            "uri": "kca://work/amzn1.gr.work.v1.TpSZr2V57rJbUAQhK7q3Hg"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "review_show"
+  },
+  "review": {
+    "id": "12345",
+    "user": {
+      "id": "1024",
+      "uri": "kca://profile:goodreads/AV20J1XH6R60V",
+      "name": "Natalie",
+      "display_name": "Natalie",
+      "location": "Tulsa, OK",
+      "link": "https://www.goodreads.com/user/show/1024-natalie",
+      "image_url": "https://images.gr-assets.com/users/1170357899p3/1024.jpg",
+      "small_image_url": "https://images.gr-assets.com/users/1170357899p2/1024.jpg",
+      "has_image": "true"
+    },
+    "book": {
+      "id": {
+        "@type": "integer",
+        "#text": "4009"
+      },
+      "isbn": "0316767727",
+      "isbn13": "9780316767729",
+      "text_reviews_count": {
+        "@type": "integer",
+        "#text": "2798"
+      },
+      "uri": "kca://book/amzn1.gr.book.v1.meUBQ8ohUrrZwdo_iq8uWg",
+      "title": "Nine Stories",
+      "title_without_series": "Nine Stories",
+      "image_url": "https://images.gr-assets.com/books/1514839407m/4009.jpg",
+      "small_image_url": "https://images.gr-assets.com/books/1514839407s/4009.jpg",
+      "large_image_url": null,
+      "link": "https://www.goodreads.com/book/show/4009.Nine_Stories",
+      "num_pages": "198",
+      "format": "Paperback",
+      "edition_information": null,
+      "publisher": "Little, Brown and Company",
+      "publication_day": "30",
+      "publication_year": "2001",
+      "publication_month": "1",
+      "average_rating": "4.19",
+      "ratings_count": "124477",
+      "description": "Nine Stories (1953) is a collection of short stories by American fiction writer J. D. Salinger published in April 1953. It includes two of his most famous short stories, \"A Perfect Day for Bananafish\" and \"For Esm\\u00e9 \\u2013 with Love and Squalor\". (Nine Stories is the U.S. title; the book is published in many other countries as For Esm\\u00e9 - with Love and Squalor, and Other Stories.)<br /><br />The stories are:<br /><br />\"A Perfect Day for Bananafish\"<br />\"Uncle Wiggily in Connecticut\"<br />\"Just Before the War with the Eskimos\"<br />\"The Laughing Man\"<br />\"Down at the Dinghy\"<br />\"For Esm\\u00e9 \\u2013 with Love and Squalor\"<br />\"Pretty Mouth and Green My Eyes\"<br />\"De Daumier-Smith's Blue Period\"<br />\"Teddy\"",
+      "authors": {
+        "author": {
+          "id": "819789",
+          "name": "J.D. Salinger",
+          "role": null,
+          "image_url": {
+            "@nophoto": "false",
+            "#text": "https://images.gr-assets.com/authors/1288777679p5/819789.jpg"
+          },
+          "small_image_url": {
+            "@nophoto": "false",
+            "#text": "https://images.gr-assets.com/authors/1288777679p2/819789.jpg"
+          },
+          "link": "https://www.goodreads.com/author/show/819789.J_D_Salinger",
+          "average_rating": "3.83",
+          "ratings_count": "2768782",
+          "text_reviews_count": "63542"
+        }
+      },
+      "published": "2001",
+      "work": {
+        "id": "1839377",
+        "uri": "kca://work/amzn1.gr.work.v1.uhwle-5lmEnKuoaB6WGEoA"
+      }
+    },
+    "rating": "5",
+    "votes": "1",
+    "spoiler_flag": "false",
+    "spoilers_state": "none",
+    "shelves": {
+      "shelf": {
+        "@name": "read",
+        "@exclusive": "true",
+        "@id": "5946172",
+        "@review_shelf_id": ""
+      }
+    },
+    "recommended_for": null,
+    "recommended_by": null,
+    "started_at": "Thu Aug 31 00:00:00 -0700 2000",
+    "read_at": "Fri Sep 01 00:00:00 -0700 2000",
+    "date_added": "Thu Feb 01 07:58:47 -0800 2007",
+    "date_updated": "Thu Feb 01 12:48:51 -0800 2007",
+    "read_count": "1",
+    "body": "These are some words in the review body",
+    "comments_count": "0",
+    "url": "https://www.goodreads.com/review/show/12345",
+    "link": "https://www.goodreads.com/review/show/12345",
+    "owned": "0"
+  }
+}

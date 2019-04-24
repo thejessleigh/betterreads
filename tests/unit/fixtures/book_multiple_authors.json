@@ -1,0 +1,964 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "book_show"
+  },
+  "book": {
+    "id": "18774683",
+    "title": "Practical Data Science with R",
+    "isbn": "1617291560",
+    "isbn13": "9781617291562",
+    "asin": null,
+    "kindle_asin": null,
+    "marketplace_id": null,
+    "country_code": "US",
+    "image_url": "https://images.gr-assets.com/books/1384382929m/18774683.jpg",
+    "small_image_url": "https://images.gr-assets.com/books/1384382929s/18774683.jpg",
+    "publication_year": "2014",
+    "publication_month": "5",
+    "publication_day": "28",
+    "publisher": "Manning Publications",
+    "language_code": null,
+    "is_ebook": "false",
+    "description": "Simply put, data science is the discipline of extracting meaning from data. While it can involve deep knowledge of statistics, mathematics, machine learning, and computer science, for most non-academics, data science looks like applying analysis techniques to answer key business questions.<br /><br /><i>Practical Data Science with R</i> lives up to its name. It explains basic principles without the theoretical mumbo-jumbo and jumps right to the real use cases faced while collecting, curating, and analyzing the data crucial to the success of businesses. Readers will apply the R programming language and statistical analysis techniques to carefully-explained examples based in marketing, business intelligence, and decision support, while learning how to create instrumentation, design experiments such as A/B tests, and accurately present data to audiences of all levels.<br /><br />Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.",
+    "work": {
+      "id": {
+        "@type": "integer",
+        "#text": "26679681"
+      },
+      "books_count": {
+        "@type": "integer",
+        "#text": "2"
+      },
+      "best_book_id": {
+        "@type": "integer",
+        "#text": "18774683"
+      },
+      "reviews_count": {
+        "@type": "integer",
+        "#text": "387"
+      },
+      "ratings_sum": {
+        "@type": "integer",
+        "#text": "272"
+      },
+      "ratings_count": {
+        "@type": "integer",
+        "#text": "66"
+      },
+      "text_reviews_count": {
+        "@type": "integer",
+        "#text": "6"
+      },
+      "original_publication_year": {
+        "@type": "integer",
+        "#text": "2014"
+      },
+      "original_publication_month": {
+        "@type": "integer",
+        "#text": "5"
+      },
+      "original_publication_day": {
+        "@type": "integer",
+        "#text": "28"
+      },
+      "original_title": {
+        "@nil": "true"
+      },
+      "original_language_id": {
+        "@type": "integer",
+        "@nil": "true"
+      },
+      "media_type": {
+        "@nil": "true"
+      },
+      "rating_dist": "5:28|4:23|3:11|2:3|1:1|total:66",
+      "desc_user_id": {
+        "@type": "integer",
+        "#text": "-44"
+      },
+      "default_chaptering_book_id": {
+        "@type": "integer",
+        "@nil": "true"
+      },
+      "default_description_language_code": {
+        "@nil": "true"
+      }
+    },
+    "average_rating": "4.12",
+    "num_pages": "450",
+    "format": "Paperback",
+    "edition_information": null,
+    "ratings_count": "66",
+    "text_reviews_count": "6",
+    "url": "https://www.goodreads.com/book/show/18774683-practical-data-science-with-r",
+    "link": "https://www.goodreads.com/book/show/18774683-practical-data-science-with-r",
+    "authors": {
+      "author": [
+        {
+          "id": "7382005",
+          "name": "Nina Zumel",
+          "role": null,
+          "image_url": {
+            "@nophoto": "true",
+            "#text": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png"
+          },
+          "small_image_url": {
+            "@nophoto": "true",
+            "#text": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          },
+          "link": "https://www.goodreads.com/author/show/7382005.Nina_Zumel",
+          "average_rating": "4.13",
+          "ratings_count": "68",
+          "text_reviews_count": "6"
+        },
+        {
+          "id": "5870593",
+          "name": "John Mount",
+          "role": null,
+          "image_url": {
+            "@nophoto": "true",
+            "#text": "https://s.gr-assets.com/assets/nophoto/user/u_200x266-e183445fd1a1b5cc7075bb1cf7043306.png"
+          },
+          "small_image_url": {
+            "@nophoto": "true",
+            "#text": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          },
+          "link": "https://www.goodreads.com/author/show/5870593.John_Mount",
+          "average_rating": "4.17",
+          "ratings_count": "72",
+          "text_reviews_count": "9"
+        }
+      ]
+    },
+    "popular_shelves": {
+      "shelf": [
+        {
+          "@name": "to-read",
+          "@count": "266"
+        },
+        {
+          "@name": "data-science",
+          "@count": "22"
+        },
+        {
+          "@name": "currently-reading",
+          "@count": "21"
+        },
+        {
+          "@name": "technical-books",
+          "@count": "3"
+        },
+        {
+          "@name": "data",
+          "@count": "3"
+        },
+        {
+          "@name": "science",
+          "@count": "3"
+        },
+        {
+          "@name": "technical",
+          "@count": "2"
+        },
+        {
+          "@name": "analytics",
+          "@count": "2"
+        },
+        {
+          "@name": "harvard-textbooks",
+          "@count": "1"
+        },
+        {
+          "@name": "tech",
+          "@count": "1"
+        },
+        {
+          "@name": "digital",
+          "@count": "1"
+        },
+        {
+          "@name": "stats",
+          "@count": "1"
+        },
+        {
+          "@name": "it-books-to-sell",
+          "@count": "1"
+        },
+        {
+          "@name": "saidoku",
+          "@count": "1"
+        },
+        {
+          "@name": "r",
+          "@count": "1"
+        },
+        {
+          "@name": "owned-unread",
+          "@count": "1"
+        },
+        {
+          "@name": "computer",
+          "@count": "1"
+        },
+        {
+          "@name": "data-science-i-prefer",
+          "@count": "1"
+        },
+        {
+          "@name": "work",
+          "@count": "1"
+        },
+        {
+          "@name": "_owned",
+          "@count": "1"
+        },
+        {
+          "@name": "data-science-visualization",
+          "@count": "1"
+        },
+        {
+          "@name": "di",
+          "@count": "1"
+        },
+        {
+          "@name": "business-analysis-and-business-inte",
+          "@count": "1"
+        },
+        {
+          "@name": "machine-learning",
+          "@count": "1"
+        },
+        {
+          "@name": "my-books",
+          "@count": "1"
+        },
+        {
+          "@name": "technical-data",
+          "@count": "1"
+        },
+        {
+          "@name": "cs-programming",
+          "@count": "1"
+        },
+        {
+          "@name": "abandoned",
+          "@count": "1"
+        },
+        {
+          "@name": "to-find-acquire",
+          "@count": "1"
+        },
+        {
+          "@name": "2017-to-read",
+          "@count": "1"
+        },
+        {
+          "@name": "books",
+          "@count": "1"
+        },
+        {
+          "@name": "to-read-computer-science",
+          "@count": "1"
+        },
+        {
+          "@name": "data-and-math",
+          "@count": "1"
+        },
+        {
+          "@name": "data-journalism",
+          "@count": "1"
+        },
+        {
+          "@name": "c_s_r",
+          "@count": "1"
+        },
+        {
+          "@name": "r-ml",
+          "@count": "1"
+        },
+        {
+          "@name": "code",
+          "@count": "1"
+        },
+        {
+          "@name": "computers-programming",
+          "@count": "1"
+        },
+        {
+          "@name": "physically-read",
+          "@count": "1"
+        },
+        {
+          "@name": "rstats",
+          "@count": "1"
+        },
+        {
+          "@name": "want-to-read",
+          "@count": "1"
+        },
+        {
+          "@name": "dnf",
+          "@count": "1"
+        },
+        {
+          "@name": "r-related",
+          "@count": "1"
+        },
+        {
+          "@name": "analytics-big-data",
+          "@count": "1"
+        },
+        {
+          "@name": "5-star",
+          "@count": "1"
+        },
+        {
+          "@name": "tech-r",
+          "@count": "1"
+        },
+        {
+          "@name": "programming-shiz",
+          "@count": "1"
+        },
+        {
+          "@name": "studies",
+          "@count": "1"
+        },
+        {
+          "@name": "computers",
+          "@count": "1"
+        },
+        {
+          "@name": "look-for",
+          "@count": "1"
+        },
+        {
+          "@name": "to-read-for-work",
+          "@count": "1"
+        },
+        {
+          "@name": "software-development",
+          "@count": "1"
+        },
+        {
+          "@name": "investigate",
+          "@count": "1"
+        },
+        {
+          "@name": "delhi-irc-new-arrival-22-apr-2015",
+          "@count": "1"
+        },
+        {
+          "@name": "textbooks",
+          "@count": "1"
+        },
+        {
+          "@name": "owned",
+          "@count": "1"
+        },
+        {
+          "@name": "it",
+          "@count": "1"
+        },
+        {
+          "@name": "data-yo",
+          "@count": "1"
+        },
+        {
+          "@name": "to-read-eventually",
+          "@count": "1"
+        },
+        {
+          "@name": "data-analytics",
+          "@count": "1"
+        },
+        {
+          "@name": "programming-languages",
+          "@count": "1"
+        },
+        {
+          "@name": "mspa",
+          "@count": "1"
+        },
+        {
+          "@name": "reference",
+          "@count": "1"
+        },
+        {
+          "@name": "programming",
+          "@count": "1"
+        },
+        {
+          "@name": "technology",
+          "@count": "1"
+        },
+        {
+          "@name": "want-read",
+          "@count": "1"
+        },
+        {
+          "@name": "computer-science",
+          "@count": "1"
+        },
+        {
+          "@name": "computer-science-r",
+          "@count": "1"
+        },
+        {
+          "@name": "delhi-irc-new-arrival-30-apr-2015",
+          "@count": "-1"
+        },
+        {
+          "@name": "to-read-nonfiction",
+          "@count": "-1"
+        }
+      ]
+    },
+    "book_links": {
+      "book_link": {
+        "id": "8",
+        "name": "Libraries",
+        "link": "https://www.goodreads.com/book_link/follow/8"
+      }
+    },
+    "buy_links": {
+      "buy_link": [
+        {
+          "id": "1",
+          "name": "Amazon",
+          "link": "https://www.goodreads.com/book_link/follow/1"
+        },
+        {
+          "id": "10",
+          "name": "Audible",
+          "link": "https://www.goodreads.com/book_link/follow/10"
+        },
+        {
+          "id": "3",
+          "name": "Barnes & Noble",
+          "link": "https://www.goodreads.com/book_link/follow/3"
+        },
+        {
+          "id": "1027",
+          "name": "Walmart eBooks",
+          "link": "https://www.goodreads.com/book_link/follow/1027"
+        },
+        {
+          "id": "2102",
+          "name": "Apple Books",
+          "link": "https://www.goodreads.com/book_link/follow/2102"
+        },
+        {
+          "id": "8036",
+          "name": "Google Play",
+          "link": "https://www.goodreads.com/book_link/follow/8036"
+        },
+        {
+          "id": "4",
+          "name": "Abebooks",
+          "link": "https://www.goodreads.com/book_link/follow/4"
+        },
+        {
+          "id": "882",
+          "name": "Book Depository",
+          "link": "https://www.goodreads.com/book_link/follow/882"
+        },
+        {
+          "id": "9",
+          "name": "Indigo",
+          "link": "https://www.goodreads.com/book_link/follow/9"
+        },
+        {
+          "id": "5",
+          "name": "Alibris",
+          "link": "https://www.goodreads.com/book_link/follow/5"
+        },
+        {
+          "id": "107",
+          "name": "Better World Books",
+          "link": "https://www.goodreads.com/book_link/follow/107"
+        },
+        {
+          "id": "7",
+          "name": "IndieBound",
+          "link": "https://www.goodreads.com/book_link/follow/7"
+        }
+      ]
+    },
+    "series_works": null,
+    "similar_books": {
+      "book": [
+        {
+          "id": "6829192",
+          "title": "ggplot2: Elegant Graphics for Data Analysis",
+          "title_without_series": "ggplot2: Elegant Graphics for Data Analysis",
+          "link": "https://www.goodreads.com/book/show/6829192-ggplot2",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "212",
+          "work": {
+            "id": "7039436"
+          },
+          "isbn": "0387981403",
+          "isbn13": "9780387981406",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2009",
+          "publication_month": "8",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "3064393",
+              "name": "Hadley Wickham",
+              "link": "https://www.goodreads.com/author/show/3064393.Hadley_Wickham"
+            }
+          }
+        },
+        {
+          "id": "17299542",
+          "title": "Applied Predictive Modeling",
+          "title_without_series": "Applied Predictive Modeling",
+          "link": "https://www.goodreads.com/book/show/17299542-applied-predictive-modeling",
+          "small_image_url": "https://images.gr-assets.com/books/1385251160s/17299542.jpg",
+          "image_url": "https://images.gr-assets.com/books/1385251160m/17299542.jpg",
+          "num_pages": "600",
+          "work": {
+            "id": "23952723"
+          },
+          "isbn": "1461468485",
+          "isbn13": "9781461468486",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2018",
+          "publication_month": "3",
+          "publication_day": "30",
+          "authors": {
+            "author": {
+              "id": "5095269",
+              "name": "Max Kuhn",
+              "link": "https://www.goodreads.com/author/show/5095269.Max_Kuhn"
+            }
+          }
+        },
+        {
+          "id": "213031",
+          "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+          "title_without_series": "Data Mining: Practical Machine Learning Tools and Techniques",
+          "link": "https://www.goodreads.com/book/show/213031.Data_Mining",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "525",
+          "work": {
+            "id": "206220"
+          },
+          "isbn": "0120884070",
+          "isbn13": "9780120884070",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2005",
+          "publication_month": "6",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "124908",
+              "name": "Ian H. Witten",
+              "link": "https://www.goodreads.com/author/show/124908.Ian_H_Witten"
+            }
+          }
+        },
+        {
+          "id": "10478952",
+          "title": "Taming Text",
+          "title_without_series": "Taming Text",
+          "link": "https://www.goodreads.com/book/show/10478952-taming-text",
+          "small_image_url": "https://images.gr-assets.com/books/1319099675s/10478952.jpg",
+          "image_url": "https://images.gr-assets.com/books/1319099675m/10478952.jpg",
+          "num_pages": "322",
+          "work": {
+            "id": "15384337"
+          },
+          "isbn": "193398838X",
+          "isbn13": "9781933988382",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2013",
+          "publication_month": "1",
+          "publication_day": "21",
+          "authors": {
+            "author": {
+              "id": "4650880",
+              "name": "Grant S. Ingersoll",
+              "link": "https://www.goodreads.com/author/show/4650880.Grant_S_Ingersoll"
+            }
+          }
+        },
+        {
+          "id": "3350960",
+          "title": "Statistics in a Nutshell: A Desktop Quick Reference",
+          "title_without_series": "Statistics in a Nutshell: A Desktop Quick Reference",
+          "link": "https://www.goodreads.com/book/show/3350960-statistics-in-a-nutshell",
+          "small_image_url": "https://images.gr-assets.com/books/1328834714s/3350960.jpg",
+          "image_url": "https://images.gr-assets.com/books/1328834714m/3350960.jpg",
+          "num_pages": "480",
+          "work": {
+            "id": "3389380"
+          },
+          "isbn": "0596510497",
+          "isbn13": "9780596510497",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2008",
+          "publication_month": "8",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "410100",
+              "name": "Sarah Boslaugh",
+              "link": "https://www.goodreads.com/author/show/410100.Sarah_Boslaugh"
+            }
+          }
+        },
+        {
+          "id": "15857489",
+          "title": "Machine Learning: A Probabilistic Perspective",
+          "title_without_series": "Machine Learning: A Probabilistic Perspective",
+          "link": "https://www.goodreads.com/book/show/15857489-machine-learning",
+          "small_image_url": "https://images.gr-assets.com/books/1500590648s/15857489.jpg",
+          "image_url": "https://images.gr-assets.com/books/1500590648m/15857489.jpg",
+          "num_pages": "1104",
+          "work": {
+            "id": "21606928"
+          },
+          "isbn": "0262018020",
+          "isbn13": "9780262018029",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2012",
+          "publication_month": "8",
+          "publication_day": "24",
+          "authors": {
+            "author": {
+              "id": "493184",
+              "name": "Kevin P. Murphy",
+              "link": "https://www.goodreads.com/author/show/493184.Kevin_P_Murphy"
+            }
+          }
+        },
+        {
+          "id": "17395743",
+          "title": "A/B Testing: The Most Powerful Way to Turn Clicks Into Customers",
+          "title_without_series": "A/B Testing: The Most Powerful Way to Turn Clicks Into Customers",
+          "link": "https://www.goodreads.com/book/show/17395743-a-b-testing",
+          "small_image_url": "https://images.gr-assets.com/books/1372043611s/17395743.jpg",
+          "image_url": "https://images.gr-assets.com/books/1372043611m/17395743.jpg",
+          "num_pages": "202",
+          "work": {
+            "id": "24205482"
+          },
+          "isbn": "1118536096",
+          "isbn13": "9781118536094",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2013",
+          "publication_month": "8",
+          "publication_day": "19",
+          "authors": {
+            "author": {
+              "id": "6947035",
+              "name": "Dan Siroker",
+              "link": "https://www.goodreads.com/author/show/6947035.Dan_Siroker"
+            }
+          }
+        },
+        {
+          "id": "265456",
+          "title": "The Tao of Programming",
+          "title_without_series": "The Tao of Programming",
+          "link": "https://www.goodreads.com/book/show/265456.The_Tao_of_Programming",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "151",
+          "work": {
+            "id": "257353"
+          },
+          "isbn": "0931137071",
+          "isbn13": "9780931137075",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "1987",
+          "publication_month": "11",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "155036",
+              "name": "Geoffrey James",
+              "link": "https://www.goodreads.com/author/show/155036.Geoffrey_James"
+            }
+          }
+        },
+        {
+          "id": "17346969",
+          "title": "RESTful Web APIs",
+          "title_without_series": "RESTful Web APIs",
+          "link": "https://www.goodreads.com/book/show/17346969-restful-web-apis",
+          "small_image_url": "https://images.gr-assets.com/books/1361784449s/17346969.jpg",
+          "image_url": "https://images.gr-assets.com/books/1361784449m/17346969.jpg",
+          "num_pages": "408",
+          "work": {
+            "id": "24087144"
+          },
+          "isbn": "1449358063",
+          "isbn13": "9781449358068",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2013",
+          "publication_month": "9",
+          "publication_day": "27",
+          "authors": {
+            "author": {
+              "id": "3100",
+              "name": "Leonard Richardson",
+              "link": "https://www.goodreads.com/author/show/3100.Leonard_Richardson"
+            }
+          }
+        },
+        {
+          "id": "10144695",
+          "title": "Bayesian Reasoning and Machine Learning",
+          "title_without_series": "Bayesian Reasoning and Machine Learning",
+          "link": "https://www.goodreads.com/book/show/10144695-bayesian-reasoning-and-machine-learning",
+          "small_image_url": "https://images.gr-assets.com/books/1391313061s/10144695.jpg",
+          "image_url": "https://images.gr-assets.com/books/1391313061m/10144695.jpg",
+          "num_pages": "697",
+          "work": {
+            "id": "15042931"
+          },
+          "isbn": "0521518148",
+          "isbn13": "9780521518147",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2012",
+          "publication_month": "4",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "82167",
+              "name": "David Barber",
+              "link": "https://www.goodreads.com/author/show/82167.David_Barber"
+            }
+          }
+        },
+        {
+          "id": "14744694",
+          "title": "Python for Data Analysis",
+          "title_without_series": "Python for Data Analysis",
+          "link": "https://www.goodreads.com/book/show/14744694-python-for-data-analysis",
+          "small_image_url": "https://images.gr-assets.com/books/1356132971s/14744694.jpg",
+          "image_url": "https://images.gr-assets.com/books/1356132971m/14744694.jpg",
+          "num_pages": "400",
+          "work": {
+            "id": "20393594"
+          },
+          "isbn": "1449319793",
+          "isbn13": "9781449319793",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2012",
+          "publication_month": "10",
+          "publication_day": null,
+          "authors": {
+            "author": {
+              "id": "6007417",
+              "name": "Wes McKinney",
+              "link": "https://www.goodreads.com/author/show/6007417.Wes_McKinney"
+            }
+          }
+        },
+        {
+          "id": "55881",
+          "title": "Pattern Recognition and Machine Learning",
+          "title_without_series": "Pattern Recognition and Machine Learning",
+          "link": "https://www.goodreads.com/book/show/55881.Pattern_Recognition_and_Machine_Learning",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "738",
+          "work": {
+            "id": "54462"
+          },
+          "isbn": "0387310738",
+          "isbn13": "9780387310732",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2011",
+          "publication_month": "4",
+          "publication_day": "6",
+          "authors": {
+            "author": {
+              "id": "31551",
+              "name": "Christopher M. Bishop",
+              "link": "https://www.goodreads.com/author/show/31551.Christopher_M_Bishop"
+            }
+          }
+        },
+        {
+          "id": "25407018",
+          "title": "Data Science from Scratch: First Principles with Python",
+          "title_without_series": "Data Science from Scratch: First Principles with Python",
+          "link": "https://www.goodreads.com/book/show/25407018-data-science-from-scratch",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": null,
+          "work": {
+            "id": "45161385"
+          },
+          "isbn": null,
+          "isbn13": null,
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": null,
+          "publication_month": null,
+          "publication_day": null,
+          "authors": {
+            "author": {
+              "id": "2966563",
+              "name": "Joel Grus",
+              "link": "https://www.goodreads.com/author/show/2966563.Joel_Grus"
+            }
+          }
+        },
+        {
+          "id": "748203",
+          "title": "The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling",
+          "title_without_series": "The Data Warehouse Toolkit: The Complete Guide to Dimensional Modeling",
+          "link": "https://www.goodreads.com/book/show/748203.The_Data_Warehouse_Toolkit",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "464",
+          "work": {
+            "id": "734345"
+          },
+          "isbn": "0471200247",
+          "isbn13": "9780471200246",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2002",
+          "publication_month": "4",
+          "publication_day": "26",
+          "authors": {
+            "author": {
+              "id": "396143",
+              "name": "Ralph Kimball",
+              "link": "https://www.goodreads.com/author/show/396143.Ralph_Kimball"
+            }
+          }
+        },
+        {
+          "id": "20306869",
+          "title": "R for Everyone: Advanced Analytics and Graphics",
+          "title_without_series": "R for Everyone: Advanced Analytics and Graphics",
+          "link": "https://www.goodreads.com/book/show/20306869-r-for-everyone",
+          "small_image_url": "https://images.gr-assets.com/books/1403189842s/20306869.jpg",
+          "image_url": "https://images.gr-assets.com/books/1403189842m/20306869.jpg",
+          "num_pages": "465",
+          "work": {
+            "id": "28141359"
+          },
+          "isbn": "0133257177",
+          "isbn13": "9780133257175",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "2013",
+          "publication_month": "12",
+          "publication_day": "10",
+          "authors": {
+            "author": {
+              "id": "7751598",
+              "name": "Jared P. Lander",
+              "link": "https://www.goodreads.com/author/show/7751598.Jared_P_Lander"
+            }
+          }
+        },
+        {
+          "id": "1842399",
+          "title": "Magic Power of Self-Image Psychology: The New Way to a Bright, New Life",
+          "title_without_series": "Magic Power of Self-Image Psychology: The New Way to a Bright, New Life",
+          "link": "https://www.goodreads.com/book/show/1842399.Magic_Power_of_Self_Image_Psychology",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": null,
+          "work": {
+            "id": "1842651"
+          },
+          "isbn": "0135450969",
+          "isbn13": "9780135450963",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": null,
+          "publication_month": null,
+          "publication_day": null,
+          "authors": {
+            "author": {
+              "id": "90212",
+              "name": "Maxwell Maltz",
+              "link": "https://www.goodreads.com/author/show/90212.Maxwell_Maltz"
+            }
+          }
+        },
+        {
+          "id": "2114066",
+          "title": "How to Break Software: A Practical Guide to Testing",
+          "title_without_series": "How to Break Software: A Practical Guide to Testing",
+          "link": "https://www.goodreads.com/book/show/2114066.How_to_Break_Software",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": null,
+          "work": {
+            "id": "2119490"
+          },
+          "isbn": null,
+          "isbn13": "9780201796193",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": null,
+          "publication_month": null,
+          "publication_day": null,
+          "authors": {
+            "author": {
+              "id": "64798",
+              "name": "James A. Whittaker",
+              "link": "https://www.goodreads.com/author/show/64798.James_A_Whittaker"
+            }
+          }
+        },
+        {
+          "id": "213030",
+          "title": "Machine Learning",
+          "title_without_series": "Machine Learning",
+          "link": "https://www.goodreads.com/book/show/213030.Machine_Learning",
+          "small_image_url": "https://s.gr-assets.com/assets/nophoto/book/50x75-a91bf249278a81aabab721ef782c4a74.png",
+          "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+          "num_pages": "414",
+          "work": {
+            "id": "206219"
+          },
+          "isbn": "0071154671",
+          "isbn13": "9780071154673",
+          "average_rating": "4.12",
+          "ratings_count": "66",
+          "publication_year": "1997",
+          "publication_month": "10",
+          "publication_day": "1",
+          "authors": {
+            "author": {
+              "id": "85657",
+              "name": "Tom M. Mitchell",
+              "link": "https://www.goodreads.com/author/show/85657.Tom_M_Mitchell"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

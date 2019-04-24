@@ -1,0 +1,500 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "group_show"
+  },
+  "group": {
+    "id": "8095",
+    "title": "Goodreads Developers",
+    "description": "Official group for developers on Goodreads to coordinate and build cool apps. Goodreads staff will participate in this group, and try to keep our <a href=\"http://www.goodreads.com/api\" rel=\"nofollow\">API</a> as useful as possible.<br /><br />For general goodreads support, please go to the: <a href=\"http://www.goodreads.com/group/show/1\" rel=\"nofollow\">Goodreads Feedback Group</a>",
+    "access": "public",
+    "location": null,
+    "last_activity_at": "Tue Apr 09 10:55:32 -0700 2019",
+    "display_folder_count": "100",
+    "display_topics_per_folder": "10",
+    "bookshelves_public_flag": ["false", "false"],
+    "add_books_flag": "false",
+    "add_events_flag": "false",
+    "polls_flag": "false",
+    "discussion_public_flag": "false",
+    "real_world_flag": "false",
+    "accepting_new_members_flag": "false",
+    "category": "Organizations",
+    "subcategory": "Companies",
+    "rules": "This is a test string",
+    "link": "https://www.goodreads.com/group/show/8095-goodreads-developers",
+    "image_url": "https://images.gr-assets.com/groups/1220414390p2/8095.jpg",
+    "group_users_count": "2028",
+    "folders": {
+      "folder": [
+        {
+          "id": "0",
+          "name": "general",
+          "items_count": "143",
+          "sub_items_count": "0",
+          "updated_at": null
+        },
+        {
+          "id": "58737",
+          "name": "examples / showcase",
+          "items_count": "65",
+          "sub_items_count": "473",
+          "updated_at": "Fri Aug 15 20:17:06 -0700 2014"
+        },
+        {
+          "id": "58735",
+          "name": "bugs",
+          "items_count": "197",
+          "sub_items_count": "1026",
+          "updated_at": "Mon Dec 17 14:36:41 -0800 2018"
+        },
+        {
+          "id": "58736",
+          "name": "feature requests",
+          "items_count": "98",
+          "sub_items_count": "391",
+          "updated_at": "Sun Feb 24 09:36:14 -0800 2019"
+        },
+        {
+          "id": "71128",
+          "name": "questions",
+          "items_count": "354",
+          "sub_items_count": "1324",
+          "updated_at": "Sun Nov 04 19:59:14 -0800 2018"
+        }
+      ]
+    },
+    "currently_reading": null,
+    "moderators": {
+      "group_user": [
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "18"
+          },
+          "title": "Chief Architect",
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "1"
+            },
+            "first_name": "Otis",
+            "last_name": "Chandler",
+            "user_name": "otis",
+            "p2_image_url": "https://images.gr-assets.com/users/1506617226p2/1.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": "Community Manager",
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "175283"
+            },
+            "first_name": "Patrick",
+            "last_name": "Brown",
+            "user_name": "patrick",
+            "p2_image_url": "https://images.gr-assets.com/users/1385422870p2/175283.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "21"
+          },
+          "title": "Goodreads engineer",
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "5006423"
+            },
+            "first_name": "William",
+            "last_name": "Cline",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://images.gr-assets.com/users/1372254773p2/5006423.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "2116738"
+            },
+            "first_name": "Dave",
+            "last_name": "Kirlin",
+            "user_name": "dkirlin",
+            "p2_image_url": "https://images.gr-assets.com/users/1388421152p2/2116738.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "3"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "13359689"
+            },
+            "first_name": "Jon",
+            "last_name": "Swartz",
+            "user_name": "jonswartz",
+            "p2_image_url": "https://images.gr-assets.com/users/1448908075p2/13359689.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "2431873"
+            },
+            "first_name": "Emily",
+            "last_name": null,
+            "user_name": "emily",
+            "p2_image_url": "https://images.gr-assets.com/users/1477433724p2/2431873.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "9032502"
+            },
+            "first_name": "Mike",
+            "last_name": "Mueller",
+            "user_name": "machrider",
+            "p2_image_url": "https://images.gr-assets.com/users/1466566793p2/9032502.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "1252572"
+            },
+            "first_name": "Sarah",
+            "last_name": "Oh",
+            "user_name": "ohyesme",
+            "p2_image_url": "https://images.gr-assets.com/users/1537203994p2/1252572.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "74"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "19059508"
+            },
+            "first_name": "Jeffrey",
+            "last_name": "Wong",
+            "user_name": "jeffwong",
+            "p2_image_url": "https://images.gr-assets.com/users/1456376310p2/19059508.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "1"
+          },
+          "title": "Engineer",
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "33180082"
+            },
+            "first_name": "Nathan",
+            "last_name": "Leech",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://images.gr-assets.com/users/1427143197p2/33180082.jpg"
+          }
+        }
+      ]
+    },
+    "members": {
+      "group_user": [
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95844269"
+            },
+            "first_name": "Dana",
+            "last_name": null,
+            "user_name": "Canadian-pharmacy-khdx741",
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95809340"
+            },
+            "first_name": "Christina",
+            "last_name": null,
+            "user_name": "Canadian-pharmacy-np5169",
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "66129526"
+            },
+            "first_name": "David",
+            "last_name": "Matthew",
+            "user_name": "davidmatthew",
+            "p2_image_url": "https://images.gr-assets.com/users/1513287951p2/66129526.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "1"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "63680802"
+            },
+            "first_name": "Remy",
+            "last_name": "Sharp",
+            "user_name": "remysharp",
+            "p2_image_url": "https://images.gr-assets.com/users/1484002621p2/63680802.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95644167"
+            },
+            "first_name": "Aditi",
+            "last_name": "Nabar",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "11810243"
+            },
+            "first_name": "HsiaoTing",
+            "last_name": null,
+            "user_name": "HsiaoTing",
+            "p2_image_url": "https://images.gr-assets.com/users/1550405390p2/11810243.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "1"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "51497495"
+            },
+            "first_name": "Bogdan",
+            "last_name": "Davidoaia",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://images.gr-assets.com/users/1452980795p2/51497495.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "6591213"
+            },
+            "first_name": "Mark",
+            "last_name": "Lennox",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://images.gr-assets.com/users/1318088291p2/6591213.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95552247"
+            },
+            "first_name": "Helena",
+            "last_name": null,
+            "user_name": "Canadian-pharmacy-n79182",
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95499068"
+            },
+            "first_name": "Eliza",
+            "last_name": null,
+            "user_name": "Canadian-pharmacy-7ar7542",
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "28592539"
+            },
+            "first_name": "Nishal",
+            "last_name": "Gurung",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://images.gr-assets.com/users/1392126126p2/28592539.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "10735112"
+            },
+            "first_name": "Vasile",
+            "last_name": "Carazanu",
+            "user_name": "int21hi",
+            "p2_image_url": "https://images.gr-assets.com/users/1526991003p2/10735112.jpg"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "7333658"
+            },
+            "first_name": "Boris",
+            "last_name": "Pavelec",
+            "user_name": {
+              "@nil": "true"
+            },
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/m_50x66-82093808bca726cb3249a493fbd3bd0f.png"
+          }
+        },
+        {
+          "comments_count": {
+            "@type": "integer",
+            "#text": "0"
+          },
+          "title": null,
+          "user": {
+            "id": {
+              "@type": "integer",
+              "#text": "95398972"
+            },
+            "first_name": "Ellen",
+            "last_name": null,
+            "user_name": "Canadian-pharmacy-87n5357",
+            "p2_image_url": "https://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,15 +1,10 @@
 language: python
 python:
-    - "2.7"
-    - "3.5"
-before_install:
-- openssl aes-256-cbc -K $encrypted_2f1e0e39ed26_key -iv $encrypted_2f1e0e39ed26_iv
-  -in apikey.py.enc -out goodreads/apikey.py -d
+  - "3.6"
+  - "3.7-dev"
 install:
-- pip install -r requirements.txt
-- pip install coveralls
-script: nosetests --with-coverage --cover-package=goodreads
-notifications:
-  email: false
-after_success:
-  coveralls
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+  - pip install coveralls==1.7.0
+script: pytest --cov=betterreads
+after_success: coveralls

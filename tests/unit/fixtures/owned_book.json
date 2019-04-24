@@ -1,0 +1,165 @@
+{
+  "Request": {
+    "authentication": "true",
+    "key": "KEY",
+    "method": "owned_books_show"
+  },
+  "owned_book": {
+    "owned_book": {
+      "id": {
+        "@type": "integer",
+        "#text": "49488032"
+      },
+      "current_owner_id": {
+        "@type": "integer",
+        "#text": "1724077"
+      },
+      "original_purchase_date": {
+        "@type": "datetime",
+        "#text": "2017-12-25T08:00:00+00:00"
+      },
+      "original_purchase_location": "Gift from Sabrina",
+      "condition": "Brand new",
+      "traded_count": "0",
+      "link": "https://www.goodreads.com/owned_books/49488032",
+      "book": {
+        "id": {
+          "@type": "integer",
+          "#text": "33375622"
+        },
+        "isbn": "155597788X",
+        "isbn13": "9781555977887",
+        "text_reviews_count": {
+          "@type": "integer",
+          "#text": "2934"
+        },
+        "uri": "kca://book/amzn1.gr.book.v1.kfQ3DhohoNN5caaXW_e6NQ",
+        "title": "Her Body and Other Parties",
+        "title_without_series": "Her Body and Other Parties",
+        "image_url": "https://images.gr-assets.com/books/1485266434m/33375622.jpg",
+        "small_image_url": "https://images.gr-assets.com/books/1485266434s/33375622.jpg",
+        "large_image_url": null,
+        "link": "https://www.goodreads.com/book/show/33375622-her-body-and-other-parties",
+        "num_pages": "248",
+        "format": "Paperback",
+        "edition_information": null,
+        "publisher": "Graywolf Press",
+        "publication_day": "3",
+        "publication_year": "2017",
+        "publication_month": "10",
+        "average_rating": "3.91",
+        "ratings_count": "20834",
+        "description": "In<i> Her Body and Other Parties</i>, Carmen Maria Machado blithely demolishes the arbitrary borders between psychological realism and science fiction, comedy and horror, fantasy and fabulism. While her work has earned her comparisons to Karen Russell and Kelly Link, she has a voice that is all her own. In this electric and provocative debut, Machado bends genre to shape startling narratives that map the realities of women's lives and the violence visited upon their bodies.<br /><br />A wife refuses her husband's entreaties to remove the green ribbon from around her neck. A woman recounts her sexual encounters as a plague slowly consumes humanity. A salesclerk in a mall makes a horrifying discovery within the seams of the store's prom dresses. One woman's surgery-induced weight loss results in an unwanted houseguest. And in the bravura novella Especially Heinous, Machado reimagines every episode of <i>Law &amp; Order: Special Victims Unit</i>, a show we naively assumed had shown it all, generating a phantasmagoric police procedural full of doppelgangers, ghosts, and girls with bells for eyes.<br /><br />Earthy and otherworldly, antic and sexy, queer and caustic, comic and deadly serious, <i>Her Body and Other Parties</i> swings from horrific violence to the most exquisite sentiment. In their explosive originality, these stories enlarge the possibilities of contemporary fiction.",
+        "authors": {
+          "author": {
+            "id": "6860265",
+            "name": "Carmen Maria Machado",
+            "role": null,
+            "image_url": {
+              "@nophoto": "false",
+              "#text": "https://images.gr-assets.com/authors/1461618720p5/6860265.jpg"
+            },
+            "small_image_url": {
+              "@nophoto": "false",
+              "#text": "https://images.gr-assets.com/authors/1461618720p2/6860265.jpg"
+            },
+            "link": "https://www.goodreads.com/author/show/6860265.Carmen_Maria_Machado",
+            "average_rating": "3.91",
+            "ratings_count": "25173",
+            "text_reviews_count": "4132"
+          }
+        },
+        "published": "2017",
+        "work": {
+          "id": "54116423",
+          "uri": "kca://work/amzn1.gr.work.v1.kAgH-shXW3ICA95FJLi6fg"
+        }
+      },
+      "review": {
+        "id": "2163802700",
+        "rating": "5",
+        "votes": "1",
+        "spoiler_flag": "false",
+        "spoilers_state": "none",
+        "shelves": {
+          "shelf": [
+            {
+              "@name": "read",
+              "@exclusive": "true",
+              "@id": "5725901",
+              "@review_shelf_id": ""
+            },
+            {
+              "@exclusive": "false",
+              "@id": "88428089",
+              "@name": "women-authors",
+              "@review_shelf_id": "1931491565",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "242124134",
+              "@name": "tob-longlist-tbr-2017",
+              "@review_shelf_id": "1846083340",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "56564384",
+              "@name": "fantasy",
+              "@review_shelf_id": "1931491614",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "109541101",
+              "@name": "recd-by-sru2",
+              "@review_shelf_id": "1814872131",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "247664550",
+              "@name": "read-in-2018",
+              "@review_shelf_id": "1931491944",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "195132060",
+              "@name": "gift",
+              "@review_shelf_id": "1931492094",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "76914033",
+              "@name": "horror",
+              "@review_shelf_id": "1931491684",
+              "@sortable": "false"
+            },
+            {
+              "@exclusive": "false",
+              "@id": "104743970",
+              "@name": "own-physical-copy",
+              "@review_shelf_id": "1931491904",
+              "@sortable": "false"
+            }
+          ]
+        },
+        "recommended_for": null,
+        "recommended_by": null,
+        "started_at": "Tue Dec 26 08:04:58 -0800 2017",
+        "read_at": "Sun Feb 04 18:05:24 -0800 2018",
+        "date_added": "Wed Oct 25 10:11:18 -0700 2017",
+        "date_updated": "Sun Feb 04 18:06:24 -0800 2018",
+        "read_count": "1",
+        "body": null,
+        "comments_count": "0",
+        "url": "https://www.goodreads.com/review/show/2163802700",
+        "link": "https://www.goodreads.com/review/show/2163802700",
+        "owned": "1"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": {
+    "@type": "integer",
+    "#text": "308827957"
+  },
+  "name": "read",
+  "book_count": {
+    "@type": "integer",
+    "#text": "3"
+  },
+  "exclusive_flag": {
+    "@type": "boolean",
+    "#text": "true"
+  },
+  "description": {
+    "@nil": "true"
+  },
+  "sort": {
+    "@nil": "true"
+  },
+  "order": {
+    "@nil": "true"
+  },
+  "per_page": {
+    "@type": "integer",
+    "@nil": "true"
+  },
+  "display_fields": null,
+  "featured": {
+    "@type": "boolean",
+    "#text": "true"
+  },
+  "recommend_for": {
+    "@type": "boolean",
+    "#text": "false"
+  },
+  "sticky": {
+    "@type": "boolean",
+    "@nil": "true"
+  }
+}
