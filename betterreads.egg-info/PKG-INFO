@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: betterreads
-Version: 0.4.0
+Version: 0.4.1
 Summary: Python 3 wrapper for Goodreads API
 Home-page: https://github.com/thejessleigh/betterreads
 Author: Jess Unrein
