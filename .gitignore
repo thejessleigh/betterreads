@@ -4,3 +4,5 @@ venv/
 docs/_*
 .idea/
 htmlcov/
+build/
+dist/
