@@ -1,12 +1,13 @@
-.. betterreads documentation master file, created by
-   sphinx-quickstart on Fri Mar 29 14:13:33 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to the BetterReads documentation!
 =========================================
 
-This package provides a Python interface for the `Goodreads
+|Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
+
+.. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
+:target: https://goodreads.com
+    :width: 100px
+
+    This package provides a Python interface for the `Goodreads
 API <http://goodreads.com/api>`__. Using it, you can do pretty much
 anything that Goodreads allows through their public API.
 
@@ -25,7 +26,7 @@ Major updates in this new project:
 - Add convenience method to get all of a user's reviews for a specific shelf
 - Some opinionated development changes. For example
    - No longer making live API calls in unit tests
-   - Using `black code style <https://github.com/ambv/black>`__ and `prettier code style <https://github.com/prettier/prettier>`__
+   - Using `black code style <https://github.com/ambv/black>`__ across the board
    - More robust `documentation <https://goodreads.readthedocs.io/en/latest/>`__
 
 Dependencies
@@ -56,6 +57,13 @@ directory.
 
     sudo python setup.py install
 
+You can also install BetterReads using pip. The current version on PyPi is 0.4.1.
+
+::
+
+    pip install betterreads
+
+
 Getting Started
 ---------------
 
@@ -65,7 +73,7 @@ create a client instance to query Goodreads.
 
 .. code:: python
 
-    from betterreads import client
+    from goodreads import client
     gc = client.GoodreadsClient(<api_key>, <api_secret>)
 
 To access some of the methods, you need `OAuth <http://oauth.net/>`__
@@ -83,11 +91,43 @@ application, you can direct the user to that particular URL, ask them
 to authorize your app and save the returning ``access_token`` and
 ``access_token_secret`` in your database.
 
+Contribution
+------------
+
+If you find an API method that is not supported by this package, feel
+free to create a Github issue. Also, you are more than welcome to submit
+a pull request for a bug fix or additional feature. For more detail on
+contributing to this project and setting up your local dev environment,
+check out `our contribution guide <contributing.html>`__.
+
 License
 -------
 
 `MIT License <http://opensource.org/licenses/mit-license.php>`__
 
+Acknowledgment
+--------------
+
+Thanks to `Paul Shannon <https://github.com/paulshannon>`__ and `Sefa Kilic <https://github.com/sefakilic>`__
+for providing 'goodreads' package at PyPI, and to `Tatiana <https://github.com/tatianass>`__ and
+`Rehan Khwaja <https://github.com/rkhwaja>`__ for continuing the project as goodreads2. BetterReads couldn't exist
+without all of you.
+
+.. |Build Status| image:: https://travis-ci.org/thejessleigh/betterreads.svg?branch=master
+:target: https://travis-ci.org/thejessleigh/betterreads
+:alt: Build Status
+.. |Coverage Status| image:: https://coveralls.io/repos/github/thejessleigh/betterreads/badge.svg?branch=master
+:target: https://coveralls.io/github/thejessleigh/betterreads?branch=master
+:alt: Coverage Status
+.. |Documentation Status| image:: https://readthedocs.org/projects/betterreads/badge/?version=latest
+:target: http://betterreads.readthedocs.io/en/latest/?badge=latest
+:alt: Documentation Status
+.. |Primary Code Style| image:: https://camo.githubusercontent.com/28a51fe3a2c05048d8ca8ecd039d6b1619037326/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667
+:target: https://github.com/ambv/black
+:alt: Primary Code Style - Black
+.. |Secondary Code Style| image:: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+:target: https://github.com/prettier/prettier
+:alt: Secondary Code Style - Prettier
 
 .. toctree::
    :maxdepth: 1
