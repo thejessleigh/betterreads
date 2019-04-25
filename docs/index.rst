@@ -1,8 +1,6 @@
 Welcome to the BetterReads documentation!
 =========================================
 
-|Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
-
 .. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
 
 This package provides a Python interface for the `Goodreads API <http://goodreads.com/api>`__. Using it, you can do
