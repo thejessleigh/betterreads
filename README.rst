@@ -4,7 +4,8 @@ BetterReads
 |Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
 
 .. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
-   :width: 100
+    :target: https://goodreads.com
+    :width: 100px
 
 This package provides a Python interface for the `Goodreads
 API <http://goodreads.com/api>`__. Using it, you can do pretty much
@@ -44,7 +45,7 @@ They can be installed using ``pip``.
     sudo pip install -r requirements.txt
 
 If you want to contribute to this package, you will need to install the packages
-in ``requirements-dev.txt` as well.
+in ``requirements-dev.txt`` as well.
 
 Installation
 ------------
