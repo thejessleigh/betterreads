@@ -6,7 +6,7 @@ Home-page: https://github.com/thejessleigh/betterreads
 Author: Jess Unrein
 Author-email: j.l.unrein@gmail.com
 License: MIT
-Description: betterreads
+Description: BetterReads
         ===========
 
         |Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
@@ -63,6 +63,13 @@ Description: betterreads
         ::
 
             sudo python setup.py install
+
+        You can also install BetterReads using pip. The current version on PyPi is 0.4.1.
+
+        ::
+
+            pip install betterreads
+
 
         Getting Started
         ---------------
@@ -226,6 +233,7 @@ Description: betterreads
         .. |Secondary Code Style| image:: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
             :target: https://github.com/prettier/prettier
             :alt: Secondary Code Style - Prettier
+
 Keywords: goodreads API
 Platform: UNKNOWN
 Classifier: Development Status :: 4 - Beta

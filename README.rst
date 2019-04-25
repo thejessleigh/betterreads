@@ -1,4 +1,4 @@
-betterreads
+BetterReads
 ===========
 
 |Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
@@ -55,6 +55,13 @@ directory.
 ::
 
     sudo python setup.py install
+
+You can also install BetterReads using pip. The current version on PyPi is 0.4.1.
+
+::
+
+    pip install betterreads
+
 
 Getting Started
 ---------------

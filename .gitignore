@@ -6,3 +6,4 @@ docs/_*
 htmlcov/
 build/
 dist/
+docs/make.bat
