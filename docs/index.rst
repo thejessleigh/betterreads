@@ -4,12 +4,9 @@ Welcome to the BetterReads documentation!
 |Build Status| |Coverage Status| |Documentation Status| |Primary Code Style| |Secondary Code Style|
 
 .. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
-:target: https://goodreads.com
-    :width: 100px
 
-    This package provides a Python interface for the `Goodreads
-API <http://goodreads.com/api>`__. Using it, you can do pretty much
-anything that Goodreads allows through their public API.
+This package provides a Python interface for the `Goodreads API <http://goodreads.com/api>`__. Using it, you can do
+pretty much anything that Goodreads allows through their public API.
 
 This package is largely Python 2 compatible, but is only officially supported for Python 3.
 
@@ -112,22 +109,6 @@ Thanks to `Paul Shannon <https://github.com/paulshannon>`__ and `Sefa Kilic <htt
 for providing 'goodreads' package at PyPI, and to `Tatiana <https://github.com/tatianass>`__ and
 `Rehan Khwaja <https://github.com/rkhwaja>`__ for continuing the project as goodreads2. BetterReads couldn't exist
 without all of you.
-
-.. |Build Status| image:: https://travis-ci.org/thejessleigh/betterreads.svg?branch=master
-:target: https://travis-ci.org/thejessleigh/betterreads
-:alt: Build Status
-.. |Coverage Status| image:: https://coveralls.io/repos/github/thejessleigh/betterreads/badge.svg?branch=master
-:target: https://coveralls.io/github/thejessleigh/betterreads?branch=master
-:alt: Coverage Status
-.. |Documentation Status| image:: https://readthedocs.org/projects/betterreads/badge/?version=latest
-:target: http://betterreads.readthedocs.io/en/latest/?badge=latest
-:alt: Documentation Status
-.. |Primary Code Style| image:: https://camo.githubusercontent.com/28a51fe3a2c05048d8ca8ecd039d6b1619037326/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667
-:target: https://github.com/ambv/black
-:alt: Primary Code Style - Black
-.. |Secondary Code Style| image:: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-:target: https://github.com/prettier/prettier
-:alt: Secondary Code Style - Prettier
 
 .. toctree::
    :maxdepth: 1
