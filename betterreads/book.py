@@ -1,4 +1,5 @@
-"""Goodreads book class"""
+from datetime import datetime
+
 from betterreads.author import GoodreadsAuthor
 
 
@@ -13,7 +14,7 @@ class GoodreadsBook:
     @property
     def gid(self):
         """Goodreads id of the book"""
-        return self._book_dict["id"]
+        return int(self._book_dict["id"])
 
     @property
     def title(self):
@@ -41,7 +42,7 @@ class GoodreadsBook:
     @property
     def average_rating(self):
         """Average rating of the book"""
-        return self._book_dict["average_rating"]
+        return float(self._book_dict["average_rating"])
 
     @property
     def rating_dist(self):
@@ -51,17 +52,17 @@ class GoodreadsBook:
     @property
     def ratings_count(self):
         """Number of ratings for the book"""
-        return self._book_dict["ratings_count"]
+        return int(self._book_dict["ratings_count"])
 
     @property
     def text_reviews_count(self):
         """Number of text reviews for the book"""
-        return self._book_dict["text_reviews_count"]
+        return int(self._book_dict["text_reviews_count"])
 
     @property
     def num_pages(self):
         """Number of pages of the book"""
-        return self._book_dict["num_pages"]
+        return int(self._book_dict["num_pages"])
 
     @property
     def popular_shelves(self):
@@ -83,10 +84,10 @@ class GoodreadsBook:
     @property
     def publication_date(self):
         """Publication month/day/year for the book"""
-        return (
-            self._book_dict["publication_month"],
-            self._book_dict["publication_day"],
-            self._book_dict["publication_year"],
+        return datetime(
+            int(self._book_dict["publication_year"]),
+            int(self._book_dict["publication_month"]),
+            int(self._book_dict["publication_day"]),
         )
 
     @property
@@ -117,7 +118,7 @@ class GoodreadsBook:
     @property
     def is_ebook(self):
         """Is this book an e-book?"""
-        return self._book_dict["is_ebook"]
+        return False if self._book_dict["is_ebook"] == "false" else True
 
     @property
     def format(self):

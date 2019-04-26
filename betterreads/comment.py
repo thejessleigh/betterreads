@@ -1,4 +1,5 @@
-"""Class for Goodreads comments"""
+from datetime import datetime
+
 from betterreads.user import GoodreadsUser
 
 
@@ -11,7 +12,7 @@ class GoodreadsComment:
     @property
     def gid(self):
         """Goodreads id of the comment"""
-        return self._comment_dict["id"]
+        return int(self._comment_dict["id"])
 
     @property
     def body(self):
@@ -26,9 +27,13 @@ class GoodreadsComment:
     @property
     def created_at(self):
         """Comment created at"""
-        return self._comment_dict["created_at"]
+        return datetime.strptime(
+            self._comment_dict["created_at"], "%a %b %d %H:%M:%S %z %Y"
+        )
 
     @property
     def updated_at(self):
         """Comment updated at"""
-        return self._comment_dict["updated_at"]
+        return datetime.strptime(
+            self._comment_dict["updated_at"], "%a %b %d %H:%M:%S %z %Y"
+        )
