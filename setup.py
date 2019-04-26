@@ -16,7 +16,12 @@ setup(
     author_email="j.l.unrein@gmail.com",
     packages=["betterreads"],
     version="0.4.1",
-    install_requires=["xmltodict", "requests", "rauth"],
+    install_requires=[
+        "backports-datetime-fromisoformat",
+        "rauth",
+        "requests",
+        "xmltodict",
+    ],
     license="MIT",
     keywords="goodreads API",
     classifiers=[

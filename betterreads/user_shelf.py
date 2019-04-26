@@ -11,7 +11,7 @@ class GoodreadsUserShelf:
 
     @property
     def gid(self):
-        return self._shelf_dict.get("id", {}).get("#text")
+        return int(self._shelf_dict.get("id", {}).get("#text"))
 
     @property
     def name(self):
@@ -22,21 +22,27 @@ class GoodreadsUserShelf:
         """
         A flag which describes whether a shelf is mutually exclusive with a user's other exclusive shelves
         """
-        return self._shelf_dict.get("exclusive_flag", {}).get("#text")
+        return (
+            True
+            if self._shelf_dict.get("exclusive_flag", {}).get("#text") == "true"
+            else False
+        )
 
     @property
     def count(self):
         """
         Number of books on a GoodreadsUserShelf
         """
-        return self._shelf_dict.get("book_count", {}).get("#text")
+        return int(self._shelf_dict.get("book_count", {}).get("#text"))
 
     @property
     def sticky(self):
         """
         Describes whether a user has designated a shelf as "sticky" in the Goodreads interface
         """
-        return self._shelf_dict.get("sticky", {}).get("#text")
+        return (
+            True if self._shelf_dict.get("sticky", {}).get("#text") == "true" else False
+        )
 
     @property
     def description(self):
@@ -47,4 +53,8 @@ class GoodreadsUserShelf:
         """
         A flag which describes whether a shelf is a user's featured shelf
         """
-        return self._shelf_dict.get("featured", {}).get("#text")
+        return (
+            True
+            if self._shelf_dict.get("featured", {}).get("#text") == "true"
+            else False
+        )

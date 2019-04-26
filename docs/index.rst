@@ -32,6 +32,7 @@ This package depends on the following packages:
 -  xmltodict
 -  requests
 -  rauth
+-  backports-datetime-fromisoformat
 
 They can be installed using ``pip``.
 

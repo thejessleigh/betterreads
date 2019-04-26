@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from unittest import mock
 
@@ -23,7 +24,7 @@ class TestAuthor:
 
     def test_get_author(self, test_author):
         assert isinstance(test_author, GoodreadsAuthor)
-        assert test_author.gid == "14880958"
+        assert test_author.gid == 14880958
         assert repr(test_author) == "Jeannette Ng"
 
     def test_author_name(self, test_author):
@@ -48,17 +49,19 @@ class TestAuthor:
         with open("tests/unit/fixtures/author_one_book.json") as f:
             author_response = f.read()
         mock_request.return_value = json.loads(author_response)
-        books = client.author("5734084").books
+        books = client.author(5734084).books
         assert len(books) == 1
 
     def test_born_at(self, test_author):
-        assert test_author.born_at == "1980/01/01"
+        assert isinstance(test_author.born_at, datetime)
+        assert test_author.born_at == datetime(1980, 1, 1)
 
     def test_died_at(self, test_author):
-        assert test_author.died_at == "2018/12/31"
+        assert isinstance(test_author.died_at, datetime)
+        assert test_author.died_at == datetime(2018, 12, 31)
 
     def test_fans_count(self, test_author):
-        assert test_author.fans_count == "149"
+        assert test_author.fans_count == 149
 
     def test_gender(self, test_author):
         assert test_author.gender == "test gender"
@@ -88,7 +91,7 @@ class TestAuthor:
         assert test_author.influences is None
 
     def test_user(self, test_author):
-        assert type(test_author.user) == GoodreadsUser
+        assert isinstance(test_author.user, GoodreadsUser)
 
     def test_works_count(self, test_author):
-        assert test_author.works_count == "5"
+        assert test_author.works_count == 5
