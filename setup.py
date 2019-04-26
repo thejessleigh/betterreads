@@ -15,7 +15,7 @@ setup(
     author="Jess Unrein",
     author_email="j.l.unrein@gmail.com",
     packages=["betterreads"],
-    version="0.4.1",
+    version="0.4.2",
     install_requires=[
         "backports-datetime-fromisoformat",
         "rauth",
