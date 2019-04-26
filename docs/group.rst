@@ -9,17 +9,19 @@ GoodreadsGroup is a BetterReads object for interfacing with group data from Good
 Properties
 ~~~~~~~~~~
 
-- gid: Goodreads id for the Group
-- title: Title of the group
-- description: Short text description of the group
-- category: Text category for filtering groups (ex: Organizations)
-- subcategory: Text category for further filtering groups (ex: Companies)
-- rules: Text description of the rules for participating in the group
-- image_url: URL for the group's featured image
-- last_activity_at: String representation of the time and date of the group's last activity
-- access: Indicates whether a group is public or private
-- users_count: Number of users in the group (string)
-- members: Dict containing information about group members. Member ids can be used to query GoodreadsUsers using the `GoodreadsClient <client.html>`__
+- gid: Goodreads id for the Group (type: int)
+- title: Title of the group (type: string)
+- description: Short text description of the group (type: string)
+- category: Text category for filtering groups (type: string)
+    - Example: Organizations
+- subcategory: Text category for further filtering groups (type: string)
+    - Example: Companies
+- rules: Text description of the rules for participating in the group (type: string)
+- image_url: URL for the group's featured image (type: string)
+- last_activity_at: String representation of the time and date of the group's last activity (type: datetime)
+- access: Indicates whether a group is public or private (type: string)
+- users_count: Number of users in the group (type: int)
+- members: List of dicts containing information about group members. Member ids can be used to query GoodreadsUsers using the `GoodreadsClient <client.html>`__ (type: list)
 
 Usage
 ~~~~~

@@ -1,4 +1,4 @@
-"""Class definition for owned books"""
+from datetime import datetime
 
 from betterreads.book import GoodreadsBook
 from betterreads.review import GoodreadsReview
@@ -11,7 +11,7 @@ class GoodreadsOwnedBook:
     @property
     def gid(self):
         """Goodreads id of the owned book"""
-        return self._owned_book_dict["id"]["#text"]
+        return int(self._owned_book_dict["id"]["#text"])
 
     @property
     def book(self):
@@ -26,16 +26,15 @@ class GoodreadsOwnedBook:
     @property
     def current_owner(self):
         """Return current owner's id"""
-        return self._owned_book_dict["current_owner_id"]["#text"]
+        return int(self._owned_book_dict["current_owner_id"]["#text"])
 
     @property
     def original_purchase_date(self):
         """Date of purchase"""
-        date_field = self._owned_book_dict.get("original_purchase_date", None)
-        if date_field:
-            return date_field.get("#text", None)
-        else:
-            return None
+        date_string = self._owned_book_dict.get("original_purchase_date", {}).get(
+            "#text", None
+        )
+        return datetime.fromisoformat(date_string) if date_string else None
 
     @property
     def original_purchase_location(self):

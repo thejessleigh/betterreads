@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from unittest import mock
 
@@ -18,11 +19,14 @@ class TestGroup:
             mock_request.return_value = json.loads(group_response)
         return client.group(8095)
 
+    def test_group_repr(self, test_group):
+        assert repr(test_group) == "Goodreads Developers"
+
     def test_title(self, test_group):
         assert test_group.title == "Goodreads Developers"
 
     def test_gid(self, test_group):
-        assert test_group.gid == "8095"
+        assert test_group.gid == 8095
 
     def test_description(self, test_group):
         assert test_group.description.startswith(
@@ -48,10 +52,11 @@ class TestGroup:
         assert test_group.access == "public"
 
     def test_users_count(self, test_group):
-        assert test_group.users_count == "2028"
+        assert test_group.users_count == 2028
 
     def test_members(self, test_group):
+        assert isinstance(test_group.members, list)
         assert len(test_group.members) > 1
 
     def test_last_activity_at(self, test_group):
-        assert test_group.last_activity_at == "Tue Apr 09 10:55:32 -0700 2019"
+        assert isinstance(test_group.last_activity_at, datetime)

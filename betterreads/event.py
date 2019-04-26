@@ -1,4 +1,4 @@
-"""Class for GoodreadsEvent"""
+from datetime import datetime
 
 
 class GoodreadsEvent:
@@ -11,7 +11,7 @@ class GoodreadsEvent:
     @property
     def gid(self):
         """ID for the event"""
-        return self._event_dict["id"]["#text"]
+        return int(self._event_dict["id"]["#text"])
 
     @property
     def title(self):
@@ -71,7 +71,7 @@ class GoodreadsEvent:
     @property
     def added_by(self):
         """User id for the event creator"""
-        return self._event_dict["user_id"]["#text"]
+        return int(self._event_dict["user_id"]["#text"])
 
     @property
     def image_url(self):
@@ -81,19 +81,19 @@ class GoodreadsEvent:
     @property
     def created_at(self):
         """Event created at"""
-        return self._event_dict["created_at"]["#text"]
+        return datetime.fromisoformat(self._event_dict["created_at"]["#text"])
 
     @property
     def updated_at(self):
         """Event updated at"""
-        return self._event_dict["updated_at"]["#text"]
+        return datetime.fromisoformat(self._event_dict["updated_at"]["#text"])
 
     @property
     def reminder_at(self):
         """Reminder time for the event"""
         reminder = self._event_dict.get("reminder_at")
         if reminder:
-            return reminder.get("#text")
+            return datetime.fromisoformat(reminder.get("#text"))
         else:
             return None
 
@@ -102,19 +102,19 @@ class GoodreadsEvent:
         """RSVP for the event ends at"""
         rsvp_end_at = self._event_dict.get("rsvp_end_at")
         if rsvp_end_at:
-            return rsvp_end_at.get("#text")
+            return datetime.fromisoformat(rsvp_end_at.get("#text"))
         else:
             return None
 
     @property
     def start_at(self):
         """Event starts at"""
-        return self._event_dict["start_at"]["#text"]
+        return datetime.fromisoformat(self._event_dict["start_at"]["#text"])
 
     @property
     def end_at(self):
         """Event ends at"""
-        return self._event_dict["end_at"]["#text"]
+        return datetime.fromisoformat(self._event_dict["end_at"]["#text"])
 
     @property
     def attending_count(self):
@@ -131,5 +131,5 @@ class GoodreadsEvent:
         """Type and ID for the event resource"""
         return (
             self._event_dict["resource_type"],
-            self._event_dict["resource_id"]["#text"],
+            int(self._event_dict["resource_id"]["#text"]),
         )

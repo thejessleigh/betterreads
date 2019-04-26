@@ -8,13 +8,13 @@ GoodreadsUserShelf
 
 Properties
 ~~~~~~~~~~
-- gid: Goodreads id of the shelf
-- name: Name of the shelf
-- exclusive: boolean flag indicating whether this shelf is mutually exclusive with other exclusive shelves
-- count: number of books on a shelf
-- sticky: boolean flag indicating whether this shelf is "sticky" to the top of the list in the Goodreads UI
-- description: text description of the shelf
-- featured: boolean flag indicating whether this is a `GoodreadsUser <user.html>`__'s featured shelf.
+- gid: Goodreads id of the shelf (type: int)
+- name: Name of the shelf (type: string)
+- exclusive: boolean flag indicating whether this shelf is mutually exclusive with other exclusive shelves (type: boolean)
+- count: number of books on a shelf (type: integer)
+- sticky: boolean flag indicating whether this shelf is "sticky" to the top of the list in the Goodreads UI (type: boolean)
+- description: text description of the shelf (type: string)
+- featured: boolean flag indicating whether this is a `GoodreadsUser <user.html>`__'s featured shelf. (type: boolean)
 
 Usage
 ~~~~~
