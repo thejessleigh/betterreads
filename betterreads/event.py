@@ -1,5 +1,10 @@
 from datetime import datetime
 
+from backports.datetime_fromisoformat import MonkeyPatch
+
+# Python 3.6 compatibility
+MonkeyPatch.patch_fromisoformat()
+
 
 class GoodreadsEvent:
     def __init__(self, event_dict):

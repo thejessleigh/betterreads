@@ -45,6 +45,7 @@ Description: BetterReads
         -  xmltodict
         -  requests
         -  rauth
+        -  backports-datetime-fromisoformat
 
         They can be installed using ``pip``.
 
