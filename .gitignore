@@ -1,9 +1,10 @@
 *pyc
 .coverage
-venv/
+venv*
 docs/_*
 .idea/
 htmlcov/
 build/
 dist/
 docs/make.bat
+.python-version

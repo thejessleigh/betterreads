@@ -1,7 +1,12 @@
 from datetime import datetime
 
+from backports.datetime_fromisoformat import MonkeyPatch
+
 from betterreads.book import GoodreadsBook
 from betterreads.review import GoodreadsReview
+
+# Python version 3.6 compatibility
+MonkeyPatch.patch_fromisoformat()
 
 
 class GoodreadsOwnedBook:
