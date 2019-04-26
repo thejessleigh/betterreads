@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from unittest import mock
 
@@ -20,7 +21,7 @@ class TestBook:
 
     def test_get_book(self, test_book):
         assert isinstance(test_book, GoodreadsBook)
-        assert test_book.gid == "39721925"
+        assert test_book.gid == 39721925
         assert (
             repr(test_book)
             == "The Personality Brokers: The Strange History of Myers-Briggs and the Birth of Personality Testing"
@@ -45,7 +46,7 @@ class TestBook:
             book_response = f.read()
         mock_request.return_value = json.loads(book_response)
 
-        book = client.book("18774683")
+        book = client.book(18774683)
         assert len(book.authors) == 2
         assert isinstance(book.authors[0], GoodreadsAuthor)
 
@@ -55,21 +56,20 @@ class TestBook:
         )
 
     def test_average_rating(self, test_book):
-        rating = float(test_book.average_rating)
-        assert type(rating) == float
-        assert rating == 3.38
+        assert isinstance(test_book.average_rating, float)
+        assert test_book.average_rating == 3.38
 
     def test_rating_dist(self, test_book):
         assert test_book.rating_dist.startswith("5:")
 
     def test_ratings_count(self, test_book):
-        assert test_book.ratings_count == "935"
+        assert test_book.ratings_count == 935
 
     def test_text_reviews_count(self, test_book):
-        assert test_book.text_reviews_count == "195"
+        assert test_book.text_reviews_count == 195
 
     def test_num_pages(self, test_book):
-        assert test_book.num_pages == "307"
+        assert test_book.num_pages == 307
 
     def test_popular_shelves(self, test_book):
         shelf_names = [shelf.get("@name") for shelf in test_book.popular_shelves]
@@ -77,7 +77,7 @@ class TestBook:
         assert all(isinstance(shelf, dict) for shelf in test_book.popular_shelves)
 
     def test_work(self, test_book):
-        assert type(test_book.work) == dict
+        assert isinstance(test_book.work, dict)
         assert test_book.work["id"]["#text"] == "60781039"
 
     def test_series_works(self, test_book):
@@ -86,7 +86,8 @@ class TestBook:
     # TODO: Add test book with series works
 
     def test_publication_date(self, test_book):
-        assert test_book.publication_date == ("9", "11", "2018")
+        assert isinstance(test_book.publication_date, datetime)
+        assert test_book.publication_date == datetime(2018, 9, 11)
 
     def test_publisher(self, test_book):
         assert test_book.publisher == "Doubleday"
@@ -112,7 +113,7 @@ class TestBook:
         )
 
     def test_is_ebook(self, test_book):
-        assert test_book.is_ebook == "false"
+        assert test_book.is_ebook is False
 
     def test_format(self, test_book):
         assert test_book.format == "Hardcover"

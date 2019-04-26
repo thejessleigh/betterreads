@@ -19,19 +19,19 @@ class TestUserShelf:
         assert test_shelf.name == "read"
 
     def test_shelf_book_count(self, test_shelf):
-        assert test_shelf.count == "3"
+        assert test_shelf.count == 3
 
     def test_shelf_exclusive_flag(self, test_shelf):
-        assert test_shelf.exclusive == "true"
+        assert test_shelf.exclusive
 
     def test_shelf_description(self, test_shelf):
         assert test_shelf.description is None
 
     def test_shelf_gid(self, test_shelf):
-        assert test_shelf.gid == "308827957"
+        assert test_shelf.gid == 308827957
 
     def test_shelf_sticky(self, test_shelf):
-        assert test_shelf.sticky is None
+        assert not test_shelf.sticky
 
     def test_shelf_featured(self, test_shelf):
-        assert test_shelf.featured == "true"
+        assert test_shelf.featured

@@ -9,11 +9,11 @@ GoodreadsComment is a BetterReads object for interfacing with comment data from 
 Properties
 ~~~~~~~~~~
 
-- gid: Goodreads id of the comment
-- body: Text body of the comment
-- user: `GoodreadsUser <user.html>`__ that authored the comment
-- created_at: String representation of the date when the comment was created
-- updated_at: String representation of the date when the comment was updated
+- gid: Goodreads id of the comment (type: int)
+- body: Text body of the comment (type: string)
+- user: `GoodreadsUser <user.html>`__ that authored the comment (type: `GoodreadsUser <user.html>`__)
+- created_at: String representation of the date when the comment was created (type: datetime)
+- updated_at: String representation of the date when the comment was updated (type: datetime)
 
 Usage
 ~~~~~

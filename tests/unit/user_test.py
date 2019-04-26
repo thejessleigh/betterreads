@@ -27,7 +27,7 @@ class TestUser:
 
     def test_get_user(self, test_user):
         assert isinstance(test_user, GoodreadsUser)
-        assert test_user.gid == "95040664"
+        assert test_user.gid == 95040664
 
     def test_user_name(self, test_user):
         assert test_user.user_name == "mitzynitzy"
