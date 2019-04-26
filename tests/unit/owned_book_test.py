@@ -1,5 +1,6 @@
+from datetime import datetime
 import json
-from unittest import mock, skip
+from unittest import mock
 
 import pytest
 
@@ -32,7 +33,7 @@ class TestOwnedBook:
 
     def test_owned_book_instantiated(self, test_owned_book):
         assert isinstance(test_owned_book, GoodreadsOwnedBook)
-        assert test_owned_book.gid == "49488032"
+        assert test_owned_book.gid == 49488032
 
     def test_book(self, test_owned_book):
         assert isinstance(test_owned_book.book, GoodreadsBook)
@@ -40,13 +41,13 @@ class TestOwnedBook:
 
     def test_review(self, test_owned_book):
         assert isinstance(test_owned_book.review, GoodreadsReview)
-        assert test_owned_book.review.gid == "2163802700"
+        assert test_owned_book.review.gid == 2163802700
 
     def test_current_owner(self, test_owned_book):
-        assert test_owned_book.current_owner == "1724077"
+        assert test_owned_book.current_owner == 1724077
 
     def test_original_purchase_date(self, test_owned_book):
-        assert test_owned_book.original_purchase_date == "2017-12-25T08:00:00+00:00"
+        assert isinstance(test_owned_book.original_purchase_date, datetime)
 
     def test_without_original_purchase_date(
         self, test_owned_book_missing_original_data

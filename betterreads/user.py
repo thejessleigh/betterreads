@@ -20,7 +20,7 @@ class GoodreadsUser:
     @property
     def gid(self):
         """Goodreads ID for the user"""
-        return self._user_dict["id"]
+        return int(self._user_dict["id"])
 
     @property
     def user_name(self):

@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 from unittest import mock
 
@@ -25,13 +26,13 @@ class TestEvent:
         assert all(isinstance(e, GoodreadsEvent) for e in test_event_list)
 
     def test_resource(self, test_event):
-        assert test_event.resource == ("Author", "21246")
+        assert test_event.resource == ("Author", 21246)
 
     def test_repr(self, test_event):
         assert repr(test_event) == test_event.title
 
     def test_gid(self, test_event):
-        assert test_event.gid == "1048832"
+        assert test_event.gid == 1048832
 
     def test_title(self, test_event):
         assert test_event.title == "Outer Order Inner Calm Book Tour: Highland Park, CO"
@@ -69,7 +70,7 @@ class TestEvent:
         assert test_event.event_type == "author_appearance"
 
     def test_added_by(self, test_event):
-        assert test_event.added_by == "2547702"
+        assert test_event.added_by == 2547702
 
     def test_image_url(self, test_event):
         assert (
@@ -78,30 +79,30 @@ class TestEvent:
         )
 
     def test_created_at(self, test_event):
-        assert test_event.created_at == "2019-02-11T20:50:41+00:00"
+        assert isinstance(test_event.created_at, datetime)
 
     def test_updated_at(self, test_event):
-        assert test_event.updated_at == "2019-02-11T20:50:41+00:00"
+        assert isinstance(test_event.updated_at, datetime)
 
     def test_reminder_at(self, test_event):
-        assert test_event.reminder_at == "2019-05-01T02:00:00+00:00"
+        assert isinstance(test_event.reminder_at, datetime)
 
     def test_none_reminder_at(self, test_event_list):
         event = test_event_list[1]
         assert event.reminder_at is None
 
     def test_rsvp_end_at(self, test_event):
-        assert test_event.rsvp_end_at == "2019-05-08T02:00:00+00:00"
+        assert isinstance(test_event.rsvp_end_at, datetime)
 
     def test_none_rsvp_end_at(self, test_event_list):
         event = test_event_list[1]
         assert event.rsvp_end_at is None
 
     def test_start_at(self, test_event):
-        assert test_event.start_at == "2019-05-08T02:00:00+00:00"
+        assert isinstance(test_event.start_at, datetime)
 
     def test_end_at(self, test_event):
-        assert test_event.end_at == "2019-05-08T03:30:00+00:00"
+        assert isinstance(test_event.end_at, datetime)
 
     def test_attending_count(self, test_event):
         assert test_event.attending_count == 0

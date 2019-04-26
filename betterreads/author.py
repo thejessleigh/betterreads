@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 class GoodreadsAuthor:
     def __init__(self, author_dict, client):
         self._author_dict = author_dict
@@ -9,7 +12,7 @@ class GoodreadsAuthor:
     @property
     def gid(self):
         """Goodreads id of the author"""
-        return self._author_dict["id"]
+        return int(self._author_dict["id"])
 
     @property
     def name(self):
@@ -39,17 +42,19 @@ class GoodreadsAuthor:
     @property
     def born_at(self):
         """Author date of birth"""
-        return self._author_dict["born_at"]
+        born_date = self._author_dict["born_at"]
+        return datetime.strptime(born_date, "%Y/%m/%d")
 
     @property
     def died_at(self):
         """Author date of death"""
-        return self._author_dict["died_at"]
+        died_date = self._author_dict["died_at"]
+        return datetime.strptime(died_date, "%Y/%m/%d")
 
     @property
     def fans_count(self):
         """Number of fans"""
-        return self._author_dict["fans_count"]["#text"]
+        return int(self._author_dict["fans_count"]["#text"])
 
     @property
     def gender(self):
@@ -84,7 +89,7 @@ class GoodreadsAuthor:
     @property
     def user(self):
         """Goodreads user profile of the author"""
-        from .user import GoodreadsUser
+        from betterreads.user import GoodreadsUser
 
         goodreads_user = None
         if "user" in self._author_dict:
@@ -96,4 +101,4 @@ class GoodreadsAuthor:
     @property
     def works_count(self):
         """Author number of works"""
-        return self._author_dict["works_count"]
+        return int(self._author_dict["works_count"])
