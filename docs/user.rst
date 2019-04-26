@@ -9,12 +9,12 @@ GoodreadsUser is a BetterReads object for interfacing with user data from Goodre
 Properties
 ~~~~~~~~~~
 
-- gid: Goodreads user id
-- user_name: Goodreads handle for the user
-- name: User's name
-- link: URL for the user profile on Goodreads
-- image_url: URL for the user's profile image
-- small_image_url: URL for a smaller version of the user's profile image
+- gid: Goodreads user id (type: int)
+- user_name: Goodreads handle for the user (type: string)
+- name: User's name (type: string)
+- link: URL for the user profile on Goodreads (type: string)
+- image_url: URL for the user's profile image (type: string)
+- small_image_url: URL for a smaller version of the user's profile image (type: string)
 
 Key Functions and Usage
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,10 +37,10 @@ Get a user using the `GoodreadsClient <client.html>`__
 Get a list of all the `GoodreadsGroups <group.html>`__ to which a user belongs
 
 params:
-- int: page (default=1)
 
-return:
-- list of `GoodreadsGroup <group.html>`__ objects
+- page (int, default=1)
+
+return: list of `GoodreadsGroup <group.html>`__ objects
 
 ``owned_books``
 ^^^^^^^^^^^^^^^
@@ -48,10 +48,10 @@ return:
 Get a list of `GoodreadsOwnedBook <owned_books.html>`__ belonging to a user
 
 params:
-- int: page (default=1)
 
-return:
-- list of `GoodreadsOwnedBook <owned_books.html>`__ objects
+- page (int, default=1)
+
+return: list of `GoodreadsOwnedBook <owned_books.html>`__ objects
 
 ``reviews``
 ^^^^^^^^^^^
@@ -59,10 +59,10 @@ return:
 Get a list of a user's `GoodreadsReview <review.html>`__
 
 params:
-- int: page (default=1)
 
-return
-- list of `GoodreadsReview <review.html>`__ objects
+- page (int, default=1)
+
+return: list of `GoodreadsReview <review.html>`__ objects
 
 ``shelves``
 ^^^^^^^^^^^
@@ -70,10 +70,10 @@ return
 Get a list of user's `GoodreadsUserShelf <user_shelf.html>`__ objects
 
 params:
-- int: page (default=1)
 
-return
-- list of `GoodreadsUserShelf <user_shelf.html>`__ objects
+- page (int, default=1)
+
+return: list of `GoodreadsUserShelf <user_shelf.html>`__ objects
 
 ``per_shelf_reviews``
 ^^^^^^^^^^^^^^^^^^^^^
@@ -81,10 +81,10 @@ return
 Get a list of `GoodreadsBook <book.html>`__ objects belonging to a particular `GoodreadsUserShelf <user_shelf.html>`__
 
 params:
-- int: page (default=1)
-- int: per_page (default=200)
-- string: shelf_name (default="read")
 
-return
-- list of `GoodreadsReview <review.html>`__ objects
+- page (int, default=1)
+- per_page (int, default=200)
+- shelf_name (string, default="read)
+
+return: list of `GoodreadsReview <review.html>`__ objects
 

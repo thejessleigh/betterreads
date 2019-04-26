@@ -1,4 +1,4 @@
-"""Class implementation for Goodreads reviews"""
+from datetime import datetime
 
 
 class GoodreadsReview:
@@ -11,7 +11,7 @@ class GoodreadsReview:
     @property
     def gid(self):
         """Goodreads id for the review"""
-        return self._review_dict["id"]
+        return int(self._review_dict["id"])
 
     @property
     def book(self):
@@ -21,7 +21,7 @@ class GoodreadsReview:
     @property
     def rating(self):
         """Rating of the book"""
-        return self._review_dict["rating"]
+        return int(self._review_dict["rating"])
 
     @property
     def shelves(self):
@@ -48,12 +48,16 @@ class GoodreadsReview:
     @property
     def started_at(self):
         """Book started at"""
-        return self._review_dict["started_at"]
+        return datetime.strptime(
+            self._review_dict["started_at"], "%a %b %d %H:%M:%S %z %Y"
+        )
 
     @property
     def read_at(self):
         """Book read at"""
-        return self._review_dict["read_at"]
+        return datetime.strptime(
+            self._review_dict["read_at"], "%a %b %d %H:%M:%S %z %Y"
+        )
 
     @property
     def body(self):
@@ -63,7 +67,7 @@ class GoodreadsReview:
     @property
     def comments_count(self):
         """Number of comments to this review"""
-        return self._review_dict["comments_count"]
+        return int(self._review_dict["comments_count"])
 
     @property
     def url(self):
@@ -73,4 +77,4 @@ class GoodreadsReview:
     @property
     def owned(self):
         """Is the book owned by this user?"""
-        return self._review_dict["owned"]
+        return False if self._review_dict["owned"] == "0" else True

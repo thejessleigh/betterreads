@@ -1,4 +1,4 @@
-nose
-xmltodict
-requests
+backports-datetime-fromisoformat
 rauth
+requests
+xmltodict

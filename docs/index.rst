@@ -1,14 +1,10 @@
-.. betterreads documentation master file, created by
-   sphinx-quickstart on Fri Mar 29 14:13:33 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to the BetterReads documentation!
 =========================================
 
-This package provides a Python interface for the `Goodreads
-API <http://goodreads.com/api>`__. Using it, you can do pretty much
-anything that Goodreads allows through their public API.
+.. image:: http://s.gr-assets.com/assets/icons/goodreads_icon_50x50-823139ec9dc84278d3863007486ae0ac.png
+
+This package provides a Python interface for the `Goodreads API <http://goodreads.com/api>`__. Using it, you can do
+pretty much anything that Goodreads allows through their public API.
 
 This package is largely Python 2 compatible, but is only officially supported for Python 3.
 
@@ -25,7 +21,7 @@ Major updates in this new project:
 - Add convenience method to get all of a user's reviews for a specific shelf
 - Some opinionated development changes. For example
    - No longer making live API calls in unit tests
-   - Using `black code style <https://github.com/ambv/black>`__ and `prettier code style <https://github.com/prettier/prettier>`__
+   - Using `black code style <https://github.com/ambv/black>`__ across the board
    - More robust `documentation <https://goodreads.readthedocs.io/en/latest/>`__
 
 Dependencies
@@ -36,6 +32,7 @@ This package depends on the following packages:
 -  xmltodict
 -  requests
 -  rauth
+-  backports-datetime-fromisoformat
 
 They can be installed using ``pip``.
 
@@ -56,6 +53,13 @@ directory.
 
     sudo python setup.py install
 
+You can also install BetterReads using pip. The current version on PyPi is 0.4.1.
+
+::
+
+    pip install betterreads
+
+
 Getting Started
 ---------------
 
@@ -65,7 +69,7 @@ create a client instance to query Goodreads.
 
 .. code:: python
 
-    from betterreads import client
+    from goodreads import client
     gc = client.GoodreadsClient(<api_key>, <api_secret>)
 
 To access some of the methods, you need `OAuth <http://oauth.net/>`__
@@ -83,11 +87,27 @@ application, you can direct the user to that particular URL, ask them
 to authorize your app and save the returning ``access_token`` and
 ``access_token_secret`` in your database.
 
+Contribution
+------------
+
+If you find an API method that is not supported by this package, feel
+free to create a Github issue. Also, you are more than welcome to submit
+a pull request for a bug fix or additional feature. For more detail on
+contributing to this project and setting up your local dev environment,
+check out `our contribution guide <contributing.html>`__.
+
 License
 -------
 
 `MIT License <http://opensource.org/licenses/mit-license.php>`__
 
+Acknowledgment
+--------------
+
+Thanks to `Paul Shannon <https://github.com/paulshannon>`__ and `Sefa Kilic <https://github.com/sefakilic>`__
+for providing 'goodreads' package at PyPI, and to `Tatiana <https://github.com/tatianass>`__ and
+`Rehan Khwaja <https://github.com/rkhwaja>`__ for continuing the project as goodreads2. BetterReads couldn't exist
+without all of you.
 
 .. toctree::
    :maxdepth: 1

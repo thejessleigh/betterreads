@@ -15,8 +15,13 @@ setup(
     author="Jess Unrein",
     author_email="j.l.unrein@gmail.com",
     packages=["betterreads"],
-    version="0.4.1",
-    install_requires=["nose", "xmltodict", "requests", "rauth"],
+    version="0.4.2",
+    install_requires=[
+        "backports-datetime-fromisoformat",
+        "rauth",
+        "requests",
+        "xmltodict",
+    ],
     license="MIT",
     keywords="goodreads API",
     classifiers=[
@@ -27,5 +32,5 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
     ],
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
 )

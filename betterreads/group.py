@@ -1,4 +1,4 @@
-"""Class for GoodreadsGroup"""
+from datetime import datetime
 
 
 class GoodreadsGroup:
@@ -15,7 +15,7 @@ class GoodreadsGroup:
     @property
     def gid(self):
         """Goodreads id for the group"""
-        return self._group_dict["id"]
+        return int(self._group_dict["id"])
 
     @property
     def title(self):
@@ -50,7 +50,9 @@ class GoodreadsGroup:
     @property
     def last_activity_at(self):
         """Time of the last activity in the group"""
-        return self._group_dict["last_activity_at"]
+        return datetime.strptime(
+            self._group_dict["last_activity_at"], "%a %b %d %H:%M:%S %z %Y"
+        )
 
     @property
     def access(self):
@@ -60,7 +62,7 @@ class GoodreadsGroup:
     @property
     def users_count(self):
         """Number of users in the group"""
-        return self._group_dict["group_users_count"]
+        return int(self._group_dict["group_users_count"])
 
     @property
     def members(self):
