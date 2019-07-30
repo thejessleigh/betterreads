@@ -56,7 +56,7 @@ class TestClient:
         assert all(isinstance(book, GoodreadsBook) for book in books)
 
     def test_group_by_id(self, test_client_fixture):
-        group = test_client_fixture.group(1)
+        group = test_client_fixture.group(8095)
         assert isinstance(group, GoodreadsGroup)
 
     def test_find_groups(self, test_client_fixture):
