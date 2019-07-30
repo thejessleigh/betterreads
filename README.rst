@@ -74,7 +74,7 @@ create a client instance to query Goodreads.
 
 .. code:: python
 
-    from goodreads import client
+    from betterreads import client
     gc = client.GoodreadsClient(<api_key>, <api_secret>)
 
 To access some of the methods, you need `OAuth <http://oauth.net/>`__
