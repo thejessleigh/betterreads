@@ -28,7 +28,7 @@ If this PR corresponds to an issue, please link the issue number here.
 
 ## Technical Description
 
-If applicable, go into further detaial about the technical changes and design decisions of your changes.
+If applicable, go into further detail about the technical changes and design decisions of your changes.
 
 ## Dependency updates
 
