@@ -27,7 +27,7 @@ Major updates in this new project:
 - Some opinionated development changes. For example
    - No longer making live API calls in unit tests
    - Using `black code style <https://github.com/ambv/black>`__ across the board
-   - More robust `documentation <https://goodreads.readthedocs.io/en/latest/>`__
+   - More robust `documentation <https://betterreads.readthedocs.io/en/latest/>`__
 
 Dependencies
 ------------
@@ -74,7 +74,7 @@ create a client instance to query Goodreads.
 
 .. code:: python
 
-    from goodreads import client
+    from betterreads import client
     gc = client.GoodreadsClient(<api_key>, <api_secret>)
 
 To access some of the methods, you need `OAuth <http://oauth.net/>`__
