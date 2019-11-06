@@ -10,3 +10,5 @@ docs/make.bat
 .python-version
 
 *.egg-info
+
+.vscode/
