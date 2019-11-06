@@ -8,3 +8,5 @@ build/
 dist/
 docs/make.bat
 .python-version
+
+*.egg-info

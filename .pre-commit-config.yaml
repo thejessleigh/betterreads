@@ -14,7 +14,7 @@ repos:
       - id: trailing-whitespace
     additional_dependencies: [black]
   - repo: https://github.com/prettier/prettier
-    rev: master
+    rev: 9471152218efaf2e5aa14cfe219c288de16cdbb1
     hooks:
       - id: prettier
     files: "\\.(\
@@ -24,3 +24,4 @@ repos:
       |json\
       |yaml|yml\
       )$"
+    additional_dependencies: ["prettier@1.1.0"]

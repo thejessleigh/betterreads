@@ -1,4 +1,0 @@
-backports-datetime-fromisoformat
-rauth
-requests
-xmltodict
