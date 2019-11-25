@@ -188,7 +188,7 @@ Documentation
 -------------
 
 Read more about this package
-`here <http://goodreads.readthedocs.org/en/latest/>`__.
+`here <https://betterreads.readthedocs.io/en/latest/>`__.
 
 Contribution
 ------------
