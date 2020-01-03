@@ -1,6 +1,8 @@
 from rauth.service import OAuth1Service, OAuth1Session
 import xmltodict
 
+from betterreads.request_util import throttle
+
 
 class GoodreadsSession:
     """Handle OAuth sessions"""
@@ -51,6 +53,7 @@ class GoodreadsSession:
             access_token_secret=self.access_token_secret,
         )
 
+    @throttle
     def get(self, path, params=None):
         """OAuth get request"""
         if not params:

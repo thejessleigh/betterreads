@@ -2,6 +2,8 @@ import requests
 import xmltodict
 import json
 
+from betterreads.request_util import throttle
+
 
 class GoodreadsRequestException(Exception):
     def __init__(self, error_msg, url):
@@ -21,6 +23,7 @@ class GoodreadsRequest:
         self.path = path
         self.req_format = req_format
 
+    @throttle
     def request(self):
         resp = requests.get(self.host + self.path, params=self.params)
         if resp.status_code != 200:

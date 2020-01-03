@@ -9,7 +9,11 @@ from betterreads.user_shelf import GoodreadsUserShelf
 class GoodreadsUser:
     def __init__(self, user_dict, client):
         self._user_dict = user_dict
-        self._client = client  # for later queries
+        if hasattr(client, "session"):
+            # Always use the oauth session when available.
+            self._request_getter = client.request_oauth
+        else:
+            self._request_getter = client.request
 
     def __repr__(self):
         if self.user_name:
@@ -51,7 +55,7 @@ class GoodreadsUser:
         """List groups for the user. If there are more than 30 groups, get them
         page by page."""
         try:
-            resp = self._client.request("group/list/%s.xml" % self.gid, {"page": page})
+            resp = self._request_getter("group/list/%s.xml" % self.gid, {"page": page})
             groups = [
                 GoodreadsGroup(group_dict)
                 for group_dict in resp["groups"]["list"]["group"]
@@ -63,7 +67,7 @@ class GoodreadsUser:
     def owned_books(self, page=1):
         """Return the list of books owned by the user"""
         try:
-            resp = self._client.session.get(
+            resp = self._request_getter(
                 "owned_books/user", {"page": page, "format": "xml", "id": self.gid}
             )
             owned_books_resp = resp["owned_books"]["owned_book"]
@@ -77,15 +81,15 @@ class GoodreadsUser:
 
     def reviews(self, page=1):
         """Get all books and reviews on user's shelves"""
-        resp = self._client.request(
-            "/review/list.xml", {"v": 2, "id": self.gid, "page": page}
+        resp = self._request_getter(
+            "review/list.xml", {"v": 2, "id": self.gid, "page": page}
         )
         return [GoodreadsReview(r) for r in resp["reviews"]["review"]]
 
     def shelves(self, page=1):
         """Get the user's shelves. This method gets shelves only for users with
         public profile"""
-        resp = self._client.request(
+        resp = self._request_getter(
             "shelf/list.xml", {"user_id": self.gid, "page": page}
         )
         return [GoodreadsUserShelf(s) for s in resp["shelves"]["user_shelf"]]
@@ -95,8 +99,8 @@ class GoodreadsUser:
         total = 1
         all_reviews = []
         while len(all_reviews) < total:
-            resp = self._client.request(
-                "/review/list.xml",
+            resp = self._request_getter(
+                "review/list.xml",
                 {
                     "v": 2,
                     "id": self.gid,
