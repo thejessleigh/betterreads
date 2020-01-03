@@ -6,8 +6,9 @@ from betterreads.user import GoodreadsUser
 class GoodreadsComment:
     """Goodreads comment class"""
 
-    def __init__(self, comment_dict):
+    def __init__(self, comment_dict, client):
         self._comment_dict = comment_dict
+        self._client = client
 
     @property
     def gid(self):
@@ -22,7 +23,7 @@ class GoodreadsComment:
     @property
     def user(self):
         """User that made the comment"""
-        return GoodreadsUser(self._comment_dict["user"], self)
+        return GoodreadsUser(self._comment_dict["user"], self._client)
 
     @property
     def created_at(self):

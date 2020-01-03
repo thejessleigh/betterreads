@@ -190,7 +190,7 @@ class GoodreadsClient:
             "%s/%s/comments" % (comment_type, resource_id), {"format": "xml"}
         )
         return [
-            GoodreadsComment(comment_dict)
+            GoodreadsComment(comment_dict, self)
             for comment_dict in resp["comments"]["comment"]
         ]
 
