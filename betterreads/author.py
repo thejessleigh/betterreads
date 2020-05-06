@@ -48,8 +48,10 @@ class GoodreadsAuthor:
     @property
     def died_at(self):
         """Author date of death"""
-        died_date = self._author_dict["died_at"]
-        return datetime.strptime(died_date, "%Y/%m/%d")
+        if self._author_dict["died_at"]:
+            return datetime.strptime(self._author_dict["died_at"], "%Y/%m/%d")
+        else:
+            return None
 
     @property
     def fans_count(self):
