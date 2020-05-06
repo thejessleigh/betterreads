@@ -14,7 +14,7 @@ class GoodreadsBook:
     @property
     def gid(self):
         """Goodreads id of the book"""
-        return int(self._book_dict["id"])
+        return int(self._book_dict["id"]['#text'])
 
     @property
     def title(self):
@@ -47,7 +47,7 @@ class GoodreadsBook:
     @property
     def rating_dist(self):
         """Rating distribution of the book"""
-        return self._book_dict["work"]["rating_dist"]
+        return self._book_dict["work"].get("rating_dist")
 
     @property
     def ratings_count(self):
@@ -57,7 +57,7 @@ class GoodreadsBook:
     @property
     def text_reviews_count(self):
         """Number of text reviews for the book"""
-        return int(self._book_dict["text_reviews_count"])
+        return int(self._book_dict["text_reviews_count"]['#text'])
 
     @property
     def num_pages(self):
@@ -67,9 +67,12 @@ class GoodreadsBook:
     @property
     def popular_shelves(self):
         """A count of hw many user shelves with the same name contain this book"""
-        return [
-            shelf_dict for shelf_dict in self._book_dict["popular_shelves"]["shelf"]
-        ]
+        if "popular_shelves" in self._book_dict:
+            return [
+                shelf_dict for shelf_dict in self._book_dict["popular_shelves"]["shelf"]
+            ]
+        else:
+            []
 
     @property
     def work(self):
@@ -79,7 +82,7 @@ class GoodreadsBook:
     @property
     def series_works(self):
         """Return series of the book"""
-        return self._book_dict["series_works"]
+        return self._book_dict.get("series_works")
 
     @property
     def publication_date(self):
@@ -98,7 +101,7 @@ class GoodreadsBook:
     @property
     def language_code(self):
         """Language code for the book"""
-        return self._book_dict["language_code"]
+        return self._book_dict.get("language_code")
 
     @property
     def edition_information(self):
@@ -118,7 +121,7 @@ class GoodreadsBook:
     @property
     def is_ebook(self):
         """Is this book an e-book?"""
-        return False if self._book_dict["is_ebook"] == "false" else True
+        return False if self._book_dict.get("is_ebook", "false") == "false" else True
 
     @property
     def format(self):
@@ -143,12 +146,15 @@ class GoodreadsBook:
     @property
     def reviews_widget(self):
         """Widget for reviews in HTML"""
-        return self._book_dict["reviews_widget"]
+        return self._book_dict.get("reviews_widget")
 
     @property
     def similar_books(self):
         """Return the list of similar books."""
-        return [
-            GoodreadsBook(b, self._client)
-            for b in self._book_dict["similar_books"]["book"]
-        ]
+        if "similar_books" in self._book_dict:
+            return [
+                GoodreadsBook(b, self._client)
+                for b in self._book_dict["similar_books"]["book"]
+            ]
+        else:
+            return []
