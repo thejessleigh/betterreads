@@ -107,7 +107,8 @@ class GoodreadsClient:
         resp = self.request(
             "search/index.xml", {"q": q, "page": page, "search[field]": search_field}
         )
-        works = resp["search"]["results"]["work"]
+        results = resp["search"]["results"]
+        works = [] if results is None else results["work"]
         # If there's only one work returned, put it in a list.
         if type(works) == dict:
             works = [works]
