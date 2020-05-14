@@ -1,3 +1,4 @@
+from ratelimit import limits, sleep_and_retry
 import requests
 import xmltodict
 import json
@@ -21,6 +22,8 @@ class GoodreadsRequest:
         self.path = path
         self.req_format = req_format
 
+    @sleep_and_retry
+    @limits(calls=1, period=1)
     def request(self):
         resp = requests.get(self.host + self.path, params=self.params)
         if resp.status_code != 200:
