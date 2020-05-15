@@ -67,9 +67,10 @@ class GoodreadsBook:
     @property
     def popular_shelves(self):
         """A count of hw many user shelves with the same name contain this book"""
-        return [
-            shelf_dict for shelf_dict in self._book_dict["popular_shelves"]["shelf"]
-        ]
+        shelves = self._book_dict["popular_shelves"]["shelf"]
+        if isinstance(shelves, dict):
+            shelves = [shelves]
+        return [ shelf_dict for shelf_dict in shelves ]
 
     @property
     def work(self):
