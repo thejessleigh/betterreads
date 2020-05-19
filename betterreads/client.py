@@ -1,4 +1,6 @@
 import webbrowser
+import ratelimit
+import requests
 
 from betterreads.author import GoodreadsAuthor
 from betterreads.book import GoodreadsBook
@@ -23,10 +25,14 @@ class GoodreadsClientException(Exception):
 class GoodreadsClient:
     base_url = "https://www.goodreads.com/"
 
-    def __init__(self, client_key, client_secret):
+    def __init__(self, client_key, client_secret, diskcache = None):
         """Initialize the client"""
         self.client_key = client_key
         self.client_secret = client_secret
+        throttled_get = ratelimit.sleep_and_retry(ratelimit.limits(calls=1,
+                period=1)(requests.get))
+        self.requests_get = throttled_get if diskcache is None else (
+                diskcache.memoize()(throttled_get))
 
     @property
     def query_dict(self):
@@ -107,7 +113,8 @@ class GoodreadsClient:
         resp = self.request(
             "search/index.xml", {"q": q, "page": page, "search[field]": search_field}
         )
-        works = resp["search"]["results"]["work"]
+        results = resp["search"]["results"]
+        works = [] if results is None else results["work"]
         # If there's only one work returned, put it in a list.
         if type(works) == dict:
             works = [works]

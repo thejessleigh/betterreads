@@ -4,12 +4,13 @@ Client
 GoodreadsClient
 ---------------
 
-The GoodreadsClient is the wrapper that powers direct queries to the Goodreads API.
+The GoodreadsClient is the wrapper that powers direct queries to the Goodreads API.  It throttles requests to one per second, as required by Goodreads' terms and conditions.
 
 Fields
 ~~~~~~
 - client_key: Application's Goodreads API Client Key
 - client_secret: Application's Goodreads API Client Secret
+- diskcache: a diskcache cache instance (optional)
 
 
 Properties
@@ -26,6 +27,15 @@ Instantiate Client
 
     >>> from betterreads.client import client
     >>> gc = client.GoodreadsClient(<api_key>, <api_secret>)
+
+or, with cache:
+
+.. code:: python
+
+    >>> from diskcache import Cache
+    >>> cache = Cache()
+    >>> from betterreads import client
+    >>> gc = client.GoodreadsClient(<api_key>, <api_secret>, cache)
 
 ``author``
 ^^^^^^^^^^
@@ -144,7 +154,7 @@ return: integer number of results pages for the query string
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Get all the books for a given query. This will return all books where the title/author/genre fields show matches.
-Sorted by popularity on Goodreads. Note that if you use a broad search term this operation could take a while. Also bear in mind that the Goodreads API terms and conditions limit each application to 1 request/second per endpoint. This client function does not throttle requests.
+Sorted by popularity on Goodreads. Note that if you use a broad search term this operation could take a while.
 
 params:
 
