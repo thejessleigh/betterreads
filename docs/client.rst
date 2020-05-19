@@ -10,6 +10,7 @@ Fields
 ~~~~~~
 - client_key: Application's Goodreads API Client Key
 - client_secret: Application's Goodreads API Client Secret
+- diskcache: a diskcache cache instance (optional)
 
 
 Properties
@@ -26,6 +27,15 @@ Instantiate Client
 
     >>> from betterreads.client import client
     >>> gc = client.GoodreadsClient(<api_key>, <api_secret>)
+
+or, with cache:
+
+.. code:: python
+
+    >>> from diskcache import Cache
+    >>> cache = Cache()
+    >>> from betterreads import client
+    >>> gc = client.GoodreadsClient(<api_key>, <api_secret>, cache)
 
 ``author``
 ^^^^^^^^^^
