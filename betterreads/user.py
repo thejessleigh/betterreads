@@ -78,7 +78,7 @@ class GoodreadsUser:
     def reviews(self, page=1):
         """Get all books and reviews on user's shelves"""
         resp = self._client.request(
-            "/review/list.xml", {"v": 2, "id": self.gid, "page": page}
+            "review/list.xml", {"v": 2, "id": self.gid, "page": page}
         )
         return [GoodreadsReview(r) for r in resp["reviews"]["review"]]
 
@@ -96,7 +96,7 @@ class GoodreadsUser:
         all_reviews = []
         while len(all_reviews) < total:
             resp = self._client.request(
-                "/review/list.xml",
+                "review/list.xml",
                 {
                     "v": 2,
                     "id": self.gid,

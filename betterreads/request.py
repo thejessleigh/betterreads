@@ -1,6 +1,7 @@
 import requests
 import xmltodict
 import json
+from betterreads.session import GoodreadsSession
 
 
 class GoodreadsRequestException(Exception):
@@ -13,17 +14,22 @@ class GoodreadsRequestException(Exception):
 
 
 class GoodreadsRequest:
-    def __init__(self, client, path, query_dict, req_format="xml"):
+    def __init__(self, client, session, path, query_dict, req_format="xml"):
         """Initialize request object."""
         self.params = query_dict
         self.params.update(client.query_dict)
         self.host = client.base_url
         self.path = path
+        self.session = session;
         self.req_format = req_format
 
     def request(self):
-        resp = requests.get(self.host + self.path, params=self.params)
+        if self.session is None:
+            resp = requests.get(self.host + self.path, params=self.params)
+        else:
+            resp = self.session.get(self.host + self.path, params=self.params)
         if resp.status_code != 200:
+            print(resp.reason)
             raise GoodreadsRequestException(resp.reason, self.path)
         if self.req_format == "xml":
             data_dict = xmltodict.parse(resp.content, dict_constructor=dict)

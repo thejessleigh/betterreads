@@ -12,6 +12,7 @@ class GoodreadsSession:
         self.client_secret = client_secret
         self.access_token = access_token
         self.access_token_secret = access_token_secret
+        self.is_authenticated = False
 
     def oauth_init(self):
         """Start outh and return authorization url."""
@@ -22,7 +23,7 @@ class GoodreadsSession:
             request_token_url="https://www.goodreads.com/oauth/request_token",
             authorize_url="https://www.goodreads.com/oauth/authorize",
             access_token_url="https://www.goodreads.com/oauth/access_token",
-            base_url="https://www.goodreads.com/",
+            base_url="https://www.goodreads.com/api",
         )
         request_token, request_token_secret = service.get_request_token(
             header_auth=True
@@ -41,6 +42,7 @@ class GoodreadsSession:
         )
         self.access_token = self.session.access_token
         self.access_token_secret = self.session.access_token_secret
+        self.is_authenticated = True
 
     def oauth_resume(self):
         """Create session if access token and key are already available"""
@@ -50,11 +52,14 @@ class GoodreadsSession:
             access_token=self.access_token,
             access_token_secret=self.access_token_secret,
         )
+        self.is_authenticated = True
 
     def get(self, path, params=None):
         """OAuth get request"""
         if not params:
             params = {}
-        base = "https://www.goodreads.com/"
-        resp = self.session.get(base + path, params=params)
-        return xmltodict.parse(resp.content)["GoodreadsResponse"]
+        params['format'] = 'xml'
+        resp = self.session.get(path, params=params)
+        print(params)
+        print(resp.url)
+        return resp

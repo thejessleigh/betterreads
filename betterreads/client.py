@@ -27,6 +27,7 @@ class GoodreadsClient:
         """Initialize the client"""
         self.client_key = client_key
         self.client_secret = client_secret
+        self.session = None
 
     @property
     def query_dict(self):
@@ -50,13 +51,13 @@ class GoodreadsClient:
         """Return user who authorized OAuth"""
         if not hasattr(self, "session"):
             raise GoodreadsClientException("No authenticated session")
-        resp = self.request_oauth("api/auth_user", {})
+        resp = self.request("api/auth_user", {})
         user_id = resp["user"]["@id"]
         return self.user(user_id)
 
     def request(self, *args, **kwargs):
         """Create a GoodreadsRequest object and make that request"""
-        req = GoodreadsRequest(self, *args, **kwargs)
+        req = GoodreadsRequest(self, self.session, *args, **kwargs)
         return req.request()
 
     def request_oauth(self, *args, **kwargs):

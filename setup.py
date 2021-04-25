@@ -17,7 +17,6 @@ setup(
     packages=["betterreads"],
     version="0.4.2",
     install_requires=[
-        "backports-datetime-fromisoformat",
         "rauth",
         "requests",
         "xmltodict",
